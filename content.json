@@ -1,0 +1,156 @@
+{
+  "articles": [
+    {
+      "id": "samara-issue-001",
+      "title": "Meet Samara: The 9-Year-Old Behind a Global Learning Platform",
+      "subtitle": "From YouTube educator to the face of an AI-powered edtech platform reaching children worldwide — Samara's story is redefining what it means to grow up building something that matters.",
+      "category": "Kids & Teens",
+      "categoryColor": "gold",
+      "date": "May 2026",
+      "author": "LWS Media",
+      "readTime": "8 min read",
+      "featured": true,
+      "coverImage": "images/samara-cover.jpg",
+      "coverImageCaption": "Samara, photographed at home — May 2026. Photo: LWS Media Network",
+      "excerpt": "At nine years old, most children are thinking about their favourite cartoons. Samara is thinking about curriculum design and how to make learning feel less like a chore for children around the world.",
+      "slug": "samara-issue-001",
+      "tags": ["Kids & Teens", "Edtech", "Young Founders", "Learning With Samara", "Geor De Mer"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "At nine years old, most children are thinking about their favourite cartoons, their next playdate, or what's for dinner. Samara is thinking about curriculum design, user experience, and how to make learning feel less like a chore for children around the world."
+        },
+        {
+          "type": "paragraph",
+          "text": "She is the inspiration behind Learning With Samara — an AI-powered educational platform built by her mother, solo founder Sasha Gaye Hemmings, and the flagship product of Geor De Mer LLC. But Samara is far more than a namesake. She is the platform's most enthusiastic tester, its most honest critic, and increasingly, its most compelling ambassador."
+        },
+        {
+          "type": "quote",
+          "text": "I wanted kids to actually enjoy learning. Not just sit there and be bored.",
+          "cite": "Samara, Age 9"
+        },
+        {
+          "type": "heading",
+          "text": "Growing Up on Camera"
+        },
+        {
+          "type": "paragraph",
+          "text": "Long before the platform launched, Samara was already building an audience on YouTube through Samara TV — a channel dedicated to animated learning videos designed to make education engaging for very young children. The channel became both a proof of concept and a creative outlet, one where Samara's personality could shine through every video."
+        },
+        {
+          "type": "image",
+          "src": "images/samara-youtube.jpg",
+          "caption": "Samara TV — the YouTube channel that started it all."
+        },
+        {
+          "type": "heading",
+          "text": "The Platform"
+        },
+        {
+          "type": "paragraph",
+          "text": "Learning With Samara covers children from ages 0 to 17, offering AI-powered tutoring, gamified learning, PEP Jamaica curriculum prep, ESL for non-English speakers, and a growing library of interactive games and activities. All of it free to start, with a Pro plan that unlocks the full experience."
+        },
+        {
+          "type": "video",
+          "youtubeId": "YOUR_YOUTUBE_VIDEO_ID",
+          "caption": "Watch: Samara talks about her favourite features on the platform."
+        },
+        {
+          "type": "heading",
+          "text": "What Comes Next"
+        },
+        {
+          "type": "paragraph",
+          "text": "With the platform now available globally and a Google Play Store launch on the horizon, Samara's story is only just beginning. For her mother and founder Sasha, building in public with her daughter by her side has always been about more than technology — it's about showing the next generation that they don't have to wait to start building."
+        },
+        {
+          "type": "gallery",
+          "images": [
+            { "src": "images/samara-1.jpg", "caption": "Samara testing the platform" },
+            { "src": "images/samara-2.jpg", "caption": "Recording for Samara TV" },
+            { "src": "images/samara-3.jpg", "caption": "Mother and daughter — the team behind it all" }
+          ]
+        }
+      ],
+      "related": ["solo-founders-global-products", "young-creators-youtube", "global-south-world-news"]
+    },
+    {
+      "id": "solo-founders-global-products",
+      "title": "Solo Founders Building Global Products From Home — And Winning",
+      "subtitle": "How a new wave of one-person startups is competing with venture-backed teams and disrupting industries from their living rooms.",
+      "category": "Innovators & Founders",
+      "categoryColor": "purple",
+      "date": "May 2026",
+      "author": "LWS Media",
+      "readTime": "6 min read",
+      "featured": false,
+      "coverImage": "images/solo-founders.jpg",
+      "coverImageCaption": "Solo founders are reshaping the startup landscape in 2026.",
+      "excerpt": "How a new wave of one-person startups is competing with venture-backed teams and disrupting industries from their living rooms.",
+      "slug": "solo-founders-global-products",
+      "tags": ["Founders", "Startups", "Entrepreneurship", "Tech"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The myth that you need a team, an office, and millions in venture funding to build a global product is being dismantled — one solo founder at a time."
+        },
+        {
+          "type": "paragraph",
+          "text": "Across the world, individuals armed with laptops, free tools, and relentless determination are shipping products used by thousands — sometimes millions — of people. They are doing it without investors, without co-founders, and without asking for permission."
+        }
+      ],
+      "related": ["samara-issue-001", "women-tech-emerging-markets", "fintech-no-funding"]
+    },
+    {
+      "id": "global-south-world-news",
+      "title": "Why the Global South Is Tired of Being an Afterthought in World News",
+      "subtitle": "A commentary on how international media continues to frame developing nations as perpetual victims rather than complex societies with agency and voice.",
+      "category": "Weh Yuh Seh Views",
+      "categoryColor": "green",
+      "date": "May 2026",
+      "author": "LWS Media",
+      "readTime": "5 min read",
+      "featured": false,
+      "coverImage": "images/global-south.jpg",
+      "coverImageCaption": "Voices from the Global South deserve more than footnotes.",
+      "excerpt": "A commentary on how international media continues to frame developing nations as perpetual victims rather than complex societies with agency.",
+      "slug": "global-south-world-news",
+      "tags": ["Media", "Global South", "Commentary", "News"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Turn on any major international news network and the pattern becomes impossible to ignore. Countries across Africa, the Caribbean, Latin America, and Southeast Asia appear almost exclusively in the context of crisis — natural disasters, political instability, poverty, conflict."
+        },
+        {
+          "type": "quote",
+          "text": "We are not a footnote. We are not a charity case. We are nations full of people building, creating, and leading.",
+          "cite": "LWS Media Editorial"
+        }
+      ],
+      "related": ["global-water-crisis", "ai-regulation-debate", "caribbean-economies"]
+    },
+    {
+      "id": "global-water-crisis",
+      "title": "The Global Water Crisis Nobody Is Talking About",
+      "subtitle": "Millions affected, minimal coverage. We go inside the communities bearing the weight of a silent emergency.",
+      "category": "Underreported",
+      "categoryColor": "coral",
+      "date": "May 2026",
+      "author": "LWS Media",
+      "readTime": "7 min read",
+      "featured": false,
+      "coverImage": "images/water-crisis.jpg",
+      "coverImageCaption": "Communities across three continents face a water emergency the world has largely ignored.",
+      "excerpt": "Millions affected, minimal coverage. We go inside the communities bearing the weight of a silent emergency.",
+      "slug": "global-water-crisis",
+      "tags": ["Underreported", "Climate", "Global Crisis", "Investigative"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "In three separate communities — one in sub-Saharan Africa, one in South Asia, and one in the Caribbean — the story is the same. Water is scarce, the situation is worsening, and the international media has moved on to the next headline."
+        }
+      ],
+      "related": ["global-south-world-news", "villages-disappearing-climate", "child-labour-fast-fashion"]
+    }
+  ]
+}
