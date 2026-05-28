@@ -1,9 +1,7 @@
 {
-  "articles": [
-    {
-      "id": "watch-underreported-hunger-crisis",
-      "title": "Underreported: The Hidden Hunger Crisis",
-      "subtitle": "A video episode of Underreported: Weh Dem Nuh Seh hosted by Sasha Gaye Hemmings.",
+      "id": "watch-hunger-crisis-episode-1",
+      "title": "UNDERREPORTED: The Hidden Hunger Crisis — Why the World Is Silent",
+      "subtitle": "Episode 1 of Underreported: Weh Dem Nuh Seh — host Sasha Hemmings exposes the global hunger emergency being deliberately ignored by mainstream media.",
       "category": "Watch & Listen",
       "categoryColor": "purple",
       "date": "2025",
@@ -11,58 +9,71 @@
       "readTime": "Watch",
       "featured": false,
       "coverImage": "images/hunger-crisis.jpeg",
-      "coverImageCaption": "Underreported: Weh Dem Nuh Seh. Hosted by Sasha Gaye Hemmings.",
-      "excerpt": "In this episode of Underreported: Weh Dem Nuh Seh, host Sasha Gaye Hemmings spotlights the global hunger crisis the world is deliberately ignoring.",
-      "slug": "watch-underreported-hunger-crisis",
-      "tags": ["Watch & Listen", "Underreported", "Weh Dem Nuh Seh", "Video"],
+      "coverImageCaption": "Underreported: Weh Dem Nuh Seh — Episode 1. Hosted by Sasha Hemmings.",
+      "excerpt": "Episode 1 of Underreported: Weh Dem Nuh Seh. Host Sasha Hemmings breaks down the global hunger crisis — why it is happening, who is responsible, and why the world is staying silent.",
+      "slug": "watch-hunger-crisis-episode-1",
+      "tags": ["Watch & Listen", "Underreported", "Global Hunger", "Weh Dem Nuh Seh", "Video"],
       "body": [
         {
           "type": "paragraph",
-          "text": "Welcome to Underreported: Weh Dem Nuh Seh — where we spotlight the global stories that are not trending but should be. In this episode, host Sasha Gaye Hemmings covers the global hunger crisis that mainstream media continues to ignore."
+          "text": "Welcome to Underreported: Weh Dem Nuh Seh — where we spotlight the global stories that are not trending but should be. In this episode, host Sasha Hemmings breaks down the global hunger emergency that mainstream media continues to ignore."
         },
         {
           "type": "video",
           "youtubeId": "ydHNbJ0fqNk",
-          "caption": "Underreported: Weh Dem Nuh Seh — The Hidden Hunger Crisis. Hosted by Sasha Gaye Hemmings."
+          "caption": "UNDERREPORTED: The Hidden Hunger Crisis — Why the World Is Silent. Hosted by Sasha Hemmings."
         },
         {
           "type": "paragraph",
           "text": "Underreported: Weh Dem Nuh Seh is a series by LWS Media Network where we bring light to what others ignore. Stay alert, stay aware, and stay loud for those who cannot be heard."
         }
       ],
-      "related": ["watch-underreported-saltwater"]
+      "related": ["watch-hunger-crisis-episode-2"]
     },
     {
-      "id": "watch-underreported-saltwater",
-      "title": "Underreported: The Slow Drowning of Freshwater",
-      "subtitle": "A video episode of Underreported: Weh Dem Nuh Seh hosted by Sasha Gaye Hemmings.",
+      "id": "watch-hunger-crisis-episode-2",
+      "title": "UNDERREPORTED: The Global Hunger Crisis No One Is Talking About",
+      "subtitle": "Episode 2 of Underreported: Weh Dem Nuh Seh — host Sasha Hemmings exposes the silent crisis affecting over 783 million people worldwide.",
       "category": "Watch & Listen",
       "categoryColor": "purple",
       "date": "2025",
       "author": "Sasha Gaye Hemmings | LWS Media Network",
       "readTime": "Watch",
       "featured": false,
-      "coverImage": "images/saltwater-intrusion.jpeg",
-      "coverImageCaption": "Underreported: Weh Dem Nuh Seh. Hosted by Sasha Gaye Hemmings.",
-      "excerpt": "In this episode of Underreported: Weh Dem Nuh Seh, host Sasha Gaye Hemmings investigates the invisible water crisis quietly contaminating drinking water supplies from Florida to Bangladesh.",
-      "slug": "watch-underreported-saltwater",
-      "tags": ["Watch & Listen", "Underreported", "Weh Dem Nuh Seh", "Video"],
+      "coverImage": "images/hunger-crisis.jpeg",
+      "coverImageCaption": "Underreported: Weh Dem Nuh Seh — Episode 2. Hosted by Sasha Hemmings.",
+      "excerpt": "Episode 2 of Underreported: Weh Dem Nuh Seh. From Sudan to Gaza, the Sahel to Haiti, humanitarian food programs are collapsing — and the world stays silent.",
+      "slug": "watch-hunger-crisis-episode-2",
+      "tags": ["Watch & Listen", "Underreported", "Global Hunger", "Weh Dem Nuh Seh", "Video"],
       "body": [
         {
           "type": "paragraph",
-          "text": "Welcome to Underreported: Weh Dem Nuh Seh — where we spotlight the global stories that are not trending but should be. In this episode, host Sasha Gaye Hemmings investigates saltwater intrusion — the invisible crisis quietly contaminating freshwater supplies around the world."
+          "text": "In this episode of Underreported: Weh Dem Nuh Seh, host Sasha Hemmings exposes the silent crisis affecting over 783 million people worldwide. From Sudan to Gaza, the Sahel to Haiti, humanitarian food programs are collapsing due to lack of funding, political indifference, and conflict-driven blockades. Entire regions are being starved into submission — and yet the world stays silent."
         },
         {
           "type": "video",
           "youtubeId": "j8u-RwOTYUo",
-          "caption": "Underreported: Weh Dem Nuh Seh — The Slow Drowning of Freshwater. Hosted by Sasha Gaye Hemmings."
+          "caption": "UNDERREPORTED: The Global Hunger Crisis No One Is Talking About — Hosted by Sasha Hemmings."
+        },
+        {
+          "type": "heading",
+          "text": "What You Will Learn in This Episode"
+        },
+        {
+          "type": "paragraph",
+          "text": "How politics and profit decide who gets to eat. Why famine is a man-made disaster, not a natural one. The real reasons hunger is not making headlines. And what you can do to raise awareness and make a difference."
+        },
+        {
+          "type": "quote",
+          "text": "Hunger is not just a humanitarian issue — it is a weapon of war. This is the story the world needs to hear.",
+          "cite": "Sasha Hemmings, LWS Media Network"
         },
         {
           "type": "paragraph",
           "text": "Underreported: Weh Dem Nuh Seh is a series by LWS Media Network where we bring light to what others ignore. Stay alert, stay aware, and stay loud for those who cannot be heard."
         }
       ],
-      "related": ["watch-underreported-hunger-crisis"]
+      "related": ["watch-hunger-crisis-episode-1"]
     },
     {
       "id": "wyh-morning-briefing-september-3-2025",
