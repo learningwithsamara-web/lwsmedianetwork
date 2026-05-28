@@ -10,6 +10,8 @@
   <meta property="og:url" content="https://lwsmedianetwork.com" />
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#b8922a" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -405,8 +407,12 @@
         <p class="footer-domain">lwsmedianetwork.com</p>
       </div>
     </div>
-  </footer>
-
+</footer>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
   <script>
     var bgMap = {
       gold:   'linear-gradient(135deg,#1a2a4a,#2d6a9f)',
