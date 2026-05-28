@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Get the App | LWS Media Network</title>
+  <meta name="description" content="Install LWS Media Network on your device and never miss a story. Available on Android and iOS." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#b8922a" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+      background:#f8f6f1; color:#111; font-size:16px; line-height:1.6;
+    }
+    a { text-decoration:none; color:inherit; }
+    .wrap { max-width:1100px; margin:0 auto; padding:0 24px; }
+    .content-wrap { max-width:760px; margin:0 auto; padding:0 24px; }
+
+    #lws-header { background:#fff; border-bottom:1px solid #e8e4dc; padding:16px 0; position:sticky; top:0; z-index:100; }
+    .header-inner { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .lws-logo { font-size:16px; font-weight:600; letter-spacing:2px; color:#111; }
+    .logo-sep { color:#ccc; margin:0 6px; }
+    .logo-acc { color:#b8922a; }
+    nav ul { display:flex; gap:20px; list-style:none; align-items:center; }
+    nav ul a { font-size:12px; color:#666; letter-spacing:0.8px; text-transform:uppercase; transition:color 0.2s; }
+    nav ul a:hover { color:#b8922a; }
+    nav ul .nav-cta { background:#6b46b0; color:#fff; padding:7px 14px; border-radius:2px; }
+    .menu-toggle { display:none; background:none; border:none; font-size:24px; color:#111; cursor:pointer; }
+
+    .page-hero { background:#111; padding:64px 0; text-align:center; }
+    .hero-eyebrow { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:#b8922a; margin-bottom:16px; }
+    .hero-title { font-size:38px; font-weight:600; color:#fff; margin-bottom:16px; }
+    .hero-title span { color:#b8922a; }
+    .hero-sub { font-size:16px; color:#888; max-width:480px; margin:0 auto 32px; line-height:1.75; }
+    .hero-app-icon { width:96px; height:96px; border-radius:20px; margin:0 auto 24px; overflow:hidden; background:#1a1a1a; border:1px solid #333; }
+    .hero-app-icon img { width:100%; height:100%; object-fit:cover; }
+
+    .install-body { padding:64px 0 80px; }
+
+    .install-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-bottom:48px; }
+
+    .install-card { background:#fff; border:0.5px solid #e0dbd0; border-radius:4px; overflow:hidden; }
+    .install-card-header { padding:24px 28px 20px; border-bottom:1px solid #e8e4dc; display:flex; align-items:center; gap:16px; }
+    .install-card-icon { width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+    .icon-android { background:#1a1a2e; }
+    .icon-ios { background:#1a1a1a; }
+    .install-card-icon i { font-size:24px; color:#fff; }
+    .install-card-title { font-size:18px; font-weight:600; color:#111; margin-bottom:4px; }
+    .install-card-sub { font-size:13px; color:#aaa; }
+    .install-card-body { padding:24px 28px; }
+
+    .step { display:flex; gap:16px; align-items:flex-start; margin-bottom:20px; }
+    .step:last-child { margin-bottom:0; }
+    .step-num { width:28px; height:28px; border-radius:50%; background:#b8922a; color:#fff; font-size:12px; font-weight:600; display:flex; align-items:center; justify-content:center; flex-shrink:0; margin-top:2px; }
+    .step-content h3 { font-size:14px; font-weight:600; color:#111; margin-bottom:4px; }
+    .step-content p { font-size:13px; color:#777; line-height:1.6; }
+    .step-content .step-icon { display:inline-flex; align-items:center; gap:4px; background:#f8f6f1; border:0.5px solid #e0dbd0; padding:3px 8px; border-radius:4px; font-size:12px; color:#555; margin-top:4px; }
+
+    .install-btn { display:inline-flex; align-items:center; gap:8px; background:#b8922a; color:#fff; padding:12px 24px; border-radius:2px; font-size:13px; font-weight:600; letter-spacing:0.5px; margin-top:20px; border:none; cursor:pointer; font-family:inherit; transition:background 0.2s; width:100%; justify-content:center; }
+    .install-btn:hover { background:#a07820; }
+    .install-btn.dark { background:#111; }
+    .install-btn.dark:hover { background:#222; }
+    .install-btn:disabled { background:#ccc; cursor:not-allowed; }
+
+    .playstore-section { background:#fff; border:0.5px solid #e0dbd0; border-radius:4px; padding:40px; text-align:center; margin-bottom:48px; }
+    .playstore-badge { display:inline-flex; align-items:center; gap:16px; background:#111; color:#fff; padding:16px 28px; border-radius:8px; margin:24px auto; }
+    .playstore-badge i { font-size:32px; color:#b8922a; }
+    .playstore-badge-text { text-align:left; }
+    .playstore-badge-sub { font-size:11px; color:#888; letter-spacing:1px; text-transform:uppercase; }
+    .playstore-badge-title { font-size:20px; font-weight:600; color:#fff; }
+    .coming-soon-tag { display:inline-block; background:#6b46b0; color:#fff; font-size:11px; letter-spacing:2px; text-transform:uppercase; padding:6px 16px; border-radius:2px; margin-bottom:16px; }
+    .playstore-title { font-size:24px; font-weight:600; color:#111; margin-bottom:10px; }
+    .playstore-sub { font-size:15px; color:#777; max-width:440px; margin:0 auto 24px; line-height:1.75; }
+
+    .notify-form { display:flex; gap:10px; max-width:400px; margin:0 auto; }
+    .notify-input { flex:1; background:#f8f6f1; border:1px solid #e0dbd0; border-radius:2px; padding:12px 16px; font-size:13px; color:#111; outline:none; font-family:inherit; transition:border-color 0.2s; }
+    .notify-input:focus { border-color:#b8922a; }
+    .notify-input::placeholder { color:#aaa; }
+    .notify-btn { background:#b8922a; color:#fff; border:none; padding:12px 20px; font-size:12px; letter-spacing:1px; text-transform:uppercase; border-radius:2px; cursor:pointer; font-family:inherit; white-space:nowrap; transition:background 0.2s; }
+    .notify-btn:hover { background:#a07820; }
+    .notify-success { display:none; font-size:14px; color:#1d7a5a; margin-top:12px; }
+
+    .newsletter-section { background:#111; border-radius:4px; padding:48px; text-align:center; margin-bottom:48px; }
+    .newsletter-eyebrow { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:#b8922a; margin-bottom:12px; }
+    .newsletter-title { font-size:28px; font-weight:600; color:#fff; margin-bottom:10px; }
+    .newsletter-title span { color:#b8922a; }
+    .newsletter-sub { font-size:15px; color:#888; max-width:440px; margin:0 auto 28px; line-height:1.75; }
+    .newsletter-form { display:flex; gap:10px; max-width:420px; margin:0 auto; }
+    .newsletter-input { flex:1; background:#1a1a1a; border:0.5px solid #333; color:#fff; padding:13px 16px; font-size:13px; border-radius:2px; outline:none; font-family:inherit; transition:border-color 0.2s; }
+    .newsletter-input:focus { border-color:#b8922a; }
+    .newsletter-input::placeholder { color:#555; }
+    .newsletter-btn { background:#b8922a; color:#fff; border:none; padding:13px 22px; font-size:12px; letter-spacing:1px; text-transform:uppercase; border-radius:2px; cursor:pointer; font-family:inherit; white-space:nowrap; }
+    .newsletter-note { font-size:12px; color:#555; margin-top:12px; }
+    #newsletter-success { display:none; font-size:14px; color:#b8922a; margin-top:12px; }
+
+    .features-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-bottom:48px; }
+    .feature-card { background:#fff; border:0.5px solid #e0dbd0; border-radius:4px; padding:24px; text-align:center; }
+    .feature-icon { font-size:28px; color:#b8922a; margin-bottom:12px; }
+    .feature-title { font-size:14px; font-weight:600; color:#111; margin-bottom:8px; }
+    .feature-desc { font-size:13px; color:#888; line-height:1.6; }
+
+    #lws-footer { background:#0a0a0a; border-top:0.5px solid #2a2a2a; padding:48px 0 0; }
+    .footer-inner { display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px; padding-bottom:40px; }
+    .footer-logo-text { font-size:15px; font-weight:600; letter-spacing:2px; color:#fff; margin-bottom:12px; }
+    .footer-tagline { font-size:13px; color:#bbb; line-height:1.7; }
+    .footer-col-label { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:#b8922a; margin-bottom:14px; font-weight:600; }
+    .footer-links { display:flex; flex-direction:column; gap:10px; }
+    .footer-links a { font-size:13px; color:#ccc; transition:color 0.2s; }
+    .footer-links a:hover { color:#b8922a; }
+    .footer-bottom { border-top:0.5px solid #1e1e1e; padding:20px 0; display:flex; justify-content:space-between; }
+    .footer-copy { font-size:12px; color:#888; }
+    .footer-domain { font-size:12px; color:#555; }
+
+    @media(max-width:768px) {
+      .install-grid { grid-template-columns:1fr; }
+      .features-grid { grid-template-columns:1fr; }
+      .newsletter-form { flex-direction:column; }
+      .notify-form { flex-direction:column; }
+      nav ul { display:none; }
+      nav ul.open { display:flex; flex-direction:column; position:absolute; top:60px; left:0; right:0; background:#fff; border-bottom:1px solid #e8e4dc; padding:20px 24px; gap:16px; }
+      .menu-toggle { display:block; }
+      .footer-inner { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; gap:8px; }
+      .hero-title { font-size:28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="lws-header">
+    <div class="wrap">
+      <div class="header-inner">
+        <a href="index.html" class="lws-logo">LWS<span class="logo-sep">|</span><span class="logo-acc">Media Network</span></a>
+        <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('open')"><i class="ti ti-menu-2"></i></button>
+        <nav><ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="archive.html">All Stories</a></li>
+          <li><a href="index.html#featured" class="nav-cta">Get Featured</a></li>
+        </ul></nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="wrap">
+      <div class="hero-app-icon">
+        <img src="icon-192.png" alt="LWS Media Network" />
+      </div>
+      <p class="hero-eyebrow">Get the App</p>
+      <h1 class="hero-title">LWS <span>Media Network</span></h1>
+      <p class="hero-sub">Install LWS Media Network on your device for the full experience — fast, beautiful, and available even offline.</p>
+    </div>
+  </div>
+
+  <div class="install-body">
+    <div class="content-wrap">
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ti ti-bolt"></i></div>
+          <p class="feature-title">Fast & Lightweight</p>
+          <p class="feature-desc">Loads instantly even on slow connections. Built for real-world performance.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ti ti-wifi-off"></i></div>
+          <p class="feature-title">Works Offline</p>
+          <p class="feature-desc">Read previously loaded stories even without an internet connection.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><i class="ti ti-device-mobile"></i></div>
+          <p class="feature-title">Home Screen Access</p>
+          <p class="feature-desc">Launch directly from your home screen like any other app — no browser needed.</p>
+        </div>
+      </div>
+
+      <div class="install-grid">
+
+        <!-- ANDROID -->
+        <div class="install-card">
+          <div class="install-card-header">
+            <div class="install-card-icon icon-android">
+              <i class="ti ti-brand-android"></i>
+            </div>
+            <div>
+              <p class="install-card-title">Android</p>
+              <p class="install-card-sub">Chrome browser recommended</p>
+            </div>
+          </div>
+          <div class="install-card-body">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <h3>Open in Chrome</h3>
+                <p>Visit <strong>lwsmedianetwork.com</strong> in your Chrome browser on Android.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <h3>Tap the Menu</h3>
+                <p>Tap the three dots <span class="step-icon"><i class="ti ti-dots-vertical" style="font-size:12px"></i> Menu</span> in the top right corner of Chrome.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <h3>Add to Home Screen</h3>
+                <p>Tap <span class="step-icon"><i class="ti ti-plus" style="font-size:12px"></i> Add to Home screen</span> from the menu options.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <h3>Confirm Install</h3>
+                <p>Tap <strong>Add</strong> on the confirmation prompt. LWS Media Network will appear on your home screen instantly.</p>
+              </div>
+            </div>
+            <button class="install-btn dark" id="android-install-btn" onclick="triggerInstall()">
+              <i class="ti ti-brand-android"></i> Install on Android
+            </button>
+          </div>
+        </div>
+
+        <!-- IOS -->
+        <div class="install-card">
+          <div class="install-card-header">
+            <div class="install-card-icon icon-ios">
+              <i class="ti ti-brand-apple"></i>
+            </div>
+            <div>
+              <p class="install-card-title">iPhone & iPad</p>
+              <p class="install-card-sub">Safari browser required</p>
+            </div>
+          </div>
+          <div class="install-card-body">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-content">
+                <h3>Open in Safari</h3>
+                <p>Visit <strong>lwsmedianetwork.com</strong> in Safari on your iPhone or iPad. This will not work in Chrome on iOS.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-content">
+                <h3>Tap the Share Button</h3>
+                <p>Tap the Share icon <span class="step-icon"><i class="ti ti-share" style="font-size:12px"></i> Share</span> at the bottom of your Safari browser.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-content">
+                <h3>Add to Home Screen</h3>
+                <p>Scroll down in the share menu and tap <span class="step-icon"><i class="ti ti-plus" style="font-size:12px"></i> Add to Home Screen</span>.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <div class="step-content">
+                <h3>Confirm</h3>
+                <p>Tap <strong>Add</strong> in the top right corner. LWS Media Network will appear on your home screen ready to use.</p>
+              </div>
+            </div>
+            <button class="install-btn" style="background:#1a1a1a;" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+              <i class="ti ti-brand-apple"></i> Follow Steps Above for iOS
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PLAY STORE COMING SOON -->
+      <div class="playstore-section">
+        <span class="coming-soon-tag">Coming Soon</span>
+        <h2 class="playstore-title">LWS Media Network on Google Play</h2>
+        <p class="playstore-sub">The official LWS Media Network app is coming to the Google Play Store. Be the first to know when it launches — drop your email below.</p>
+        <div class="playstore-badge">
+          <i class="ti ti-brand-google-play"></i>
+          <div class="playstore-badge-text">
+            <p class="playstore-badge-sub">Coming Soon to</p>
+            <p class="playstore-badge-title">Google Play</p>
+          </div>
+        </div>
+        <form id="notify-form" action="https://formspree.io/f/xlgvaogy" method="POST">
+          <input type="hidden" name="_subject" value="LWS Media — Play Store Launch Notification Request" />
+          <div class="notify-form">
+            <input class="notify-input" type="email" name="email" placeholder="Enter your email to be notified" required />
+            <button class="notify-btn" type="submit">Notify Me</button>
+          </div>
+        </form>
+        <p class="notify-success" id="notify-success">You are on the list! We will notify you when the app launches on Google Play.</p>
+      </div>
+
+      <!-- NEWSLETTER -->
+      <div class="newsletter-section">
+        <p class="newsletter-eyebrow">Stay Informed</p>
+        <h2 class="newsletter-title">Never Miss a <span>Story</span></h2>
+        <p class="newsletter-sub">Subscribe to the LWS Media Network newsletter and get the latest stories, briefings, and features delivered straight to your inbox.</p>
+        <form id="newsletter-form" action="https://formspree.io/f/xlgvaogy" method="POST">
+          <input type="hidden" name="_subject" value="LWS Media — Newsletter Subscription" />
+          <div class="newsletter-form">
+            <input class="newsletter-input" type="email" name="email" placeholder="Enter your email address" required />
+            <button class="newsletter-btn" type="submit">Subscribe</button>
+          </div>
+        </form>
+        <p id="newsletter-success" class="notify-success" style="color:#b8922a;">You are subscribed! Welcome to the LWS Media Network community.</p>
+        <p class="newsletter-note">No spam. Unsubscribe any time. We respect your inbox.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <footer id="lws-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo-text">LWS<span style="color:#444;margin:0 6px;">|</span><span style="color:#b8922a;">Media Network</span></div>
+          <p class="footer-tagline">A global multimedia network covering the stories that matter. Powered by Geor De Mer LLC.</p>
+        </div>
+        <div>
+          <p class="footer-col-label">Sections</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="archive.html">All Stories</a>
+            <a href="index.html#science">Science &amp; Environment</a>
+            <a href="index.html#wyh">Weh Yuh Seh Views</a>
+            <a href="index.html#underreported">Underreported</a>
+            <a href="index.html#watch">Watch &amp; Listen</a>
+            <a href="index.html#featured">Get Featured</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-label">Company</p>
+          <div class="footer-links">
+            <a href="about.html">About LWS Media</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+            <a href="advertise.html">Advertise</a>
+            <a href="consent.html">Parental Consent Form</a>
+            <a href="mailto:editor@lwsmedianetwork.com">editor@lwsmedianetwork.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Geor De Mer LLC. All rights reserved. LWS Media Network.</p>
+        <p class="footer-domain">lwsmedianetwork.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var deferredPrompt = null;
+
+    window.addEventListener('beforeinstallprompt', function(e) {
+      e.preventDefault();
+      deferredPrompt = e;
+      var btn = document.getElementById('android-install-btn');
+      if (btn) {
+        btn.innerHTML = '<i class="ti ti-download"></i> Install Now';
+        btn.style.background = '#1d7a5a';
+      }
+    });
+
+    function triggerInstall() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(function(result) {
+          if (result.outcome === 'accepted') {
+            var btn = document.getElementById('android-install-btn');
+            if (btn) { btn.innerHTML = '<i class="ti ti-check"></i> Installed!'; btn.disabled = true; }
+          }
+          deferredPrompt = null;
+        });
+      }
+    }
+
+    document.getElementById('notify-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = this.querySelector('.notify-btn');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      fetch(this.action, { method:'POST', body:new FormData(this), headers:{'Accept':'application/json'} })
+        .then(function(r) {
+          if (r.ok) { document.getElementById('notify-success').style.display = 'block'; }
+          else { btn.textContent = 'Notify Me'; btn.disabled = false; }
+        }).catch(function() { btn.textContent = 'Notify Me'; btn.disabled = false; });
+    });
+
+    document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var btn = this.querySelector('.newsletter-btn');
+      btn.textContent = 'Subscribing...';
+      btn.disabled = true;
+      fetch(this.action, { method:'POST', body:new FormData(this), headers:{'Accept':'application/json'} })
+        .then(function(r) {
+          if (r.ok) { document.getElementById('newsletter-success').style.display = 'block'; }
+          else { btn.textContent = 'Subscribe'; btn.disabled = false; }
+        }).catch(function() { btn.textContent = 'Subscribe'; btn.disabled = false; });
+    });
+  </script>
+
+</body>
+</html>
