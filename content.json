@@ -1,6 +1,106 @@
 {
   "articles": [
     {
+      "id": "wyh-morning-briefing-september-3-2025",
+      "title": "Weh Yuh Seh Views — Morning Briefing | September 3, 2025",
+      "subtitle": "Global news you can trust in just a few minutes — from drone strikes over Ukraine to AI safety updates, climate alerts, and the week's most important diplomatic moves.",
+      "category": "Weh Yuh Seh Views",
+      "categoryColor": "green",
+      "date": "September 3, 2025",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "5 min read",
+      "featured": false,
+      "coverImage": "images/wyh-sept-3-2025.jpeg",
+      "coverImageCaption": "Weh Yuh Seh Views — Morning Briefing, September 3, 2025. Photo: LWS Media Network",
+      "excerpt": "Good morning. Today's briefing covers Russia's massive overnight drone and missile barrage on Ukraine, NATO's response, markets on edge over bond yields, new AI parental controls, and climate alerts across Europe and the US.",
+      "slug": "wyh-morning-briefing-september-3-2025",
+      "tags": ["Weh Yuh Seh Views", "Morning Briefing", "Global News", "Ukraine", "NATO", "AI", "Climate", "Politics"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Good morning, and welcome to Weh Yuh Seh Views. I am your host, Sasha — bringing you global news you can trust in just a few minutes. Here are today's headlines for September 3, 2025."
+        },
+        {
+          "type": "heading",
+          "text": "1. Top Global Headlines"
+        },
+        {
+          "type": "paragraph",
+          "text": "Russia unleashed a massive drone and missile barrage overnight — over 500 drones and dozens of missiles struck Ukrainian cities, injuring railway workers and disrupting critical infrastructure. NATO jets were deployed to patrol Polish airspace in response to the escalation."
+        },
+        {
+          "type": "paragraph",
+          "text": "NATO Secretary General Mark Rutte has indicated he anticipates clarity on security guarantees for Ukraine at an upcoming summit co-hosted by French President Macron and UK Prime Minister Starmer. A peacekeeping force is among the options being evaluated to deter future Russian aggression."
+        },
+        {
+          "type": "heading",
+          "text": "2. Breaking News"
+        },
+        {
+          "type": "paragraph",
+          "text": "US President is set to welcome Poland's President Nawrocki at the White House today. Talks are expected to focus on strengthening defense cooperation, energy resilience, and NATO ties — all against the backdrop of the ongoing conflict in Ukraine."
+        },
+        {
+          "type": "heading",
+          "text": "3. Politics and Diplomacy"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ukrainian President Zelenskiy is heading to Denmark and France to lobby allies for stronger pressure on Russia following the latest wave of airstrikes. European powers are actively evaluating postwar security frameworks as the conflict shows no signs of resolution."
+        },
+        {
+          "type": "heading",
+          "text": "4. Business and Finance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Markets remain cautious as global bond yields — especially in the United Kingdom — hit their highest levels in decades. US markets are awaiting reaction to Nvidia's earnings report and the latest moves on tariffs and technology export restrictions."
+        },
+        {
+          "type": "heading",
+          "text": "5. Technology and AI"
+        },
+        {
+          "type": "paragraph",
+          "text": "New parental control features have been released for ChatGPT, aiming to enhance safety and content moderation for young users. The update comes amid growing pressure on AI companies to do more to protect children online."
+        },
+        {
+          "type": "heading",
+          "text": "6. Climate and Weather Alerts"
+        },
+        {
+          "type": "paragraph",
+          "text": "Europe continues to suffer from devastating wildfire conditions, with the season potentially still producing new hotspots across the continent. Climate scientists warn that this pattern is becoming the new normal as temperatures continue to rise."
+        },
+        {
+          "type": "paragraph",
+          "text": "US Regional Forecast for September 3, 2025 — Florida: Still hot and humid, expect 93 degrees Fahrenheit (34 Celsius) with possible afternoon storms. Georgia: Warm at 91 degrees Fahrenheit (33 Celsius) with showers likely. New York: Mild evening at 72 degrees Fahrenheit (22 Celsius) with heavy rain expected."
+        },
+        {
+          "type": "heading",
+          "text": "7. Science and Health"
+        },
+        {
+          "type": "paragraph",
+          "text": "The death toll from the Afghanistan earthquake has been estimated at over 1,400, with rescue operations underway amid widespread devastation. Aid organisations are calling for urgent international support as affected communities struggle to access basic services."
+        },
+        {
+          "type": "heading",
+          "text": "8. Special Reports"
+        },
+        {
+          "type": "paragraph",
+          "text": "Russia and Belarus are set to conduct joint military exercises called Zapad 2025 from September 12 to 16. The drills will feature scenarios involving nuclear deployment and are raising serious concerns among NATO and European Union observers about the signal being sent at this critical moment in the conflict."
+        },
+        {
+          "type": "quote",
+          "text": "That is your Morning Briefing for September 3, 2025. This is Weh Yuh Seh Views — delivering the stories shaping our world, every morning and evening. See you at 5 PM for the Evening Digest.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        }
+      ],
+      "related": ["wyh-morning-briefing-september-3-2025", "the-hidden-hunger-crisis", "the-slow-drowning-of-freshwater"]
+    },
+    {
       "id": "samara-issue-001",
       "title": "Meet Samara: The 9-Year-Old Behind a Global Learning Platform",
       "subtitle": "From YouTube educator to the face of an AI-powered edtech platform reaching children worldwide — Samara's story is redefining what it means to grow up building something that matters.",
