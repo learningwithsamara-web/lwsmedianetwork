@@ -37,7 +37,7 @@
       top:0;
       z-index:100;
     }
-    .header-inner { display:flex; align-items:center; justify-content:space-between; }
+    .header-inner { display:flex; align-items:center; justify-content:space-between; gap:16px; }
     .lws-logo { font-size:16px; font-weight:600; letter-spacing:2px; color:#111; }
     .logo-sep { color:#ccc; margin:0 6px; font-weight:300; }
     .logo-acc { color:#b8922a; }
@@ -87,6 +87,7 @@
     .cat-purple { color:#6b46b0; } .cat-purple::before { background:#6b46b0; }
     .cat-green { color:#1d7a5a; } .cat-green::before { background:#1d7a5a; }
     .cat-coral { color:#c04a20; } .cat-coral::before { background:#c04a20; }
+    .cat-teal  { color:#1a6b8a; } .cat-teal::before  { background:#1a6b8a; }
 
     .art-title { font-size:38px; font-weight:600; line-height:1.2; color:#111; margin-bottom:18px; }
     .art-subtitle { font-size:17px; color:#777; line-height:1.75; margin-bottom:28px; }
@@ -109,9 +110,7 @@
 
     /* ---- ARTICLE BODY ---- */
     .art-body { background:#fff; padding:48px 0 64px; }
-
     .art-p { font-size:17px; color:#333; line-height:1.85; margin-bottom:26px; }
-
     .art-h2 { font-size:26px; font-weight:600; color:#111; margin:40px 0 14px; }
     .art-h3 { font-size:20px; font-weight:600; color:#111; margin:30px 0 12px; }
 
@@ -130,10 +129,7 @@
 
     /* ---- INLINE IMAGE ---- */
     .art-inline-img { margin:36px 0; }
-    .art-inline-img img {
-      width:100%; border-radius:4px;
-      height:auto; object-fit:contain;
-    }
+    .art-inline-img img { width:100%; border-radius:4px; height:auto; object-fit:contain; }
     .art-inline-img-placeholder {
       width:100%; border-radius:4px; height:300px;
       background:linear-gradient(135deg,#1a2a4a,#2a4a8a);
@@ -149,10 +145,7 @@
       height:0; overflow:hidden; border-radius:4px;
       background:#111;
     }
-    .art-video-frame iframe {
-      position:absolute; top:0; left:0;
-      width:100%; height:100%; border:none;
-    }
+    .art-video-frame iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:none; }
     .art-video-caption { font-size:12px; color:#aaa; margin-top:10px; }
 
     /* ---- PHOTO GALLERY ---- */
@@ -160,10 +153,7 @@
     .art-gallery-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; }
     .art-gallery-item { position:relative; overflow:hidden; border-radius:4px; }
     .art-gallery-item img { height:200px; width:100%; object-fit:cover; }
-    .art-gallery-placeholder {
-      height:200px; width:100%;
-      display:flex; align-items:center; justify-content:center;
-    }
+    .art-gallery-placeholder { height:200px; width:100%; display:flex; align-items:center; justify-content:center; }
     .gp-a { background:linear-gradient(135deg,#1a2a4a,#2d6a9f); }
     .gp-b { background:linear-gradient(135deg,#2a1a4a,#6b46b0); }
     .gp-c { background:linear-gradient(135deg,#1a3a2a,#1d7a5a); }
@@ -203,12 +193,13 @@
     .rel-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
     .rel-card { background:#fff; border:0.5px solid #e0dbd0; border-radius:4px; overflow:hidden; cursor:pointer; transition:box-shadow 0.2s; }
     .rel-card:hover { box-shadow:0 4px 20px rgba(0,0,0,0.08); }
-    .rel-thumb { height:130px; display:flex; align-items:center; justify-content:center; }
+    .rel-thumb { height:130px; overflow:hidden; }
     .rel-thumb i { font-size:28px; color:rgba(255,255,255,0.2); }
-    .bg-gold { background:linear-gradient(135deg,#1a2a4a,#2d6a9f); }
+    .bg-gold   { background:linear-gradient(135deg,#1a2a4a,#2d6a9f); }
     .bg-purple { background:linear-gradient(135deg,#2a1a4a,#6b46b0); }
-    .bg-green { background:linear-gradient(135deg,#1a3a2a,#1d7a5a); }
-    .bg-coral { background:linear-gradient(135deg,#3a1a0a,#c04a20); }
+    .bg-green  { background:linear-gradient(135deg,#1a3a2a,#1d7a5a); }
+    .bg-coral  { background:linear-gradient(135deg,#3a1a0a,#c04a20); }
+    .bg-teal   { background:linear-gradient(135deg,#0a2a3a,#1a6b8a); }
     .rel-body { padding:14px 16px; }
     .rel-cat { font-size:10px; letter-spacing:2px; text-transform:uppercase; font-weight:600; margin-bottom:6px; }
     .rel-title { font-size:13px; font-weight:600; color:#111; line-height:1.4; }
@@ -233,7 +224,6 @@
     @media(max-width:768px) {
       .art-title { font-size:26px; }
       .art-subtitle { font-size:15px; }
-      .art-cover-img { height:280px; }
       .art-gallery-grid { grid-template-columns:1fr 1fr; }
       .rel-grid { grid-template-columns:1fr; }
       .footer-inner { grid-template-columns:1fr; }
@@ -257,10 +247,6 @@
           <i class="ti ti-search"></i>
           <input type="text" id="header-search-input" placeholder="Search stories..." onkeydown="if(event.key==='Enter' && this.value.trim()){window.location.href='archive.html?q='+encodeURIComponent(this.value.trim())}" />
         </div>
-       <div class="header-search">
-          <i class="ti ti-search"></i>
-          <input type="text" id="header-search-input" placeholder="Search stories..." onkeydown="if(event.key==='Enter' && this.value.trim()){window.location.href='archive.html?q='+encodeURIComponent(this.value.trim())}" />
-        </div>
         <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('open')" aria-label="Toggle menu">
           <i class="ti ti-menu-2"></i>
         </button>
@@ -269,6 +255,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#kids">Kids &amp; Teens</a></li>
             <li><a href="index.html#innovators">Innovators</a></li>
+            <li><a href="index.html#science">Science</a></li>
             <li><a href="index.html#watch">Watch &amp; Listen</a></li>
             <li><a href="index.html#wyh">Weh Yuh Seh</a></li>
             <li><a href="index.html#underreported">Underreported</a></li>
@@ -339,6 +326,7 @@
             <a href="index.html">Home</a>
             <a href="index.html#kids">Kids &amp; Teens</a>
             <a href="index.html#innovators">Innovators &amp; Founders</a>
+            <a href="index.html#science">Science &amp; Environment</a>
             <a href="index.html#wyh">Weh Yuh Seh Views</a>
             <a href="index.html#underreported">Underreported</a>
             <a href="index.html#watch">Watch &amp; Listen</a>
@@ -372,14 +360,16 @@
       'gold':   'cat-gold',
       'purple': 'cat-purple',
       'green':  'cat-green',
-      'coral':  'cat-coral'
+      'coral':  'cat-coral',
+      'teal':   'cat-teal'
     };
 
     var relBg = {
       'gold':   'bg-gold',
       'purple': 'bg-purple',
       'green':  'bg-green',
-      'coral':  'bg-coral'
+      'coral':  'bg-coral',
+      'teal':   'bg-teal'
     };
 
     function getSlug() {
@@ -401,9 +391,11 @@
         } else if (block.type === 'image') {
           html += '<div class="art-inline-img">';
           if (block.src && block.src.indexOf('images/') === 0) {
-            html += '<div class="art-inline-img-placeholder"><i class="ti ti-photo"></i></div>';
+            html += '<img src="' + block.src + '" alt="' + (block.caption || '') + '" />';
+          } else if (block.src) {
+            html += '<img src="' + block.src + '" alt="' + (block.caption || '') + '" />';
           } else {
-            html += '<img src="' + block.src + '" alt="' + (block.caption || '') + '" style="height:380px;" />';
+            html += '<div class="art-inline-img-placeholder"><i class="ti ti-photo"></i></div>';
           }
           if (block.caption) html += '<p class="art-img-caption">' + block.caption + '</p>';
           html += '</div>';
@@ -443,9 +435,9 @@
         var a = allArticles.find(function(x) { return x.id === id; });
         if (!a) return;
         var bg = relBg[a.categoryColor] || 'bg-gold';
-        var catClass = a.categoryColor === 'gold' ? 'cat-gold' : a.categoryColor === 'purple' ? 'cat-purple' : a.categoryColor === 'green' ? 'cat-green' : 'cat-coral';
+        var catClass = 'cat-' + (a.categoryColor || 'gold');
         var thumbHtml = (a.coverImage && a.coverImage !== '')
-          ? '<img src="' + a.coverImage + '" alt="' + a.title + '" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.className+=\' ' + bg + '\';this.style.display=\'none\';" />'
+          ? '<img src="' + a.coverImage + '" alt="' + a.title + '" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.innerHTML=\'<div class=\\\'' + bg + '\\\'style=\\\'width:100%;height:100%;display:flex;align-items:center;justify-content:center;\\\'><i class=\\\'ti ti-article\\\'style=\\\'font-size:24px;color:rgba(255,255,255,0.2);\\\'></i></div>\';" />'
           : '<div class="' + bg + '" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;"><i class="ti ti-article" style="font-size:24px;color:rgba(255,255,255,0.2);"></i></div>';
         html += '<a href="article.html?slug=' + a.slug + '" class="rel-card">';
         html += '<div class="rel-thumb">' + thumbHtml + '</div>';
