@@ -192,7 +192,7 @@
         }
       ],
       "related": ["samara-issue-001", "the-hidden-hunger-crisis", "the-slow-drowning-of-freshwater"]
-    }
+    },
     {
       "id": "the-hidden-hunger-crisis",
       "title": "The Hidden Hunger Crisis — Why the World Is Quiet About Starvation",
@@ -203,7 +203,7 @@
       "author": "Sasha Gaye Hemmings | LWS Media Network",
       "readTime": "7 min read",
       "featured": false,
-      "coverImage": "",
+      "coverImage": "images/hunger-crisis.jpeg",
       "coverImageCaption": "Underreported: Weh Dem Nuh Seh — stories the world chooses not to tell. Photo: LWS Media Network",
       "excerpt": "Over 783 million people are going to sleep hungry tonight. In Sudan, Gaza, and across the Sahel, humanitarian food programs are being cut — not because the need is not there, but because the world simply is not paying attention.",
       "slug": "the-hidden-hunger-crisis",
@@ -288,7 +288,7 @@
       "author": "Sasha Gaye Hemmings | LWS Media Network",
       "readTime": "7 min read",
       "featured": false,
-      "coverImage": "",
+      "coverImage": "images/saltwater-intrusion.jpeg",
       "coverImageCaption": "Underreported: Weh Dem Nuh Seh — the slow crisis contaminating our drinking water. Photo: LWS Media Network",
       "excerpt": "From Florida to Bangladesh, seawater is quietly seeping into underground freshwater supplies. Once salt enters these aquifers it is almost impossible to remove — and millions of people are already drinking the consequences.",
       "slug": "the-slow-drowning-of-freshwater",
