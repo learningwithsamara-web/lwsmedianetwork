@@ -1,5 +1,5 @@
 // LWS Media Network — Service Worker
-// Version: lws-media-v1.0.2
+// Version: lws-media-v1.0.3
 
 var CACHE_NAME = 'lws-media-v1.0.1';
 
