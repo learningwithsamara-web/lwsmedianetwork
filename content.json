@@ -137,27 +137,92 @@
       "related": ["global-water-crisis", "ai-regulation-debate", "caribbean-economies"]
     },
     {
-      "id": "global-water-crisis",
-      "title": "The Global Water Crisis Nobody Is Talking About",
-      "subtitle": "Millions affected, minimal coverage. We go inside the communities bearing the weight of a silent emergency.",
+      "id": "the-hidden-hunger-crisis",
+      "title": "The Hidden Hunger Crisis — Why the World Is Quiet About Starvation",
+      "subtitle": "Over 783 million people are going to sleep hungry tonight. This is not a story about poverty — it is a story about silence, indifference, and the deliberate turning away of the world's most powerful nations.",
       "category": "Underreported",
       "categoryColor": "coral",
       "date": "May 2026",
-      "author": "LWS Media",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
       "readTime": "7 min read",
       "featured": false,
-      "coverImage": "images/water-crisis.jpg",
-      "coverImageCaption": "Communities across three continents face a water emergency the world has largely ignored.",
-      "excerpt": "Millions affected, minimal coverage. We go inside the communities bearing the weight of a silent emergency.",
-      "slug": "global-water-crisis",
-      "tags": ["Underreported", "Climate", "Global Crisis", "Investigative"],
+      "coverImage": "images/hunger-crisis.jpeg",
+      "coverImageCaption": "Underreported: Weh Dem Nuh Seh — stories the world chooses not to tell. Photo: LWS Media Network",
+      "excerpt": "Over 783 million people are going to sleep hungry tonight. In Sudan, Gaza, and across the Sahel, humanitarian food programs are being cut — not because the need isn't there, but because the world simply isn't paying attention.",
+      "slug": "the-hidden-hunger-crisis",
+      "tags": ["Underreported", "Global Hunger", "Sudan", "Gaza", "Sahel", "Humanitarian Crisis", "Weh Dem Nuh Seh"],
       "body": [
         {
           "type": "paragraph",
-          "text": "In three separate communities — one in sub-Saharan Africa, one in South Asia, and one in the Caribbean — the story is the same. Water is scarce, the situation is worsening, and the international media has moved on to the next headline."
+          "text": "Welcome to Underreported: Weh Dem Nuh Seh — where we spotlight the global stories that aren't trending but should be. Today, we are talking about a quiet crisis — one the world is deliberately ignoring: global hunger."
+        },
+        {
+          "type": "heading",
+          "text": "A Crisis in the Shadows"
+        },
+        {
+          "type": "paragraph",
+          "text": "Right now, over 783 million people are going to sleep hungry. But this isn't just about poverty — it's about silence."
+        },
+        {
+          "type": "paragraph",
+          "text": "In Sudan, Gaza, and across the Sahel, humanitarian food programs are being cut due to lack of funding. Not because the need isn't there — but because the world simply isn't paying attention. In Sudan alone, 23 million people are food insecure, and children are dying from malnutrition at double the rate compared to just last year."
+        },
+        {
+          "type": "paragraph",
+          "text": "Aid groups like the World Food Programme say they are being forced to choose who eats and who starves — not because they want to, but because donor governments have turned their backs."
+        },
+        {
+          "type": "quote",
+          "text": "Hunger doesn't just kill the body. It breaks the spirit. And silence, in the face of suffering, makes us complicit.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        },
+        {
+          "type": "heading",
+          "text": "Why Aren't We Talking About This?"
+        },
+        {
+          "type": "paragraph",
+          "text": "Why isn't this making headlines? Because most of the people affected are in Africa, the Middle East, or politically unstable regions. Because there is no viral hashtag for starving children in Burkina Faso or Yemen. And because funding flows based on politics and profit — not compassion."
+        },
+        {
+          "type": "paragraph",
+          "text": "Even in places like Haiti, gang violence has blocked entire neighborhoods from receiving aid. That is not just hunger — that is organized starvation. And the world's media cycle has moved on."
+        },
+        {
+          "type": "heading",
+          "text": "What You Need to Know"
+        },
+        {
+          "type": "paragraph",
+          "text": "Let's be clear: famine is not caused by food shortages. It is caused by conflict, climate change, and most of all — indifference. This is a man-made disaster, driven by decisions made in powerful rooms and the lack of accountability in global institutions."
+        },
+        {
+          "type": "paragraph",
+          "text": "If this were happening in Europe or North America, we would see 24/7 coverage. Rolling news. Emergency summits. But for now, hunger has become a silent weapon of war — and the silence of the international community is deafening."
+        },
+        {
+          "type": "heading",
+          "text": "Where Do We Go From Here?"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is not a problem without solutions. But solutions require attention, and attention requires voices. Here is what you can do right now:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Stay informed and share stories like this one. Support independent journalism and credible humanitarian organisations. Hold governments accountable for how they fund — or defund — crisis zones. Demand that your elected representatives treat hunger as the emergency it is."
+        },
+        {
+          "type": "paragraph",
+          "text": "The world needs louder voices, not just louder noise. The people going hungry tonight do not need our pity — they need our action, our attention, and our refusal to look away."
+        },
+        {
+          "type": "quote",
+          "text": "This is Underreported: Weh Dem Nuh Seh — where we bring light to what others ignore. Stay alert, stay aware, and stay loud for those who cannot be heard.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
         }
       ],
-      "related": ["global-south-world-news", "villages-disappearing-climate", "child-labour-fast-fashion"]
+      "related": ["the-slow-drowning-of-freshwater", "global-south-world-news", "solo-founders-global-products"]
     }
-  ]
 }
