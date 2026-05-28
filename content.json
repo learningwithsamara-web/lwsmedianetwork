@@ -1,6 +1,70 @@
 {
   "articles": [
     {
+      "id": "watch-underreported-hunger-crisis",
+      "title": "Underreported: The Hidden Hunger Crisis",
+      "subtitle": "A video episode of Underreported: Weh Dem Nuh Seh hosted by Sasha Gaye Hemmings.",
+      "category": "Watch & Listen",
+      "categoryColor": "purple",
+      "date": "2025",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "Watch",
+      "featured": false,
+      "coverImage": "images/hunger-crisis.jpeg",
+      "coverImageCaption": "Underreported: Weh Dem Nuh Seh. Hosted by Sasha Gaye Hemmings.",
+      "excerpt": "In this episode of Underreported: Weh Dem Nuh Seh, host Sasha Gaye Hemmings spotlights the global hunger crisis the world is deliberately ignoring.",
+      "slug": "watch-underreported-hunger-crisis",
+      "tags": ["Watch & Listen", "Underreported", "Weh Dem Nuh Seh", "Video"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Welcome to Underreported: Weh Dem Nuh Seh — where we spotlight the global stories that are not trending but should be. In this episode, host Sasha Gaye Hemmings covers the global hunger crisis that mainstream media continues to ignore."
+        },
+        {
+          "type": "video",
+          "youtubeId": "ydHNbJ0fqNk",
+          "caption": "Underreported: Weh Dem Nuh Seh — The Hidden Hunger Crisis. Hosted by Sasha Gaye Hemmings."
+        },
+        {
+          "type": "paragraph",
+          "text": "Underreported: Weh Dem Nuh Seh is a series by LWS Media Network where we bring light to what others ignore. Stay alert, stay aware, and stay loud for those who cannot be heard."
+        }
+      ],
+      "related": ["watch-underreported-saltwater"]
+    },
+    {
+      "id": "watch-underreported-saltwater",
+      "title": "Underreported: The Slow Drowning of Freshwater",
+      "subtitle": "A video episode of Underreported: Weh Dem Nuh Seh hosted by Sasha Gaye Hemmings.",
+      "category": "Watch & Listen",
+      "categoryColor": "purple",
+      "date": "2025",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "Watch",
+      "featured": false,
+      "coverImage": "images/saltwater-intrusion.jpeg",
+      "coverImageCaption": "Underreported: Weh Dem Nuh Seh. Hosted by Sasha Gaye Hemmings.",
+      "excerpt": "In this episode of Underreported: Weh Dem Nuh Seh, host Sasha Gaye Hemmings investigates the invisible water crisis quietly contaminating drinking water supplies from Florida to Bangladesh.",
+      "slug": "watch-underreported-saltwater",
+      "tags": ["Watch & Listen", "Underreported", "Weh Dem Nuh Seh", "Video"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Welcome to Underreported: Weh Dem Nuh Seh — where we spotlight the global stories that are not trending but should be. In this episode, host Sasha Gaye Hemmings investigates saltwater intrusion — the invisible crisis quietly contaminating freshwater supplies around the world."
+        },
+        {
+          "type": "video",
+          "youtubeId": "j8u-RwOTYUo",
+          "caption": "Underreported: Weh Dem Nuh Seh — The Slow Drowning of Freshwater. Hosted by Sasha Gaye Hemmings."
+        },
+        {
+          "type": "paragraph",
+          "text": "Underreported: Weh Dem Nuh Seh is a series by LWS Media Network where we bring light to what others ignore. Stay alert, stay aware, and stay loud for those who cannot be heard."
+        }
+      ],
+      "related": ["watch-underreported-hunger-crisis"]
+    },
+    {
       "id": "wyh-morning-briefing-september-3-2025",
       "title": "Weh Yuh Seh Views — Morning Briefing | September 3, 2025",
       "subtitle": "Global news you can trust in just a few minutes — from drone strikes over Ukraine to AI safety updates, climate alerts, and the week's most important diplomatic moves.",
