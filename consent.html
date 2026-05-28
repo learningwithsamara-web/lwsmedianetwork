@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parental Consent Form | LWS Media Network</title>
+  <meta name="description" content="Parental consent form for minor media participation — LWS Media Network." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f8f6f1;
+      color: #111;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    a { text-decoration:none; color:inherit; }
+
+    .wrap { max-width:1100px; margin:0 auto; padding:0 24px; }
+    .form-wrap { max-width:760px; margin:0 auto; padding:0 24px; }
+
+    /* HEADER */
+    #lws-header { background:#fff; border-bottom:1px solid #e8e4dc; padding:16px 0; position:sticky; top:0; z-index:100; }
+    .header-inner { display:flex; align-items:center; justify-content:space-between; }
+    .lws-logo { font-size:16px; font-weight:600; letter-spacing:2px; color:#111; }
+    .logo-sep { color:#ccc; margin:0 6px; }
+    .logo-acc { color:#b8922a; }
+    nav ul { display:flex; gap:20px; list-style:none; align-items:center; }
+    nav ul a { font-size:12px; color:#666; letter-spacing:0.8px; text-transform:uppercase; transition:color 0.2s; }
+    nav ul a:hover { color:#b8922a; }
+    nav ul .nav-cta { background:#6b46b0; color:#fff; padding:7px 14px; border-radius:2px; }
+    .menu-toggle { display:none; background:none; border:none; font-size:24px; color:#111; }
+
+    /* PAGE HERO */
+    .page-hero { background:#fff; border-bottom:1px solid #e8e4dc; padding:48px 0; }
+    .page-eyebrow { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:#6b46b0; margin-bottom:12px; }
+    .page-title { font-size:34px; font-weight:600; color:#111; margin-bottom:12px; }
+    .page-title span { color:#b8922a; }
+    .page-sub { font-size:15px; color:#777; line-height:1.75; max-width:580px; margin-bottom:20px; }
+    .download-btn {
+      display:inline-flex; align-items:center; gap:8px;
+      background:#b8922a; color:#fff; padding:11px 22px;
+      font-size:12px; letter-spacing:1px; text-transform:uppercase;
+      border-radius:2px; transition:background 0.2s;
+    }
+    .download-btn:hover { background:#a07820; color:#fff; }
+
+    /* FORM CONTAINER */
+    .form-container { padding:48px 0 80px; }
+
+    /* SECTION */
+    .form-section {
+      background:#fff;
+      border:0.5px solid #e0dbd0;
+      border-radius:4px;
+      margin-bottom:24px;
+      overflow:hidden;
+    }
+    .form-section-header {
+      background:#fdfaf4;
+      border-bottom:1px solid #e8e4dc;
+      padding:16px 24px;
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .section-num {
+      width:28px; height:28px; border-radius:50%;
+      background:#b8922a; color:#fff;
+      display:flex; align-items:center; justify-content:center;
+      font-size:12px; font-weight:600; flex-shrink:0;
+    }
+    .section-title { font-size:14px; font-weight:600; color:#111; letter-spacing:0.3px; }
+    .form-section-body { padding:24px; }
+
+    /* FORM FIELDS */
+    .field-group { margin-bottom:20px; }
+    .field-group:last-child { margin-bottom:0; }
+    .field-row { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:20px; }
+    .field-row:last-child { margin-bottom:0; }
+
+    label {
+      display:block;
+      font-size:12px;
+      font-weight:600;
+      letter-spacing:0.5px;
+      text-transform:uppercase;
+      color:#888;
+      margin-bottom:6px;
+    }
+    label .required { color:#c04a20; margin-left:2px; }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select,
+    textarea {
+      width:100%;
+      background:#f8f6f1;
+      border:1px solid #e0dbd0;
+      border-radius:2px;
+      padding:11px 14px;
+      font-size:14px;
+      color:#111;
+      font-family:inherit;
+      outline:none;
+      transition:border-color 0.2s, background 0.2s;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color:#b8922a;
+      background:#fff;
+    }
+    input::placeholder, textarea::placeholder { color:#bbb; }
+    textarea { resize:vertical; min-height:100px; }
+    select { cursor:pointer; }
+
+    /* CHECKBOXES */
+    .consent-item {
+      display:flex;
+      gap:14px;
+      align-items:flex-start;
+      padding:16px;
+      border:1px solid #e8e4dc;
+      border-radius:4px;
+      margin-bottom:12px;
+      cursor:pointer;
+      transition:border-color 0.2s, background 0.2s;
+    }
+    .consent-item:hover { border-color:#b8922a; background:#fdfaf4; }
+    .consent-item.checked { border-color:#b8922a; background:#fdfaf4; }
+    .consent-item input[type="checkbox"] {
+      width:18px; height:18px; flex-shrink:0;
+      accent-color:#b8922a; cursor:pointer;
+      margin-top:2px;
+    }
+    .consent-label { font-size:14px; color:#333; line-height:1.6; }
+    .consent-label strong { color:#111; display:block; margin-bottom:4px; font-size:13px; letter-spacing:0.3px; }
+
+    /* DECLARATION */
+    .declaration-box {
+      background:#fdfaf4;
+      border:1px solid #e8e4dc;
+      border-left:3px solid #b8922a;
+      border-radius:4px;
+      padding:20px;
+      margin-bottom:24px;
+    }
+    .declaration-box p { font-size:14px; color:#555; line-height:1.75; margin-bottom:8px; }
+    .declaration-box p:last-child { margin-bottom:0; }
+
+    /* SUBMIT */
+    .form-submit { text-align:center; padding:32px 0 0; }
+    .submit-btn {
+      background:#b8922a; color:#fff; border:none;
+      padding:16px 48px; font-size:14px; font-weight:600;
+      letter-spacing:1px; text-transform:uppercase;
+      border-radius:2px; cursor:pointer;
+      transition:background 0.2s;
+      font-family:inherit;
+    }
+    .submit-btn:hover { background:#a07820; }
+    .submit-note { font-size:13px; color:#aaa; margin-top:12px; }
+
+    /* SUCCESS */
+    #success-msg {
+      display:none;
+      background:#fff;
+      border:1px solid #e0dbd0;
+      border-top:3px solid #1d7a5a;
+      border-radius:4px;
+      padding:48px;
+      text-align:center;
+      margin:32px 0;
+    }
+    #success-msg i { font-size:48px; color:#1d7a5a; display:block; margin-bottom:16px; }
+    #success-msg h2 { font-size:24px; font-weight:600; color:#111; margin-bottom:12px; }
+    #success-msg p { font-size:15px; color:#777; max-width:440px; margin:0 auto; line-height:1.75; }
+
+    /* ERROR */
+    .field-error { font-size:12px; color:#c04a20; margin-top:4px; display:none; }
+    input.error, textarea.error, select.error { border-color:#c04a20; }
+
+    /* LEGAL NOTE */
+    .legal-note {
+      background:#fff;
+      border:0.5px solid #e0dbd0;
+      border-radius:4px;
+      padding:20px 24px;
+      margin-bottom:24px;
+    }
+    .legal-note p { font-size:13px; color:#888; line-height:1.7; }
+
+    /* FOOTER */
+    #lws-footer { background:#0a0a0a; border-top:0.5px solid #2a2a2a; padding:48px 0 0; }
+    .footer-inner { display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px; padding-bottom:40px; }
+    .footer-logo-text { font-size:15px; font-weight:600; letter-spacing:2px; color:#fff; margin-bottom:12px; }
+    .footer-tagline { font-size:13px; color:#bbb; line-height:1.7; }
+    .footer-col-label { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:#b8922a; margin-bottom:14px; font-weight:600; }
+    .footer-links { display:flex; flex-direction:column; gap:10px; }
+    .footer-links a { font-size:13px; color:#ccc; transition:color 0.2s; }
+    .footer-links a:hover { color:#b8922a; }
+    .footer-bottom { border-top:0.5px solid #1e1e1e; padding:20px 0; display:flex; justify-content:space-between; }
+    .footer-copy { font-size:12px; color:#888; }
+    .footer-domain { font-size:12px; color:#555; }
+
+    @media(max-width:640px) {
+      .field-row { grid-template-columns:1fr; }
+      nav ul { display:none; }
+      .menu-toggle { display:block; }
+      .footer-inner { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; gap:8px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="lws-header">
+    <div class="wrap">
+      <div class="header-inner">
+        <a href="index.html" class="lws-logo">LWS<span class="logo-sep">|</span><span class="logo-acc">Media Network</span></a>
+        <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('open')" aria-label="Toggle menu">
+          <i class="ti ti-menu-2"></i>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="archive.html">All Stories</a></li>
+            <li><a href="index.html#featured" class="nav-cta">Get Featured</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-hero">
+    <div class="form-wrap">
+      <p class="page-eyebrow">LWS Media Network</p>
+      <h1 class="page-title">Parental <span>Consent</span> Form</h1>
+      <p class="page-sub">This form must be completed by a parent or legal guardian before a minor may participate in any LWS Media Network feature, interview, or photo/video shoot. Please read all sections carefully before submitting.</p>
+      <a href="LWS-Media-Parental-Consent-Form.docx" class="download-btn" download>
+        <i class="ti ti-download"></i> Download PDF Version
+      </a>
+    </div>
+  </div>
+
+  <div class="form-container">
+    <div class="form-wrap">
+
+      <div class="legal-note">
+        <p><strong style="color:#111;">Important:</strong> All fields marked with <span style="color:#c04a20;">*</span> are required. By submitting this form you confirm that you are the parent or legal guardian of the minor named below and that you have read and understood all consent clauses. A copy of your submission will be sent to <strong>editor@lwsmedianetwork.com</strong> for our records.</p>
+      </div>
+
+      <div id="success-msg">
+        <i class="ti ti-circle-check"></i>
+        <h2>Consent Form Submitted</h2>
+        <p>Thank you. We have received your consent form and a copy has been sent to our team. We will be in touch shortly to confirm next steps. If you have any questions contact us at editor@lwsmedianetwork.com</p>
+      </div>
+
+      <form id="consent-form" action="https://formspree.io/f/xlgvaogy" method="POST" novalidate>
+
+        <!-- Hidden fields for Formspree -->
+        <input type="hidden" name="_subject" value="LWS Media — Parental Consent Form Submission" />
+        <input type="hidden" name="_replyto" id="reply-email" value="" />
+
+        <!-- SECTION 1 — MINOR DETAILS -->
+        <div class="form-section">
+          <div class="form-section-header">
+            <div class="section-num">1</div>
+            <p class="section-title">Details of the Minor</p>
+          </div>
+          <div class="form-section-body">
+            <div class="field-row">
+              <div class="field-group">
+                <label>Full Name of Minor <span class="required">*</span></label>
+                <input type="text" name="minor_name" placeholder="First and last name" required />
+                <p class="field-error">Please enter the minor's full name.</p>
+              </div>
+              <div class="field-group">
+                <label>Date of Birth <span class="required">*</span></label>
+                <input type="date" name="minor_dob" required />
+                <p class="field-error">Please enter the minor's date of birth.</p>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field-group">
+                <label>Age at Time of Participation <span class="required">*</span></label>
+                <input type="text" name="minor_age" placeholder="e.g. 9" required />
+              </div>
+              <div class="field-group">
+                <label>Nationality</label>
+                <input type="text" name="minor_nationality" placeholder="e.g. Jamaican" />
+              </div>
+            </div>
+            <div class="field-group">
+              <label>School / Organisation (if applicable)</label>
+              <input type="text" name="minor_school" placeholder="School or organisation name" />
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 2 — PARENT/GUARDIAN -->
+        <div class="form-section">
+          <div class="form-section-header">
+            <div class="section-num">2</div>
+            <p class="section-title">Parent / Guardian Details</p>
+          </div>
+          <div class="form-section-body">
+            <div class="field-row">
+              <div class="field-group">
+                <label>Full Name <span class="required">*</span></label>
+                <input type="text" name="guardian_name" placeholder="First and last name" required />
+                <p class="field-error">Please enter your full name.</p>
+              </div>
+              <div class="field-group">
+                <label>Relationship to Minor <span class="required">*</span></label>
+                <select name="guardian_relationship" required>
+                  <option value="">Select relationship</option>
+                  <option>Mother</option>
+                  <option>Father</option>
+                  <option>Legal Guardian</option>
+                  <option>Grandparent</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field-group">
+                <label>Email Address <span class="required">*</span></label>
+                <input type="email" name="guardian_email" id="guardian-email" placeholder="your@email.com" required oninput="document.getElementById('reply-email').value=this.value" />
+                <p class="field-error">Please enter a valid email address.</p>
+              </div>
+              <div class="field-group">
+                <label>Phone Number <span class="required">*</span></label>
+                <input type="tel" name="guardian_phone" placeholder="+1 (000) 000-0000" required />
+                <p class="field-error">Please enter your phone number.</p>
+              </div>
+            </div>
+            <div class="field-group">
+              <label>Mailing Address</label>
+              <input type="text" name="guardian_address" placeholder="Street, City, Country" />
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 3 — PARTICIPATION -->
+        <div class="form-section">
+          <div class="form-section-header">
+            <div class="section-num">3</div>
+            <p class="section-title">Nature of Participation</p>
+          </div>
+          <div class="form-section-body">
+            <div class="field-row">
+              <div class="field-group">
+                <label>Type of Feature <span class="required">*</span></label>
+                <select name="feature_type" required>
+                  <option value="">Select type</option>
+                  <option>Interview</option>
+                  <option>Photo Shoot</option>
+                  <option>Video Feature</option>
+                  <option>Interview + Photo</option>
+                  <option>Interview + Video</option>
+                  <option>All of the above</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field-group">
+                <label>Approximate Date(s) <span class="required">*</span></label>
+                <input type="text" name="feature_date" placeholder="e.g. June 2026" required />
+              </div>
+            </div>
+            <div class="field-group">
+              <label>Story Title or Topic <span class="required">*</span></label>
+              <input type="text" name="feature_topic" placeholder="What is the feature about?" required />
+            </div>
+            <div class="field-group">
+              <label>Location of Interview / Shoot</label>
+              <input type="text" name="feature_location" placeholder="e.g. Miami, Florida / Online / School" />
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 4 — CONSENT CLAUSES -->
+        <div class="form-section">
+          <div class="form-section-header">
+            <div class="section-num">4</div>
+            <p class="section-title">Consent — Please check each box to confirm</p>
+          </div>
+          <div class="form-section-body">
+
+            <div class="consent-item" onclick="toggleCheck(this)">
+              <input type="checkbox" name="consent_interview" value="yes" />
+              <div class="consent-label">
+                <strong>Interview Consent</strong>
+                I consent for my child to be interviewed by LWS Media Network staff or representatives. I understand the interview may be audio or video recorded.
+              </div>
+            </div>
+
+            <div class="consent-item" onclick="toggleCheck(this)">
+              <input type="checkbox" name="consent_photography" value="yes" />
+              <div class="consent-label">
+                <strong>Photography Consent</strong>
+                I consent for my child to be photographed during the feature. I understand these photos may be edited and used in published content.
+              </div>
+            </div>
+
+            <div class="consent-item" onclick="toggleCheck(this)">
+              <input type="checkbox" name="consent_video" value="yes" />
+              <div class="consent-label">
+                <strong>Video Recording Consent</strong>
+                I consent for my child to be filmed during the feature. I understand this footage may be edited and published in part or in full.
+              </div>
+            </div>
+
+            <div class="consent-item" onclick="toggleCheck(this)">
+              <input type="checkbox" name="consent_website" value="yes" />
+              <div class="consent-label">
+                <strong>Website Publication</strong>
+                I consent for content featuring my child — including name, age, photo, video, and quotes — to be published on lwsmedianetwork.com.
+              </div>
+            </div>
+
+            <div class="consent-item" onclick="toggleCheck(this)">
+              <input type="checkbox" name="consent_social" value="yes" />
+              <div class="consent-label">
+                <strong>Social Media Publishing</strong>
+                I consent for content featuring my child to be shared on LWS Media Network social media platforms including Instagram, TikTok, YouTube, Facebook, and X (Twitter).
+              </div>
+            </div>
+
+            <div class="consent-item" onclick="toggleCheck(this)">
+              <input type="checkbox" name="consent_commercial" value="yes" />
+              <div class="consent-label">
+                <strong>Commercial Use</strong>
+                I consent for content featuring my child to be used in promotional, marketing, or commercial materials produced by or on behalf of LWS Media Network and Geor De Mer LLC. No additional compensation is implied or guaranteed unless agreed separately in writing.
+              </div>
+            </div>
+
+            <div class="consent-item" onclick="toggleCheck(this)">
+              <input type="checkbox" name="consent_data" value="yes" />
+              <div class="consent-label">
+                <strong>Data Retention</strong>
+                I understand that published content and associated media files may be retained by LWS Media Network indefinitely as part of its published archive. I may request removal at any time by contacting editor@lwsmedianetwork.com.
+              </div>
+            </div>
+
+            <div class="consent-item" onclick="toggleCheck(this)">
+              <input type="checkbox" name="consent_withdraw" value="yes" />
+              <div class="consent-label">
+                <strong>Right to Withdraw</strong>
+                I understand that I may withdraw this consent at any time prior to publication by contacting editor@lwsmedianetwork.com in writing. Withdrawal after publication will be handled on a case-by-case basis.
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- SECTION 5 — RESTRICTIONS -->
+        <div class="form-section">
+          <div class="form-section-header">
+            <div class="section-num">5</div>
+            <p class="section-title">Restrictions or Special Instructions (Optional)</p>
+          </div>
+          <div class="form-section-body">
+            <div class="field-group">
+              <label>Please note any restrictions on the use of your child's image, name, or content</label>
+              <textarea name="restrictions" placeholder="e.g. Do not use full surname. No school name. Approved photos only. No TikTok use. etc."></textarea>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION 6 — DECLARATION -->
+        <div class="form-section">
+          <div class="form-section-header">
+            <div class="section-num">6</div>
+            <p class="section-title">Declaration</p>
+          </div>
+          <div class="form-section-body">
+            <div class="declaration-box">
+              <p>By submitting this form I confirm that:</p>
+              <p>&#x2022; I am the parent or legal guardian of the minor named above.</p>
+              <p>&#x2022; I have read and understood this consent form in full.</p>
+              <p>&#x2022; I give my free and informed consent for the participation described above.</p>
+              <p>&#x2022; I understand that no payment or compensation is implied unless separately agreed in writing.</p>
+              <p>&#x2022; All information provided is accurate and truthful.</p>
+            </div>
+
+            <div class="field-row">
+              <div class="field-group">
+                <label>Full Name (as signature) <span class="required">*</span></label>
+                <input type="text" name="signature_name" placeholder="Type your full name to sign" required />
+                <p class="field-error">Please type your full name as your signature.</p>
+              </div>
+              <div class="field-group">
+                <label>Date <span class="required">*</span></label>
+                <input type="date" name="signature_date" required />
+              </div>
+            </div>
+
+            <div class="field-group">
+              <div class="consent-item" onclick="toggleCheck(this)" id="final-consent-item">
+                <input type="checkbox" name="final_consent" id="final-consent" value="yes" required />
+                <div class="consent-label">
+                  <strong>I agree to all of the above <span style="color:#c04a20;">*</span></strong>
+                  I confirm that I have read this entire form, I am the legal parent or guardian of the minor named, and I give my full consent as indicated above.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="submit-btn">Submit Consent Form</button>
+          <p class="submit-note">A copy of this submission will be sent to editor@lwsmedianetwork.com for our records.</p>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+  <footer id="lws-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo-text">LWS<span style="color:#444;margin:0 6px;">|</span><span style="color:#b8922a;">Media Network</span></div>
+          <p class="footer-tagline">A global multimedia network covering the stories that matter. Powered by Geor De Mer LLC.</p>
+        </div>
+        <div>
+          <p class="footer-col-label">Sections</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="archive.html">All Stories</a>
+            <a href="index.html#featured">Get Featured</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-label">Company</p>
+          <div class="footer-links">
+            <a href="about.html">About LWS Media</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+            <a href="mailto:editor@lwsmedianetwork.com">editor@lwsmedianetwork.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Geor De Mer LLC. All rights reserved. LWS Media Network.</p>
+        <p class="footer-domain">lwsmedianetwork.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleCheck(item) {
+      var cb = item.querySelector('input[type="checkbox"]');
+      cb.checked = !cb.checked;
+      item.classList.toggle('checked', cb.checked);
+    }
+
+    document.getElementById('consent-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var form = this;
+      var valid = true;
+
+      // Validate required fields
+      var required = form.querySelectorAll('[required]');
+      required.forEach(function(field) {
+        var err = field.parentElement.querySelector('.field-error');
+        if (!field.value.trim()) {
+          field.classList.add('error');
+          if (err) err.style.display = 'block';
+          valid = false;
+        } else {
+          field.classList.remove('error');
+          if (err) err.style.display = 'none';
+        }
+      });
+
+      // Check final consent
+      var finalCb = document.getElementById('final-consent');
+      if (!finalCb.checked) {
+        document.getElementById('final-consent-item').style.borderColor = '#c04a20';
+        valid = false;
+      }
+
+      if (!valid) {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        return;
+      }
+
+      var btn = form.querySelector('.submit-btn');
+      btn.textContent = 'Submitting...';
+      btn.disabled = true;
+
+      var data = new FormData(form);
+
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function(res) {
+        if (res.ok) {
+          form.style.display = 'none';
+          document.getElementById('success-msg').style.display = 'block';
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          btn.textContent = 'Submit Consent Form';
+          btn.disabled = false;
+          alert('There was an error submitting the form. Please email us directly at editor@lwsmedianetwork.com');
+        }
+      }).catch(function() {
+        btn.textContent = 'Submit Consent Form';
+        btn.disabled = false;
+        alert('There was an error submitting the form. Please email us directly at editor@lwsmedianetwork.com');
+      });
+    });
+  </script>
+
+</body>
+</html>
