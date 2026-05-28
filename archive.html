@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Stories | LWS Media Network</title>
+  <meta name="description" content="Browse all stories from LWS Media Network — Kids & Teens, Innovators & Founders, Weh Yuh Seh Views, Underreported and more." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: #f8f6f1;
+      color: #111;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    a { text-decoration:none; color:inherit; }
+    img { display:block; width:100%; object-fit:cover; }
+
+    .wrap { max-width:1100px; margin:0 auto; padding:0 24px; }
+
+    /* ---- HEADER ---- */
+    #lws-header {
+      background:#fff;
+      border-bottom:1px solid #e8e4dc;
+      padding:16px 0;
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+    .header-inner { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .lws-logo { font-size:16px; font-weight:600; letter-spacing:2px; color:#111; white-space:nowrap; }
+    .logo-sep { color:#ccc; margin:0 6px; font-weight:300; }
+    .logo-acc { color:#b8922a; }
+
+    /* SEARCH BAR IN HEADER */
+    .header-search {
+      flex:1;
+      max-width:360px;
+      position:relative;
+    }
+    .header-search input {
+      width:100%;
+      background:#f8f6f1;
+      border:1px solid #e0dbd0;
+      border-radius:2px;
+      padding:8px 16px 8px 36px;
+      font-size:13px;
+      color:#111;
+      outline:none;
+      transition:border-color 0.2s;
+    }
+    .header-search input:focus { border-color:#b8922a; background:#fff; }
+    .header-search input::placeholder { color:#aaa; }
+    .header-search i {
+      position:absolute;
+      left:10px;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:16px;
+      color:#aaa;
+    }
+
+    nav ul { display:flex; gap:20px; list-style:none; align-items:center; }
+    nav ul a { font-size:12px; color:#666; letter-spacing:0.8px; text-transform:uppercase; transition:color 0.2s; }
+    nav ul a:hover { color:#b8922a; }
+    nav ul a.active { color:#b8922a; }
+    nav ul .nav-cta { background:#6b46b0; color:#fff; padding:7px 14px; border-radius:2px; }
+    nav ul .nav-cta:hover { background:#5a3a9a; color:#fff; }
+    .menu-toggle { display:none; background:none; border:none; font-size:24px; color:#111; }
+
+    /* ---- PAGE HERO ---- */
+    .page-hero {
+      background:#fff;
+      border-bottom:1px solid #e8e4dc;
+      padding:48px 0;
+    }
+    .page-hero-inner { display:flex; align-items:flex-end; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+    .page-eyebrow { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:#6b46b0; margin-bottom:12px; }
+    .page-title { font-size:36px; font-weight:600; color:#111; }
+    .page-title span { color:#b8922a; }
+    .page-count { font-size:13px; color:#aaa; margin-top:8px; }
+
+    /* MAIN SEARCH BOX */
+    .search-box {
+      position:relative;
+      min-width:300px;
+    }
+    .search-box input {
+      width:100%;
+      background:#f8f6f1;
+      border:1px solid #e0dbd0;
+      border-radius:2px;
+      padding:12px 20px 12px 44px;
+      font-size:14px;
+      color:#111;
+      outline:none;
+      transition:border-color 0.2s;
+    }
+    .search-box input:focus { border-color:#b8922a; background:#fff; }
+    .search-box input::placeholder { color:#aaa; }
+    .search-box i {
+      position:absolute;
+      left:14px;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:18px;
+      color:#aaa;
+    }
+    .search-clear {
+      position:absolute;
+      right:12px;
+      top:50%;
+      transform:translateY(-50%);
+      background:none;
+      border:none;
+      font-size:16px;
+      color:#aaa;
+      cursor:pointer;
+      display:none;
+    }
+    .search-clear.visible { display:block; }
+
+    /* ---- FILTERS ---- */
+    .archive-filters {
+      background:#fff;
+      border-bottom:1px solid #e8e4dc;
+      padding:0;
+      position:sticky;
+      top:61px;
+      z-index:90;
+    }
+    .filters-inner {
+      display:flex;
+      gap:0;
+      overflow-x:auto;
+      scrollbar-width:none;
+    }
+    .filters-inner::-webkit-scrollbar { display:none; }
+    .filter-btn {
+      background:none;
+      border:none;
+      border-bottom:2px solid transparent;
+      padding:14px 20px;
+      font-size:12px;
+      letter-spacing:1px;
+      text-transform:uppercase;
+      color:#888;
+      cursor:pointer;
+      white-space:nowrap;
+      transition:all 0.2s;
+      font-family:inherit;
+    }
+    .filter-btn:hover { color:#111; }
+    .filter-btn.active { color:#b8922a; border-bottom-color:#b8922a; }
+    .filter-btn.active.purple { color:#6b46b0; border-bottom-color:#6b46b0; }
+    .filter-btn.active.green { color:#1d7a5a; border-bottom-color:#1d7a5a; }
+    .filter-btn.active.coral { color:#c04a20; border-bottom-color:#c04a20; }
+
+    /* ---- RESULTS INFO ---- */
+    .results-bar {
+      padding:20px 0 0;
+      font-size:13px;
+      color:#aaa;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .results-bar span { color:#b8922a; font-weight:500; }
+
+    /* ---- ARTICLES GRID ---- */
+    .archive-main { padding:32px 0 64px; }
+    .articles-grid {
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:24px;
+      margin-top:24px;
+    }
+
+    /* ---- ARTICLE CARD ---- */
+    .arc-card {
+      background:#fff;
+      border:0.5px solid #e0dbd0;
+      border-radius:4px;
+      overflow:hidden;
+      cursor:pointer;
+      transition:box-shadow 0.2s;
+      display:flex;
+      flex-direction:column;
+    }
+    .arc-card:hover { box-shadow:0 4px 20px rgba(0,0,0,0.09); }
+    .arc-thumb {
+      aspect-ratio:16/9;
+      overflow:hidden;
+      position:relative;
+      flex-shrink:0;
+    }
+    .arc-thumb img { width:100%; height:100%; object-fit:cover; }
+    .arc-thumb-placeholder {
+      width:100%; height:100%;
+      display:flex; align-items:center; justify-content:center;
+    }
+    .arc-thumb i { font-size:32px; color:rgba(255,255,255,0.2); }
+    .bg-gold   { background:linear-gradient(135deg,#1a2a4a,#2d6a9f); }
+    .bg-purple { background:linear-gradient(135deg,#2a1a4a,#6b46b0); }
+    .bg-green  { background:linear-gradient(135deg,#1a3a2a,#1d7a5a); }
+    .bg-coral  { background:linear-gradient(135deg,#3a1a0a,#c04a20); }
+
+    .arc-body { padding:18px; flex:1; display:flex; flex-direction:column; }
+    .arc-cat {
+      font-size:10px; letter-spacing:2px; text-transform:uppercase;
+      font-weight:600; margin-bottom:8px;
+    }
+    .cat-gold   { color:#b8922a; }
+    .cat-purple { color:#6b46b0; }
+    .cat-green  { color:#1d7a5a; }
+    .cat-coral  { color:#c04a20; }
+    .arc-title { font-size:15px; font-weight:600; color:#111; line-height:1.4; margin-bottom:8px; }
+    .arc-excerpt { font-size:13px; color:#888; line-height:1.6; flex:1; }
+    .arc-footer {
+      padding:12px 18px;
+      border-top:0.5px solid #f0ece4;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+    .arc-meta { font-size:11px; color:#bbb; display:flex; gap:12px; }
+    .arc-meta span { display:flex; align-items:center; gap:4px; }
+    .arc-arrow { font-size:13px; color:#ccc; }
+
+    /* FEATURED CARD - spans 2 columns */
+    .arc-card.featured {
+      grid-column:span 2;
+      flex-direction:row;
+    }
+    .arc-card.featured .arc-thumb {
+      width:48%;
+      aspect-ratio:unset;
+      min-height:240px;
+      flex-shrink:0;
+    }
+    .arc-card.featured .arc-title { font-size:20px; }
+    .arc-card.featured .arc-excerpt { font-size:14px; }
+
+    /* ---- NO RESULTS ---- */
+    .no-results {
+      text-align:center;
+      padding:80px 24px;
+      color:#aaa;
+      grid-column:1/-1;
+    }
+    .no-results i { font-size:48px; display:block; margin-bottom:16px; color:#ddd; }
+    .no-results h3 { font-size:18px; color:#888; margin-bottom:8px; }
+    .no-results p { font-size:14px; }
+
+    /* ---- FOOTER ---- */
+    #lws-footer { background:#0a0a0a; border-top:0.5px solid #2a2a2a; padding:48px 0 0; }
+    .footer-inner { display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px; padding-bottom:40px; }
+    .footer-logo-text { font-size:15px; font-weight:600; letter-spacing:2px; color:#fff; margin-bottom:12px; }
+    .footer-tagline { font-size:13px; color:#bbb; line-height:1.7; }
+    .footer-col-label { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:#b8922a; margin-bottom:14px; font-weight:600; }
+    .footer-links { display:flex; flex-direction:column; gap:10px; }
+    .footer-links a { font-size:13px; color:#ccc; transition:color 0.2s; }
+    .footer-links a:hover { color:#b8922a; }
+    .footer-bottom { border-top:0.5px solid #1e1e1e; padding:20px 0; display:flex; justify-content:space-between; }
+    .footer-copy { font-size:12px; color:#888; }
+    .footer-domain { font-size:12px; color:#555; }
+
+    /* ---- RESPONSIVE ---- */
+    @media(max-width:900px) {
+      .articles-grid { grid-template-columns:repeat(2,1fr); }
+      .arc-card.featured { grid-column:span 2; flex-direction:column; }
+      .arc-card.featured .arc-thumb { width:100%; min-height:200px; aspect-ratio:16/9; }
+    }
+    @media(max-width:640px) {
+      .articles-grid { grid-template-columns:1fr; }
+      .arc-card.featured { grid-column:span 1; }
+      .header-search { display:none; }
+      nav ul { display:none; }
+      nav ul.open { display:flex; flex-direction:column; position:absolute; top:60px; left:0; right:0; background:#fff; border-bottom:1px solid #e8e4dc; padding:20px 24px; gap:16px; }
+      .menu-toggle { display:block; }
+      .footer-inner { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; gap:8px; }
+      .page-hero-inner { flex-direction:column; align-items:flex-start; }
+      .search-box { min-width:unset; width:100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="lws-header">
+    <div class="wrap">
+      <div class="header-inner">
+        <a href="index.html" class="lws-logo">LWS<span class="logo-sep">|</span><span class="logo-acc">Media Network</span></a>
+
+        <!-- Search bar in header -->
+        <div class="header-search">
+          <i class="ti ti-search"></i>
+          <input type="text" id="header-search-input" placeholder="Search stories..." />
+        </div>
+
+        <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('open')" aria-label="Toggle menu">
+          <i class="ti ti-menu-2"></i>
+        </button>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#kids">Kids &amp; Teens</a></li>
+            <li><a href="index.html#innovators">Innovators</a></li>
+            <li><a href="index.html#watch">Watch &amp; Listen</a></li>
+            <li><a href="index.html#wyh">Weh Yuh Seh</a></li>
+            <li><a href="index.html#underreported">Underreported</a></li>
+            <li><a href="index.html#featured" class="nav-cta">Get Featured</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="wrap">
+      <div class="page-hero-inner">
+        <div>
+          <p class="page-eyebrow">LWS Media Network</p>
+          <h1 class="page-title">All <span>Stories</span></h1>
+          <p class="page-count" id="total-count">Loading stories...</p>
+        </div>
+        <div class="search-box">
+          <i class="ti ti-search"></i>
+          <input type="text" id="main-search-input" placeholder="Search by title, topic, or keyword..." />
+          <button class="search-clear" id="search-clear"><i class="ti ti-x"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORY FILTERS -->
+  <div class="archive-filters">
+    <div class="wrap">
+      <div class="filters-inner">
+        <button class="filter-btn active" data-filter="all">All Stories</button>
+        <button class="filter-btn" data-filter="Kids & Teens">Kids &amp; Teens</button>
+        <button class="filter-btn purple" data-filter="Innovators & Founders">Innovators &amp; Founders</button>
+        <button class="filter-btn green" data-filter="Weh Yuh Seh Views">Weh Yuh Seh Views</button>
+        <button class="filter-btn coral" data-filter="Underreported">Underreported</button>
+        <button class="filter-btn" data-filter="Watch & Listen">Watch &amp; Listen</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="archive-main">
+    <div class="wrap">
+      <div class="results-bar">
+        <p id="results-info">Showing all stories</p>
+      </div>
+      <div class="articles-grid" id="articles-grid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="lws-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo-text">LWS<span style="color:#444;margin:0 6px;">|</span><span style="color:#b8922a;">Media Network</span></div>
+          <p class="footer-tagline">A global multimedia network covering the stories that matter. Powered by Geor De Mer LLC.</p>
+        </div>
+        <div>
+          <p class="footer-col-label">Sections</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#kids">Kids &amp; Teens</a>
+            <a href="index.html#innovators">Innovators &amp; Founders</a>
+            <a href="index.html#wyh">Weh Yuh Seh Views</a>
+            <a href="index.html#underreported">Underreported</a>
+            <a href="index.html#watch">Watch &amp; Listen</a>
+            <a href="index.html#featured">Get Featured</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-label">Company</p>
+          <div class="footer-links">
+            <a href="about.html">About LWS Media</a>
+            <a href="contact.html">Contact</a>
+            <a href="archive.html">All Stories</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+            <a href="mailto:editor@lwsmedianetwork.com">editor@lwsmedianetwork.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Geor De Mer LLC. All rights reserved. LWS Media Network.</p>
+        <p class="footer-domain">lwsmedianetwork.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var allArticles = [];
+    var currentFilter = 'all';
+    var currentSearch = '';
+
+    var catColors = {
+      'Kids & Teens': 'gold',
+      'Innovators & Founders': 'purple',
+      'Weh Yuh Seh Views': 'green',
+      'Underreported': 'coral',
+      'Watch & Listen': 'purple'
+    };
+
+    var bgColors = {
+      'gold': 'bg-gold',
+      'purple': 'bg-purple',
+      'green': 'bg-green',
+      'coral': 'bg-coral'
+    };
+
+    function renderCard(article, isFeatured) {
+      var color = catColors[article.category] || 'gold';
+      var bg = bgColors[color] || 'bg-gold';
+      var hasImage = article.coverImage && article.coverImage.indexOf('images/') === -1;
+
+      var thumbHtml = hasImage
+        ? '<img src="' + article.coverImage + '" alt="' + article.title + '" onerror="this.style.display=\'none\'" />'
+        : '<div class="arc-thumb-placeholder ' + bg + '"><i class="ti ti-article"></i></div>';
+
+      return '<a href="article.html?slug=' + article.slug + '" class="arc-card' + (isFeatured ? ' featured' : '') + '">'
+        + '<div class="arc-thumb">' + thumbHtml + '</div>'
+        + '<div style="display:flex;flex-direction:column;flex:1;">'
+        + '<div class="arc-body">'
+        + '<p class="arc-cat cat-' + color + '">' + article.category + '</p>'
+        + '<h2 class="arc-title">' + article.title + '</h2>'
+        + '<p class="arc-excerpt">' + article.excerpt + '</p>'
+        + '</div>'
+        + '<div class="arc-footer">'
+        + '<div class="arc-meta">'
+        + '<span><i class="ti ti-calendar" style="font-size:12px"></i>' + article.date + '</span>'
+        + '<span><i class="ti ti-clock" style="font-size:12px"></i>' + article.readTime + '</span>'
+        + '</div>'
+        + '<i class="ti ti-arrow-right arc-arrow"></i>'
+        + '</div>'
+        + '</div>'
+        + '</a>';
+    }
+
+    function renderNoResults(query) {
+      return '<div class="no-results">'
+        + '<i class="ti ti-search-off"></i>'
+        + '<h3>No stories found' + (query ? ' for "' + query + '"' : '') + '</h3>'
+        + '<p>Try a different keyword or browse all categories.</p>'
+        + '</div>';
+    }
+
+    function filterAndRender() {
+      var filtered = allArticles.filter(function(a) {
+        var matchesFilter = currentFilter === 'all' || a.category === currentFilter;
+        var q = currentSearch.toLowerCase().trim();
+        var matchesSearch = !q
+          || a.title.toLowerCase().indexOf(q) !== -1
+          || a.excerpt.toLowerCase().indexOf(q) !== -1
+          || a.category.toLowerCase().indexOf(q) !== -1
+          || (a.tags && a.tags.some(function(t) { return t.toLowerCase().indexOf(q) !== -1; }));
+        return matchesFilter && matchesSearch;
+      });
+
+      var grid = document.getElementById('articles-grid');
+      var info = document.getElementById('results-info');
+
+      if (filtered.length === 0) {
+        grid.innerHTML = renderNoResults(currentSearch);
+        info.innerHTML = 'No results found';
+        return;
+      }
+
+      var html = '';
+      filtered.forEach(function(article, idx) {
+        var isFeatured = idx === 0 && currentFilter === 'all' && !currentSearch && article.featured;
+        html += renderCard(article, isFeatured);
+      });
+      grid.innerHTML = html;
+
+      var filterLabel = currentFilter === 'all' ? 'all categories' : currentFilter;
+      var searchLabel = currentSearch ? ' matching <span>"' + currentSearch + '"</span>' : '';
+      info.innerHTML = 'Showing <span>' + filtered.length + ' ' + (filtered.length === 1 ? 'story' : 'stories') + '</span> in ' + filterLabel + searchLabel;
+    }
+
+    function setupFilters() {
+      var btns = document.querySelectorAll('.filter-btn');
+      btns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          btns.forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          currentFilter = btn.getAttribute('data-filter');
+          filterAndRender();
+        });
+      });
+    }
+
+    function setupSearch() {
+      var mainInput = document.getElementById('main-search-input');
+      var headerInput = document.getElementById('header-search-input');
+      var clearBtn = document.getElementById('search-clear');
+
+      function onSearch(val) {
+        currentSearch = val;
+        mainInput.value = val;
+        headerInput.value = val;
+        clearBtn.classList.toggle('visible', val.length > 0);
+        filterAndRender();
+      }
+
+      mainInput.addEventListener('input', function() { onSearch(this.value); });
+      headerInput.addEventListener('input', function() { onSearch(this.value); });
+      clearBtn.addEventListener('click', function() { onSearch(''); mainInput.focus(); });
+
+      var params = new URLSearchParams(window.location.search);
+      var q = params.get('q');
+      if (q) { onSearch(q); }
+    }
+
+    fetch('content.json')
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        allArticles = data.articles;
+        document.getElementById('total-count').textContent = allArticles.length + ' stories published';
+        setupFilters();
+        setupSearch();
+        filterAndRender();
+      })
+      .catch(function() {
+        document.getElementById('articles-grid').innerHTML = '<div class="no-results"><i class="ti ti-alert-circle"></i><h3>Could not load stories</h3><p>Please try again later.</p></div>';
+      });
+  </script>
+
+</body>
+</html>
