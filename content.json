@@ -18,7 +18,7 @@
       "body": [
         {
           "type": "paragraph",
-          "text": "At nine years old, most children are thinking about their favourite cartoons, their next playdate, or what's for dinner. Samara is thinking about curriculum design, user experience, and how to make learning feel less like a chore for children around the world."
+          "text": "At nine years old, most children are thinking about their favourite cartoons, their next playdate, or what is for dinner. Samara is thinking about curriculum design, user experience, and how to make learning feel less like a chore for children around the world."
         },
         {
           "type": "paragraph",
@@ -38,9 +38,9 @@
           "text": "Long before the platform launched, Samara was already building an audience on YouTube through Samara TV — a channel dedicated to animated learning videos designed to make education engaging for very young children. The channel became both a proof of concept and a creative outlet, one where Samara's personality could shine through every video."
         },
         {
-          "type": "image",
-          "src": "images/samara-youtube.jpg",
-          "caption": "Samara TV — the YouTube channel that started it all."
+          "type": "video",
+          "youtubeId": "7dhMrzt2Yas",
+          "caption": "Watch: Samara TV — the YouTube channel that started it all."
         },
         {
           "type": "heading",
@@ -51,35 +51,30 @@
           "text": "Learning With Samara covers children from ages 0 to 17, offering AI-powered tutoring, gamified learning, PEP Jamaica curriculum prep, ESL for non-English speakers, and a growing library of interactive games and activities. All of it free to start, with a Pro plan that unlocks the full experience."
         },
         {
-  "type": "video",
-  "youtubeId": "7dhMrzt2Yas",
-  "caption": "Watch: Samara TV — the YouTube channel that started it all."
-},
-        {
           "type": "heading",
           "text": "What Comes Next"
         },
         {
           "type": "paragraph",
-          "text": "With the platform now available globally and a Google Play Store launch on the horizon, Samara's story is only just beginning. For her mother and founder Sasha, building in public with her daughter by her side has always been about more than technology — it's about showing the next generation that they don't have to wait to start building."
+          "text": "With the platform now available globally and a Google Play Store launch on the horizon, Samara's story is only just beginning. For her mother and founder Sasha, building in public with her daughter by her side has always been about more than technology — it is about showing the next generation that they do not have to wait to start building."
         },
         {
-  "type": "image",
-  "src": "samara-solar-system.jpeg",
-  "caption": "Samara and her solar system science project."
-},
-{
-  "type": "video",
-  "youtubeId": "lXt9htNSPv0",
-  "caption": "Watch: Samara in action — a glimpse of the energy behind the platform."
-},
-{
-  "type": "image",
-  "src": "samara-and-mom.jpeg",
-  "caption": "Mother and daughter — the team behind it all."
-}
+          "type": "image",
+          "src": "samara-solar-system.jpeg",
+          "caption": "Samara and her solar system science project."
+        },
+        {
+          "type": "video",
+          "youtubeId": "lXt9htNSPv0",
+          "caption": "Watch: Samara in action — a glimpse of the energy behind the platform."
+        },
+        {
+          "type": "image",
+          "src": "samara-and-mom.jpeg",
+          "caption": "Mother and daughter — the team behind it all."
+        }
       ],
-      "related": ["solo-founders-global-products", "young-creators-youtube", "global-south-world-news"]
+      "related": ["solo-founders-global-products", "the-hidden-hunger-crisis", "the-slow-drowning-of-freshwater"]
     },
     {
       "id": "solo-founders-global-products",
@@ -91,7 +86,7 @@
       "author": "LWS Media",
       "readTime": "6 min read",
       "featured": false,
-      "coverImage": "images/solo-founders.jpg",
+      "coverImage": "",
       "coverImageCaption": "Solo founders are reshaping the startup landscape in 2026.",
       "excerpt": "How a new wave of one-person startups is competing with venture-backed teams and disrupting industries from their living rooms.",
       "slug": "solo-founders-global-products",
@@ -106,9 +101,9 @@
           "text": "Across the world, individuals armed with laptops, free tools, and relentless determination are shipping products used by thousands — sometimes millions — of people. They are doing it without investors, without co-founders, and without asking for permission."
         }
       ],
-      "related": ["samara-issue-001", "women-tech-emerging-markets", "fintech-no-funding"]
+      "related": ["samara-issue-001", "the-hidden-hunger-crisis", "the-slow-drowning-of-freshwater"]
     },
-   {
+    {
       "id": "the-hidden-hunger-crisis",
       "title": "The Hidden Hunger Crisis — Why the World Is Quiet About Starvation",
       "subtitle": "Over 783 million people are going to sleep hungry tonight. This is not a story about poverty — it is a story about silence, indifference, and the deliberate turning away of the world's most powerful nations.",
@@ -191,7 +186,7 @@
           "cite": "Sasha Gaye Hemmings, LWS Media Network"
         }
       ],
-      "related": ["the-slow-drowning-of-freshwater", "global-south-world-news", "solo-founders-global-products"]
+      "related": ["the-slow-drowning-of-freshwater", "solo-founders-global-products", "samara-issue-001"]
     },
     {
       "id": "the-slow-drowning-of-freshwater",
@@ -276,5 +271,7 @@
           "cite": "Sasha Gaye Hemmings, LWS Media Network"
         }
       ],
-      "related": ["the-hidden-hunger-crisis", "global-south-world-news", "solo-founders-global-products"]
+      "related": ["the-hidden-hunger-crisis", "solo-founders-global-products", "samara-issue-001"]
     }
+  ]
+}
