@@ -64,13 +64,20 @@
           "text": "With the platform now available globally and a Google Play Store launch on the horizon, Samara's story is only just beginning. For her mother and founder Sasha, building in public with her daughter by her side has always been about more than technology — it's about showing the next generation that they don't have to wait to start building."
         },
         {
-          "type": "gallery",
-          "images": [
-            { "src": "images/samara-1.jpg", "caption": "Samara testing the platform" },
-            { "src": "images/samara-2.jpg", "caption": "Recording for Samara TV" },
-            { "src": "images/samara-3.jpg", "caption": "Mother and daughter — the team behind it all" }
-          ]
-        }
+  "type": "image",
+  "src": "samara-solar-system.jpeg",
+  "caption": "Samara and her solar system science project."
+},
+{
+  "type": "video",
+  "youtubeId": "lXt9htNSPv0",
+  "caption": "Watch: Samara in action — a glimpse of the energy behind the platform."
+},
+{
+  "type": "image",
+  "src": "samara-and-mom.jpeg",
+  "caption": "Mother and daughter — the team behind it all."
+}
       ],
       "related": ["solo-founders-global-products", "young-creators-youtube", "global-south-world-news"]
     },
