@@ -46,6 +46,34 @@
     nav ul a:hover { color:#b8922a; }
     nav ul .nav-cta { background:#6b46b0; color:#fff; padding:7px 14px; border-radius:2px; }
     nav ul .nav-cta:hover { background:#5a3a9a; color:#fff; }
+    .header-search {
+      flex:1;
+      max-width:300px;
+      position:relative;
+    }
+    .header-search input {
+      width:100%;
+      background:#f8f6f1;
+      border:1px solid #e0dbd0;
+      border-radius:2px;
+      padding:8px 16px 8px 36px;
+      font-size:13px;
+      color:#111;
+      outline:none;
+      transition:border-color 0.2s;
+      font-family:inherit;
+    }
+    .header-search input:focus { border-color:#b8922a; background:#fff; }
+    .header-search input::placeholder { color:#aaa; }
+    .header-search i {
+      position:absolute;
+      left:10px;
+      top:50%;
+      transform:translateY(-50%);
+      font-size:16px;
+      color:#aaa;
+      pointer-events:none;
+    }
     .menu-toggle { display:none; background:none; border:none; font-size:24px; color:#111; }
 
     /* ---- ARTICLE HERO ---- */
