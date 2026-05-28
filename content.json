@@ -1,5 +1,111 @@
 {
-  "articles": [{
+  "articles": [
+    {
+      "id": "founders-talk-ep1-why-people-never-start",
+      "title": "Founders Talk EP1: Why Most People Never Start — And What To Do About It",
+      "subtitle": "Every week I sit down and talk business — real, honest, no-fluff conversations about entrepreneurship, building, and the mindset it takes to create something from nothing. This is Episode 1.",
+      "category": "Innovators & Founders",
+      "categoryColor": "purple",
+      "date": "May 2026",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "7 min read",
+      "featured": false,
+      "coverImage": "images/founders-talk-ep1.jpeg",
+      "coverImageCaption": "Founders Talk — Weekly business insights from Sasha Gaye Hemmings. Photo: LWS Media Network",
+      "excerpt": "Most people who want to start a business never do. Not because they lack talent. Not because they lack ideas. But because of something far more invisible and far more powerful — fear dressed up as practicality.",
+      "slug": "founders-talk-ep1-why-people-never-start",
+      "tags": ["Founders Talk", "Entrepreneurship", "Business", "Mindset", "Innovators & Founders"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Welcome to Founders Talk — a weekly segment here on LWS Media Network where I sit down and talk business. Real conversations. No fluff. No curated highlight reel. Just honest, practical insight from someone who has been in the trenches of entrepreneurship since 2018, built businesses from the ground up, helped over 134 clients do the same, and learned — sometimes the hard way — what it actually takes to build something that lasts."
+        },
+        {
+          "type": "paragraph",
+          "text": "I am Sasha Gaye Hemmings. Founder. Educator. Consultant. Author. And every week in this space I am going to give you something useful. Something you can take away and apply. This is Episode 1 — and we are starting with the question I get asked most often, in one form or another, by almost everyone who comes to me wanting to build something of their own."
+        },
+        {
+          "type": "heading",
+          "text": "The Question Nobody Wants to Ask Out Loud"
+        },
+        {
+          "type": "paragraph",
+          "text": "Why do most people never start? It is the elephant in the room of every entrepreneurship conversation. We talk about business plans, funding, marketing strategies, branding — all of it useful, all of it necessary. But none of it matters if you never actually begin. And the uncomfortable truth is that most people who say they want to start a business never do."
+        },
+        {
+          "type": "paragraph",
+          "text": "I have sat across from hundreds of aspiring entrepreneurs over the years. Talented people. Intelligent people. People with genuinely good ideas and real potential. And the single biggest thing that separates the ones who build something from the ones who do not is not money. It is not connections. It is not the right moment or the right circumstances. It is the decision to start despite not feeling ready."
+        },
+        {
+          "type": "quote",
+          "text": "Nobody feels ready. Readiness is not a feeling — it is a decision. The people who build things are not the ones who waited until they felt confident. They are the ones who moved while they were still afraid.",
+          "cite": "Sasha Gaye Hemmings — Founders Talk"
+        },
+        {
+          "type": "heading",
+          "text": "Fear Dressed Up as Practicality"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here is what I have learned: most people do not say they are afraid. They say they are being practical. They say they are waiting for the right time. They say they need more money, more experience, more research, more certainty. And all of those things sound reasonable. They are not unreasonable thoughts. But in most cases — not all, but most — they are fear dressed up in practical clothing."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fear of failure. Fear of judgement. Fear of investing everything and losing it. Fear of what people will say if it does not work out. Fear of discovering that the idea they have been holding onto — the one that feels like it could be something — might not be as good as they hoped. These are real fears. I have felt all of them personally. I still feel some of them. The difference is I stopped letting them make my decisions for me."
+        },
+        {
+          "type": "heading",
+          "text": "The Myth of the Perfect Moment"
+        },
+        {
+          "type": "paragraph",
+          "text": "One of the most damaging ideas in entrepreneurship is the idea that there is a perfect moment to start. There is not. There has never been. There will never be. Life does not pause to give you a clear runway. The bills do not stop while you get ready. The responsibilities do not disappear. The uncertainty does not resolve itself before you take the first step."
+        },
+        {
+          "type": "paragraph",
+          "text": "I started Creative Minds Movement Services in 2018. Was it the perfect moment? No. I faced real obstacles. I did not have everything figured out. What I had was a decision — a commitment to myself that I was going to do this. That I was going to show up even when it was uncomfortable, even when I was uncertain, even when the path was not clear. The clarity came from moving. Not from waiting."
+        },
+        {
+          "type": "heading",
+          "text": "What You Actually Need to Start"
+        },
+        {
+          "type": "paragraph",
+          "text": "You need an idea that solves a real problem for real people. You need enough knowledge to begin — not to finish, just to begin. You need a willingness to learn what you do not yet know. And you need the courage to be imperfect in public while you figure it out. That is it. Everything else — the logo, the website, the business plan, the office — those come later. They are not prerequisites. They are the things you build as you go."
+        },
+        {
+          "type": "paragraph",
+          "text": "The entrepreneurs I have watched build the most remarkable things did not wait until they had all the answers. They started with a question — how can I solve this problem? — and they kept asking it every single day until a business formed around the answer. That is the process. It is messy and nonlinear and nothing like what they teach in business school. But it is real."
+        },
+        {
+          "type": "heading",
+          "text": "A Word to Anyone Sitting on an Idea Right Now"
+        },
+        {
+          "type": "paragraph",
+          "text": "If you are reading this and you have an idea you have been sitting on — weeks, months, maybe years — I want to speak directly to you. The fact that the idea is still there means something. Ideas that are not meant for you do not stick around. They fade. But the ones that keep coming back, the ones that wake you up at night, the ones you think about in quiet moments — those are worth taking seriously."
+        },
+        {
+          "type": "paragraph",
+          "text": "You do not have to quit your job tomorrow. You do not have to have the funding or the perfect plan. But you do have to do something. Write it down. Tell one trusted person. Register the business name. Buy the domain. Do one small concrete thing that makes it real. Because the moment it becomes real — even slightly, even imperfectly — it stops being a dream and starts being a business."
+        },
+        {
+          "type": "quote",
+          "text": "The world does not need more people with good ideas. It needs more people willing to do something with them. Start imperfectly. Start scared. Just start.",
+          "cite": "Sasha Gaye Hemmings — Founders Talk"
+        },
+        {
+          "type": "heading",
+          "text": "Next Week on Founders Talk"
+        },
+        {
+          "type": "paragraph",
+          "text": "Next week we are talking about what I wish I had known before starting my first business in 2018. The lessons that cost me time, energy, and in some cases money — so you do not have to learn them the hard way. Join me every week right here on LWS Media Network for Founders Talk — because building something of your own is one of the most powerful things a human being can do. And you deserve real guidance along the way."
+        }
+      ],
+      "related": ["sasha-gaye-hemmings-founder-profile", "solo-founders-global-products", "el-nino-global-climate-crisis"]
+    },
+    {
       "id": "sasha-gaye-hemmings-founder-profile",
       "title": "I Refused to Stay Small — The Story of Sasha Gaye Hemmings",
       "subtitle": "From a difficult childhood in Jamaica to building multiple businesses, publishing books, and raising a daughter who is already changing the world — this is my story, told in my own words.",
