@@ -1,5 +1,138 @@
 {
-  "articles": [
+  "articles": [{
+      "id": "sasha-gaye-hemmings-founder-profile",
+      "title": "I Refused to Stay Small — The Story of Sasha Gaye Hemmings",
+      "subtitle": "From a difficult childhood in Jamaica to building multiple businesses, publishing books, and raising a daughter who is already changing the world — this is my story, told in my own words.",
+      "category": "Innovators & Founders",
+      "categoryColor": "purple",
+      "date": "May 2026",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "10 min read",
+      "featured": false,
+      "coverImage": "images/sasha-profile.jpeg",
+      "coverImageCaption": "Sasha Gaye Hemmings — Founder, Educator, Author, and Editor in Chief of LWS Media Network. Photo: LWS Media Network",
+      "excerpt": "From a difficult childhood in Jamaica to building multiple businesses, publishing books, and raising a daughter who is already changing the world — this is my story, in my own words. I refused to stay small. And I am just getting started.",
+      "slug": "sasha-gaye-hemmings-founder-profile",
+      "tags": ["Innovators & Founders", "Founder Story", "Entrepreneurship", "Jamaica", "Women in Business", "Education", "Author"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "I want to start by saying something that took me a long time to believe about myself: I am enough. Not in spite of where I came from. Not despite the hardships, the setbacks, the nights I was not sure how things would work out. I am enough because of all of it. Every single piece of my story — the painful parts, the proud parts, and everything in between — made me exactly who I am today. And who I am today is someone who refuses to be defined by limitations."
+        },
+        {
+          "type": "heading",
+          "text": "Where It Started"
+        },
+        {
+          "type": "paragraph",
+          "text": "I grew up in Jamaica. And I want to be honest about what that means for me personally — it was not easy. My childhood was marked by harsh conditions, real struggles, and circumstances that could have broken me if I had allowed them to. Many people in situations like mine do not make it out. They get swallowed by the weight of what surrounds them. I understand that. I lived inside that weight."
+        },
+        {
+          "type": "paragraph",
+          "text": "But somewhere inside me there was always a voice that said: this is not the whole story. There is more. You are more. I held onto that voice even when everything around me said otherwise. Looking back now, I think that voice was the truest thing about me. It was the part of me that knew — before I had any evidence to prove it — that I was built for something bigger."
+        },
+        {
+          "type": "quote",
+          "text": "I believe we are multidimensional beings. We are not meant to be one thing. We are not meant to be boxed in. The full human experience is available to all of us — and I made a decision early that I was going to claim as much of it as I possibly could.",
+          "cite": "Sasha Gaye Hemmings"
+        },
+        {
+          "type": "heading",
+          "text": "Education Was My First Act of Defiance"
+        },
+        {
+          "type": "paragraph",
+          "text": "I pursued education with a ferocity that surprised even people who knew me. Not because someone told me to. Not because it was expected. But because I understood instinctively that knowledge was the one thing no circumstance could take from me. I earned my Bachelor of Science in Business Administration with a major in Human Resources. Then I went further — completing a Masters degree in Education and another in Business. I also earned my TESOL certification, qualifying me to teach English as a second language to students around the world."
+        },
+        {
+          "type": "paragraph",
+          "text": "People sometimes look at that list and think it is impressive. What they do not always see is the sacrifice behind it. The late nights. The moments of doubt. The times I wondered if it was worth it. It was always worth it. Because every qualification I earned was not just a credential — it was proof to myself that I could do hard things. And once you prove that to yourself once, you never forget it."
+        },
+        {
+          "type": "heading",
+          "text": "Building Creative Minds Movement Services"
+        },
+        {
+          "type": "paragraph",
+          "text": "In 2018 I founded Creative Minds Movement Services — my first business and the foundation upon which everything else has been built. Through Creative Minds I offer expert-level services in business consulting, human resources, management, organisational development, and English language instruction. It is a business born directly from my education, my experience, and my genuine passion for helping others build something of their own."
+        },
+        {
+          "type": "paragraph",
+          "text": "What I am most proud of is not the business itself — it is the results. Over the years Creative Minds Movement Services has helped more than 134 clients build and grow their businesses successfully. A high retention rate that speaks not just to the quality of the work, but to the relationships built along the way. When someone trusts you with their business — their livelihood, their dream — that is not something I take lightly. I have never taken it lightly."
+        },
+        {
+          "type": "paragraph",
+          "text": "Teaching has always been at the heart of what I do. I teach English to foreign students. I teach business fundamentals to aspiring entrepreneurs. I teach children and adults across multiple subjects. Education is not just a service I offer — it is who I am. It runs through everything. It is why my daughter Samara grew up understanding that learning is not a burden. It is a superpower."
+        },
+        {
+          "type": "quote",
+          "text": "134 clients built successfully. A high retention rate. But the number I am most proud of is not a client count — it is the number of people who found their confidence, their direction, and their voice through the work we did together.",
+          "cite": "Sasha Gaye Hemmings"
+        },
+        {
+          "type": "heading",
+          "text": "The Author"
+        },
+        {
+          "type": "paragraph",
+          "text": "I am also an author. Writing has always been one of the ways I make sense of the world — and one of the ways I give back to it. I have published five books spanning business, science, education, and practical educational worksheets designed to make learning more accessible and engaging. One of them, Sasha's Module for Success, is available on Amazon. It represents my philosophy in a form that anyone can hold in their hands and apply to their own life."
+        },
+        {
+          "type": "paragraph",
+          "text": "Writing does not happen in a vacuum. It requires you to sit with yourself long enough to figure out what you actually believe. Every book I have written has taught me something about my own thinking. And every book I have yet to publish — and there are more — represents a part of me still working itself out onto the page."
+        },
+        {
+          "type": "paragraph",
+          "text": "My daughter Samara has followed in those footsteps. At nine years old she is already a published author. Her book Prince Leo and the Dragon's Promise Flicker is available on Amazon. That is not something I pushed her into. That is something that grew naturally from a home where reading, learning, and creating were always treated as the most valuable things you could do with your time."
+        },
+        {
+          "type": "heading",
+          "text": "Learning With Samara and LWS Media Network"
+        },
+        {
+          "type": "paragraph",
+          "text": "Learning With Samara is an AI-powered educational platform for children ages 0 to 17. It covers curriculum from PEP Jamaica prep to ESL for non-English speakers, gamified learning, and a growing library of tools designed to make education feel like an adventure rather than a chore. I built it as a solo founder. Every line of code, every decision, every feature — handled by me, informed by my years of experience as an educator and a businesswoman."
+        },
+        {
+          "type": "paragraph",
+          "text": "And now there is LWS Media Network — this platform. A global multimedia network built to tell the stories that matter. The stories of innovators and founders. The stories that mainstream media ignores. The science our planet needs us to understand. The news delivered with honesty and perspective. And yes — stories like this one. Stories of people who started with very little and built something real."
+        },
+        {
+          "type": "paragraph",
+          "text": "I did not build all of this because it was easy. I built it because I could not imagine not building it. Because every experience I have ever had — every lesson learned in a classroom, every client I have ever sat across from, every hard night I survived in Jamaica — pointed me in this direction. This is not luck. This is a life's work."
+        },
+        {
+          "type": "heading",
+          "text": "My Children Are My Why"
+        },
+        {
+          "type": "paragraph",
+          "text": "People often ask what drives me. The answer has never changed. My children are the driving force behind everything I do. When I build a platform, I am building something they can look at and know — our family creates. When I publish a book, I am showing them that your voice deserves to be heard. When I start a business, I am demonstrating that you do not wait for permission to build the life you want."
+        },
+        {
+          "type": "paragraph",
+          "text": "Samara already understands this at nine years old. She has a YouTube channel, a published book, and a learning platform named after her. Not because I handed her those things — but because she grew up in an environment where building was treated as natural. Where ideas were taken seriously. Where the question was never whether you could do something, but how."
+        },
+        {
+          "type": "heading",
+          "text": "What I Know For Sure"
+        },
+        {
+          "type": "paragraph",
+          "text": "I know that the conditions you are born into do not determine where you end. I know that education is the most powerful tool available to anyone willing to use it. I know that being multidimensional is not a flaw — it is a gift. The world will try to put you in a box. It will tell you to pick one thing, stay in your lane, be realistic. I have never listened to that voice. I never intend to."
+        },
+        {
+          "type": "paragraph",
+          "text": "I am an entrepreneur. An educator. An author. A media founder. A mother. A consultant. A Jamaican woman who grew up with very little and built more than most people dream of. And I am not finished. Not even close."
+        },
+        {
+          "type": "quote",
+          "text": "You are allowed to be everything this human experience makes possible. Do not let anyone — or anything — convince you otherwise.",
+          "cite": "Sasha Gaye Hemmings"
+        }
+      ],
+      "related": ["founders-talk-ep1-why-people-never-start", "solo-founders-global-products", "samara-issue-001"]
+    },
     {
       "id": "el-nino-global-climate-crisis",
       "title": "El Nino and the Planet on Fire — What the World Needs to Understand About Our Changing Climate",
