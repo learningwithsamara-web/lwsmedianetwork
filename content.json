@@ -1,6 +1,217 @@
 {
   "articles": [
     {
+      "id": "el-nino-global-climate-crisis",
+      "title": "El Nino and the Planet on Fire — What the World Needs to Understand About Our Changing Climate",
+      "subtitle": "El Nino is not just a weather pattern. It is a warning. As its effects intensify across the Caribbean, the Americas, the UK, and beyond, the world can no longer afford to treat climate change as a future problem.",
+      "category": "Science & Environment",
+      "categoryColor": "teal",
+      "date": "May 2026",
+      "author": "LWS Media Network",
+      "readTime": "10 min read",
+      "featured": false,
+      "coverImage": "images/el-nino-cover.jpeg",
+      "coverImageCaption": "El Nino is reshaping weather patterns across the entire planet. Photo: LWS Media Network",
+      "excerpt": "El Nino is not just a weather pattern. It is a warning. As its effects intensify across the Caribbean, the Americas, the UK, and beyond, the world can no longer afford to treat climate change as a future problem.",
+      "slug": "el-nino-global-climate-crisis",
+      "tags": ["Science & Environment", "El Nino", "Climate Change", "Caribbean", "Global Warming", "Weather"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Every few years, the Pacific Ocean warms. Trade winds weaken. Weather patterns shift. Scientists call it El Nino — a Spanish phrase meaning The Little Boy, or The Christ Child, named by South American fishermen who first noticed unusually warm coastal waters around Christmas. But there is nothing little about what El Nino does to the planet. And in an era of accelerating climate change, its effects are becoming more severe, more unpredictable, and more dangerous than at any point in recorded history."
+        },
+        {
+          "type": "heading",
+          "text": "What Exactly Is El Nino?"
+        },
+        {
+          "type": "paragraph",
+          "text": "El Nino is part of a natural climate cycle called the El Nino-Southern Oscillation, or ENSO. Under normal conditions, strong trade winds blow warm surface water westward across the Pacific Ocean, allowing cooler water to rise along the South American coast. During El Nino, those trade winds weaken or even reverse. Warm water spreads eastward across the central and eastern Pacific, raising ocean temperatures by as much as 3 to 5 degrees Celsius above average in some regions."
+        },
+        {
+          "type": "paragraph",
+          "text": "This shift in ocean temperatures does not stay contained to the Pacific. It disrupts atmospheric circulation patterns around the entire planet, triggering a cascade of weather extremes — droughts in some regions, catastrophic flooding in others, intensified hurricanes, unusual cold snaps, and prolonged heatwaves that push ecosystems and human communities to their limits."
+        },
+        {
+          "type": "quote",
+          "text": "El Nino does not cause climate change. But climate change makes El Nino more dangerous. A warmer baseline means every El Nino event now starts from a higher temperature floor — and the consequences are amplified accordingly.",
+          "cite": "LWS Media Network — Science & Environment"
+        },
+        {
+          "type": "heading",
+          "text": "The Caribbean — Between Drought and Destruction"
+        },
+        {
+          "type": "paragraph",
+          "text": "For the Caribbean, El Nino brings a cruel paradox. On one hand, it tends to suppress Atlantic hurricane activity during its peak phase by increasing wind shear — the difference in wind speed and direction at different altitudes that tears developing storms apart before they can strengthen. For hurricane-weary islands, this might sound like good news. But the reality is far more complicated."
+        },
+        {
+          "type": "paragraph",
+          "text": "El Nino brings severe drought conditions to much of the Caribbean. Jamaica, Barbados, Trinidad and Tobago, and other islands experience significantly reduced rainfall during El Nino events, leading to water shortages, failed crops, and serious threats to food security. Farmers across the region have reported devastating losses as rainfall deficits stretch for months."
+        },
+        {
+          "type": "paragraph",
+          "text": "Coral reefs — among the Caribbean's most vital ecosystems and a cornerstone of its tourism economy — suffer dramatically during El Nino. Warmer ocean temperatures cause mass coral bleaching events, where stressed corals expel the algae living in their tissues and turn white. Prolonged bleaching kills coral. The Caribbean has lost more than half of its coral reef cover over the past four decades, and El Nino events accelerate that destruction."
+        },
+        {
+          "type": "paragraph",
+          "text": "The transition period after El Nino ends is also dangerous. As the climate system swings back toward neutral or La Nina conditions — El Nino's cooler counterpart — Atlantic hurricane seasons can intensify dramatically. The Caribbean goes from drought to the threat of catastrophic storms in a matter of months, leaving communities with little time to recover between crises."
+        },
+        {
+          "type": "heading",
+          "text": "The Americas — Floods, Fires, and Famine"
+        },
+        {
+          "type": "paragraph",
+          "text": "Across North and South America, El Nino writes very different stories depending on where you are. The western United States and the Gulf Coast typically see heavier than normal rainfall during El Nino events, which can bring much-needed relief to drought-stricken regions like California — but also devastating floods, mudslides, and infrastructure damage to communities unprepared for the deluge."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Pacific Northwest and Canada, by contrast, tend to experience warmer and drier conditions during El Nino. This amplifies wildfire risk in forests already stressed by years of drought and rising temperatures. The catastrophic wildfire seasons that have become a defining feature of North American summers in recent years are closely linked to El Nino's drying influence combined with the background warming driven by climate change."
+        },
+        {
+          "type": "paragraph",
+          "text": "In South America, the impacts are severe and wide-ranging. Peru and Ecuador face extreme flooding and landslides as unusually warm Pacific waters supercharge rainfall along the coast. Brazil's northeastern region, already one of the most drought-prone areas on earth, suffers prolonged dry spells that devastate agriculture and push communities into food insecurity. The Amazon — the planet's largest rainforest and a critical carbon sink — faces increased fire risk as dry conditions spread."
+        },
+        {
+          "type": "paragraph",
+          "text": "Central America faces some of the most acute food security challenges. The Dry Corridor — a stretch running through Guatemala, Honduras, El Salvador, and Nicaragua — is particularly vulnerable to El Nino-related drought. Smallholder farmers who depend on seasonal rains lose entire harvests. Malnutrition rates rise. Migration pressures increase as communities can no longer sustain themselves on the land."
+        },
+        {
+          "type": "heading",
+          "text": "The United Kingdom — The Ripple Effect Reaches Europe"
+        },
+        {
+          "type": "paragraph",
+          "text": "The United Kingdom sits far from the Pacific Ocean, but El Nino's reach extends even to northwest Europe through complex atmospheric connections. Research has shown that strong El Nino events are associated with wetter and milder winters in the UK and northwestern Europe, as the jet stream — the high-altitude band of fast-moving air that steers weather systems — shifts position in response to changes in tropical weather patterns."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the UK this means increased flood risk during El Nino years. Rivers overflow. Coastal communities face storm surge threats. Infrastructure built for a climate that no longer exists struggles to cope. The UK has already experienced a series of record-breaking flood events in recent years, and El Nino amplifies the atmospheric conditions that produce them."
+        },
+        {
+          "type": "paragraph",
+          "text": "Summers following strong El Nino events can bring exceptional heat to Europe. The record-breaking heatwaves that have struck the continent in recent years — killing tens of thousands of people, buckling railway lines, and overwhelming healthcare systems — occur in a climate system where El Nino has contributed to pushing global temperatures to new highs. The summer of 2023, which followed one of the strongest El Nino events in decades, was the hottest in recorded history across much of the Northern Hemisphere."
+        },
+        {
+          "type": "heading",
+          "text": "The Planet — A System Under Stress"
+        },
+        {
+          "type": "paragraph",
+          "text": "Zoom out to the planetary level and the picture becomes even more alarming. El Nino events add a temporary boost of warmth on top of the long-term warming trend driven by human greenhouse gas emissions. During strong El Nino years, global average temperatures can be pushed 0.2 to 0.3 degrees Celsius above the already elevated baseline. In a world that is already 1.2 degrees warmer than pre-industrial levels, this matters enormously."
+        },
+        {
+          "type": "paragraph",
+          "text": "The years 2023 and 2024 were the hottest ever recorded in human history — driven in part by a powerful El Nino event on top of decades of accumulated warming. Sea surface temperatures reached unprecedented levels. Antarctic sea ice fell to record lows. Glaciers retreated further and faster than any previous measurement had captured. The Greenland ice sheet lost mass at rates that alarmed scientists who had studied it for decades."
+        },
+        {
+          "type": "paragraph",
+          "text": "Global food systems face mounting pressure. El Nino disrupts agricultural production in multiple major food-producing regions simultaneously — not just in the developing world, but in breadbasket nations whose output feeds billions. When droughts hit the US Midwest, floods devastate South Asian rice paddies, and East African harvests fail all in the same year, the cascading effects on global food prices and food security are severe."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ocean ecosystems are under extraordinary stress. Marine heatwaves — stretches of ocean where temperatures remain far above normal for weeks or months — have become more frequent and more intense. They bleach coral reefs, disrupt fish migration patterns, cause mass die-offs of marine mammals, and destabilize the food webs that billions of people depend on for their protein."
+        },
+        {
+          "type": "heading",
+          "text": "Climate Change Is Making It Worse"
+        },
+        {
+          "type": "paragraph",
+          "text": "Here is the critical distinction that must be understood: El Nino is a natural phenomenon. It has been occurring for thousands of years. But climate change — driven by the burning of fossil fuels and the resulting buildup of carbon dioxide and other greenhouse gases in the atmosphere — is fundamentally altering how El Nino behaves and what it does to the planet."
+        },
+        {
+          "type": "paragraph",
+          "text": "A warmer ocean is a more energetic ocean. A warmer atmosphere holds more moisture. When El Nino triggers rainfall, it now triggers heavier rainfall — because the atmosphere can carry and dump more water than it could in a cooler era. When El Nino triggers drought, it now triggers more severe drought — because higher temperatures accelerate evaporation and dry the land faster. The natural cycle has not changed, but the world it operates in has. And that world is now running hotter than at any point in the past 125,000 years."
+        },
+        {
+          "type": "quote",
+          "text": "We are no longer just dealing with El Nino. We are dealing with El Nino in a world our grandparents would not recognize — and our grandchildren may not survive in without urgent action.",
+          "cite": "LWS Media Network — Science & Environment"
+        },
+        {
+          "type": "heading",
+          "text": "What Needs to Happen"
+        },
+        {
+          "type": "paragraph",
+          "text": "The science is settled. The evidence is overwhelming. What is lacking is not knowledge but political will and collective urgency. Reducing greenhouse gas emissions remains the most critical long-term intervention — every fraction of a degree of warming prevented is lives saved, ecosystems preserved, and communities protected. But the speed of current climate change also demands immediate adaptation investment."
+        },
+        {
+          "type": "paragraph",
+          "text": "Small island developing states — including those across the Caribbean — must be centered in global climate finance discussions. These communities contribute minimally to global emissions but bear disproportionate consequences. The loss and damage funding mechanisms agreed at recent international climate summits must be fully funded and rapidly deployed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Early warning systems for extreme weather events must be expanded globally, particularly in developing nations where communities have the least capacity to prepare for and recover from climate disasters. Infrastructure must be redesigned for the climate we now have, not the one we had fifty years ago. Agriculture must be reimagined for a more volatile, less predictable growing season."
+        },
+        {
+          "type": "paragraph",
+          "text": "And the world's media — including platforms like this one — must cover climate change not as an occasional feature story but as the defining crisis of our time. Because it is."
+        },
+        {
+          "type": "quote",
+          "text": "El Nino is nature speaking. Climate change is the language we taught it. The question is whether we will listen before it is too late.",
+          "cite": "LWS Media Network — Science & Environment"
+        }
+      ],
+      "related": ["wyh-el-nino-commentary", "the-hidden-hunger-crisis", "the-slow-drowning-of-freshwater"]
+    },
+    {
+      "id": "wyh-el-nino-commentary",
+      "title": "Weh Yuh Seh Views: El Nino Is Here — And We Are Not Ready",
+      "subtitle": "While world leaders debate timelines and targets, El Nino is already reshaping life across the Caribbean, the Americas, and beyond. The time for talking is over.",
+      "category": "Weh Yuh Seh Views",
+      "categoryColor": "green",
+      "date": "May 2026",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "4 min read",
+      "featured": false,
+      "coverImage": "images/el-nino-cover.jpeg",
+      "coverImageCaption": "El Nino — the climate event the world keeps underestimating. Photo: LWS Media Network",
+      "excerpt": "While world leaders debate timelines and targets, El Nino is already reshaping life across the Caribbean, the Americas, and beyond. The time for talking is over.",
+      "slug": "wyh-el-nino-commentary",
+      "tags": ["Weh Yuh Seh Views", "El Nino", "Climate Change", "Commentary", "Caribbean"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Good morning. Welcome to Weh Yuh Seh Views. I am Sasha Hemmings, and today I want to talk about something that is affecting every single person on this planet right now — whether they know it or not. El Nino is here. And we are not ready."
+        },
+        {
+          "type": "paragraph",
+          "text": "Across the Caribbean, farmers are watching their crops fail in the drought. Coral reefs are bleaching and dying in waters that are too warm. In South America, communities are being swept away by floods. In North America, wildfires are burning hotter and longer. In the UK, flood records are being broken year after year. And across the Global South, food insecurity is rising to levels that should be triggering emergency responses from every government on earth."
+        },
+        {
+          "type": "quote",
+          "text": "El Nino is not a natural disaster we can shrug at. It is a natural phenomenon made catastrophic by human choices. And the people paying the highest price are the ones who made the fewest of those choices.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        },
+        {
+          "type": "paragraph",
+          "text": "What frustrates me — and what should frustrate all of us — is that none of this is new information. Scientists have been warning about the intensifying impact of El Nino in a warming world for decades. The data has been there. The projections have been clear. And yet here we are, watching the predictions come true in real time, while global climate negotiations continue to move at a pace that insults the urgency of the crisis."
+        },
+        {
+          "type": "paragraph",
+          "text": "For the Caribbean specifically, this is not an abstract conversation. We are talking about the islands where people live, where families grow food, where reefs sustain entire economies. Small island nations that have contributed almost nothing to global carbon emissions are now on the front lines of a crisis they did not create. That is not just an environmental injustice. It is a moral failure of the entire international system."
+        },
+        {
+          "type": "paragraph",
+          "text": "The coverage this crisis receives in mainstream media is nowhere near proportionate to its scale. We cover celebrity feuds for days. We dedicate entire news cycles to political drama that will be forgotten in a week. But the slow-motion destruction of the planet's climate system gets a feature every few months — and then we move on."
+        },
+        {
+          "type": "paragraph",
+          "text": "Not here. At LWS Media Network, climate is not a quarterly story. It is a beat. It is a responsibility. And we will keep reporting on it — from the Caribbean perspective, from the Global South perspective, from the perspective of the people most affected and least heard."
+        },
+        {
+          "type": "quote",
+          "text": "The planet is speaking. Are we listening? This is Weh Yuh Seh Views — stay alert, stay aware, and stay loud.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        }
+      ],
+      "related": ["el-nino-global-climate-crisis", "the-hidden-hunger-crisis", "the-slow-drowning-of-freshwater"]
+    },
+    {
       "id": "watch-hunger-crisis-episode-1",
       "title": "UNDERREPORTED: The Hidden Hunger Crisis — Why the World Is Silent",
       "subtitle": "Episode 1 of Underreported: Weh Dem Nuh Seh — host Sasha Hemmings exposes the global hunger emergency being deliberately ignored by mainstream media.",
