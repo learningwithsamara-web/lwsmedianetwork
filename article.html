@@ -443,10 +443,14 @@
         var a = allArticles.find(function(x) { return x.id === id; });
         if (!a) return;
         var bg = relBg[a.categoryColor] || 'bg-gold';
+        var catClass = a.categoryColor === 'gold' ? 'cat-gold' : a.categoryColor === 'purple' ? 'cat-purple' : a.categoryColor === 'green' ? 'cat-green' : 'cat-coral';
+        var thumbHtml = (a.coverImage && a.coverImage !== '')
+          ? '<img src="' + a.coverImage + '" alt="' + a.title + '" style="width:100%;height:100%;object-fit:cover;" onerror="this.parentElement.className+=\' ' + bg + '\';this.style.display=\'none\';" />'
+          : '<div class="' + bg + '" style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;"><i class="ti ti-article" style="font-size:24px;color:rgba(255,255,255,0.2);"></i></div>';
         html += '<a href="article.html?slug=' + a.slug + '" class="rel-card">';
-        html += '<div class="rel-thumb ' + bg + '"><i class="ti ti-article"></i></div>';
+        html += '<div class="rel-thumb">' + thumbHtml + '</div>';
         html += '<div class="rel-body">';
-        html += '<p class="rel-cat ' + (a.categoryColor === 'gold' ? 'cat-gold' : a.categoryColor === 'purple' ? 'cat-purple' : a.categoryColor === 'green' ? 'cat-green' : 'cat-coral') + '">' + a.category + '</p>';
+        html += '<p class="rel-cat ' + catClass + '">' + a.category + '</p>';
         html += '<p class="rel-title">' + a.title + '</p>';
         html += '</div></a>';
       });
