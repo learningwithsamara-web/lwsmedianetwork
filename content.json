@@ -109,34 +109,94 @@
       "related": ["samara-issue-001", "women-tech-emerging-markets", "fintech-no-funding"]
     },
     {
-      "id": "global-south-world-news",
-      "title": "Why the Global South Is Tired of Being an Afterthought in World News",
-      "subtitle": "A commentary on how international media continues to frame developing nations as perpetual victims rather than complex societies with agency and voice.",
-      "category": "Weh Yuh Seh Views",
-      "categoryColor": "green",
+      "id": "the-slow-drowning-of-freshwater",
+      "title": "The Slow Drowning of Freshwater — How Saltwater Intrusion Threatens Our Future",
+      "subtitle": "From Florida to Bangladesh, seawater is quietly seeping into our underground freshwater supplies. There is no dramatic footage, no viral moment — just a slow, invisible poisoning of the most essential resource on earth.",
+      "category": "Underreported",
+      "categoryColor": "coral",
       "date": "May 2026",
-      "author": "LWS Media",
-      "readTime": "5 min read",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "7 min read",
       "featured": false,
-      "coverImage": "images/global-south.jpg",
-      "coverImageCaption": "Voices from the Global South deserve more than footnotes.",
-      "excerpt": "A commentary on how international media continues to frame developing nations as perpetual victims rather than complex societies with agency.",
-      "slug": "global-south-world-news",
-      "tags": ["Media", "Global South", "Commentary", "News"],
+      "coverImage": "images/saltwater-intrusion.jpeg",
+      "coverImageCaption": "Underreported: Weh Dem Nuh Seh — the slow crisis contaminating our drinking water. Photo: LWS Media Network",
+      "excerpt": "From Florida to Bangladesh, seawater is quietly seeping into underground freshwater supplies. Once salt enters these aquifers it is almost impossible to remove — and millions of people are already drinking the consequences.",
+      "slug": "the-slow-drowning-of-freshwater",
+      "tags": ["Underreported", "Climate Change", "Water Crisis", "Saltwater Intrusion", "Public Health", "Weh Dem Nuh Seh"],
       "body": [
         {
           "type": "paragraph",
-          "text": "Turn on any major international news network and the pattern becomes impossible to ignore. Countries across Africa, the Caribbean, Latin America, and Southeast Asia appear almost exclusively in the context of crisis — natural disasters, political instability, poverty, conflict."
+          "text": "Welcome to Underreported: Weh Dem Nuh Seh — where we spotlight the global stories that aren't trending but should be. Today we are talking about a creeping disaster that is quietly contaminating our drinking water and putting millions at risk: saltwater intrusion."
+        },
+        {
+          "type": "heading",
+          "text": "A Crisis in the Shadows"
+        },
+        {
+          "type": "paragraph",
+          "text": "Across coastal regions from Florida to Bangladesh, seawater is slowly seeping into underground freshwater supplies. This isn't a sudden flood — it's a quiet, invisible invasion."
+        },
+        {
+          "type": "paragraph",
+          "text": "In Miami, the salt line is moving inland at around 330 feet each year. In parts of Bangladesh and island nations across the Pacific, wells that once provided fresh, safe water now taste like the ocean. And once salt enters these aquifers, it is almost impossible to remove."
+        },
+        {
+          "type": "paragraph",
+          "text": "For communities that rely on these water sources, this means drinking water that raises blood pressure, damages kidneys, and corrodes infrastructure — from household plumbing to entire city systems."
         },
         {
           "type": "quote",
-          "text": "We are not a footnote. We are not a charity case. We are nations full of people building, creating, and leading.",
-          "cite": "LWS Media Editorial"
+          "text": "Once the freshwater source is contaminated, communities must rely on costly desalination or imported water — both of which can push poor regions deeper into crisis.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        },
+        {
+          "type": "heading",
+          "text": "Why Aren't We Talking About This?"
+        },
+        {
+          "type": "paragraph",
+          "text": "This isn't making headlines because it is slow, technical, and invisible. There is no dramatic footage, no single moment of disaster — just a gradual poisoning of life's most essential resource."
+        },
+        {
+          "type": "paragraph",
+          "text": "It also disproportionately affects poorer coastal communities — in places like Southeast Asia, the Caribbean, and rural US coastal towns — where political influence is low and media coverage is rare. And the truth is, solving it requires massive investment in infrastructure and climate adaptation — something many governments would rather ignore until it is too late."
+        },
+        {
+          "type": "heading",
+          "text": "What You Need to Know"
+        },
+        {
+          "type": "paragraph",
+          "text": "Saltwater intrusion is not caused by nature alone. It is fuelled by rising sea levels from climate change, over-pumping of groundwater which draws seawater inland, and weak regulation of coastal development."
+        },
+        {
+          "type": "paragraph",
+          "text": "The hidden danger is that once the freshwater source is gone, the economic consequences are devastating. Communities must turn to costly desalination or imported water — both of which are out of reach for the world's poorest regions. This is not just an environmental issue. It is a public health emergency and an economic time bomb."
+        },
+        {
+          "type": "heading",
+          "text": "Where Do We Go From Here?"
+        },
+        {
+          "type": "paragraph",
+          "text": "This slow-moving crisis is one we can stop — but only if we see it for what it is: a direct threat to human survival. Here is what needs to happen:"
+        },
+        {
+          "type": "paragraph",
+          "text": "Governments must invest in monitoring and protecting freshwater aquifers before it is too late. Climate adaptation projects in vulnerable coastal regions need urgent funding and international support. Groundwater overuse must be tackled through sustainable agriculture and urban planning policies. And independent journalists investigating environmental issues beyond the headlines need our support."
+        },
+        {
+          "type": "paragraph",
+          "text": "The world is slowly losing one of its most precious resources — and most people have no idea it is happening. That is exactly why stories like this one need to be told."
+        },
+        {
+          "type": "quote",
+          "text": "This is Underreported: Weh Dem Nuh Seh — where we bring light to what others ignore. Stay alert, stay aware, and stay loud for those who cannot be heard.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
         }
       ],
-      "related": ["global-water-crisis", "ai-regulation-debate", "caribbean-economies"]
-    },
-    {
+      "related": ["the-hidden-hunger-crisis", "global-water-crisis", "global-south-world-news"]
+    }
       "id": "the-hidden-hunger-crisis",
       "title": "The Hidden Hunger Crisis — Why the World Is Quiet About Starvation",
       "subtitle": "Over 783 million people are going to sleep hungry tonight. This is not a story about poverty — it is a story about silence, indifference, and the deliberate turning away of the world's most powerful nations.",
