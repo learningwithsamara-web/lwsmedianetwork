@@ -1,0 +1,51 @@
+{
+  "name": "LWS Media Network",
+  "short_name": "LWS Media",
+  "description": "A global multimedia network covering the stories that inspire, inform and ignite. Powered by Geor De Mer LLC.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f8f6f1",
+  "theme_color": "#b8922a",
+  "scope": "/",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["news", "entertainment", "education"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "All Stories",
+      "short_name": "Stories",
+      "description": "Browse all LWS Media Network stories",
+      "url": "/archive.html",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Weh Yuh Seh Views",
+      "short_name": "WYS Views",
+      "description": "Global news and commentary",
+      "url": "/index.html#wyh",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Underreported",
+      "short_name": "Underreported",
+      "description": "Stories the world ignores",
+      "url": "/index.html#underreported",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
