@@ -1,6 +1,131 @@
 {
   "articles": [
     {
+      "id": "founders-talk-ep3-truth-about-entrepreneurship",
+      "title": "Founders Talk EP3: The Truth About Entrepreneurship Nobody Tells You",
+      "subtitle": "The success stories are real. But so are the parts nobody talks about — the isolation, the self-doubt, the months where nothing works, and the version of yourself you have to become before the business becomes what you dreamed.",
+      "category": "Innovators & Founders",
+      "categoryColor": "purple",
+      "date": "May 2026",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "9 min read",
+      "featured": false,
+      "coverImage": "images/founders-talk-ep3.jpeg",
+      "coverImageCaption": "Founders Talk Episode 3 — Sasha Gaye Hemmings. Photo: LWS Media Network",
+      "excerpt": "The success stories are real. But so are the parts nobody talks about — the isolation, the self-doubt, the months where nothing works, and the version of yourself you have to become before the business becomes what you dreamed.",
+      "slug": "founders-talk-ep3-truth-about-entrepreneurship",
+      "tags": ["Founders Talk", "Entrepreneurship", "Business", "Mindset", "Real Talk", "Innovators & Founders"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Welcome back to Founders Talk. I am Sasha Gaye Hemmings and today we are having a different kind of conversation. Over the past two weeks we talked about why people never start and what I wish I had known before launching my first business. Today I want to go somewhere even more honest. I want to talk about the things nobody tells you about entrepreneurship — the parts that get edited out of the success stories, the parts that almost broke me, and the parts that ultimately made me."
+        },
+        {
+          "type": "paragraph",
+          "text": "I want to say upfront — this is not a discouragement from building. If anything, I hope it is the opposite. Because the founders who make it are not the ones who never struggled. They are the ones who struggled and kept going anyway. But they deserve to know what they are getting into. You deserve to know what you are getting into."
+        },
+        {
+          "type": "heading",
+          "text": "Nobody Talks About the Loneliness"
+        },
+        {
+          "type": "paragraph",
+          "text": "Entrepreneurship is one of the loneliest things I have ever done. Not because I did not have people around me — I did. But because the specific experience of building a business, carrying its weight, making decisions that affect your livelihood and potentially others, sitting with uncertainty at 2am — very few people in your life will truly understand that unless they have lived it themselves."
+        },
+        {
+          "type": "paragraph",
+          "text": "The people who love you will try. They will listen. They will encourage you. But there is a particular kind of isolation that comes with being the one who has to figure it out — who cannot fully off-load the burden because the business depends on you and only you. I learned to be more intentional about surrounding myself with other founders. People who do not need the experience explained. People who just get it."
+        },
+        {
+          "type": "quote",
+          "text": "Find your people. Not just people who support you — people who understand you. There is a difference. And in entrepreneurship, that difference is everything.",
+          "cite": "Sasha Gaye Hemmings — Founders Talk"
+        },
+        {
+          "type": "heading",
+          "text": "The Self-Doubt Never Fully Goes Away"
+        },
+        {
+          "type": "paragraph",
+          "text": "I want to tell you that after a certain point — after enough clients, enough wins, enough evidence that you can do this — the self-doubt disappears. But that would not be true. What changes is your relationship with it. You learn to act despite it rather than waiting for it to leave. You learn to recognise it as fear, not as fact. You learn that the voice that says you are not enough is not a reliable narrator."
+        },
+        {
+          "type": "paragraph",
+          "text": "I have multiple degrees. I have helped over 134 clients build successful businesses. I have published books. I have built multiple companies simultaneously as a solo founder. And I still have moments of doubt. Still have days where I question whether I am doing enough, building fast enough, thinking big enough. The difference now is I do not let those moments make my decisions. I feel them, acknowledge them, and keep moving."
+        },
+        {
+          "type": "heading",
+          "text": "There Will Be Months Where Nothing Works"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is perhaps the most important thing I can tell any aspiring entrepreneur. There will be months — maybe several in a row — where despite your best efforts, your hardest work, and your most strategic thinking, the results simply do not come. Clients do not convert. Revenue stalls. Something you were counting on falls through. The plan you were executing stops working."
+        },
+        {
+          "type": "paragraph",
+          "text": "These months are not evidence that you are failing. They are part of the process. Every business I have ever studied — and I have studied many — has these seasons. What separates the businesses that survive them from the ones that do not is rarely strategy or talent. It is usually resilience. The ability to stay in motion even when the motion does not yet feel like progress."
+        },
+        {
+          "type": "paragraph",
+          "text": "I grew up learning resilience the hard way long before I started a business. The conditions of my childhood in Jamaica demanded it. In a strange way that background — the hardship, the years of navigating scarcity and uncertainty — prepared me for entrepreneurship better than any business course could have. When you have already survived hard things, the hard seasons in business become more manageable. Not easy. But survivable."
+        },
+        {
+          "type": "heading",
+          "text": "People Will Not Always Believe in You — And That Is Not the Problem"
+        },
+        {
+          "type": "paragraph",
+          "text": "Some of the people closest to you will not understand what you are building. Some will question it openly. Some will offer advice disguised as concern that is really just their own fear being projected onto your dream. Some will wait quietly to see if you fail before deciding whether to support you."
+        },
+        {
+          "type": "paragraph",
+          "text": "This used to hurt me more than it does now. What I have come to understand is that other people's inability to see your vision is not a reflection of the vision — it is a reflection of their own limitations. Not everyone has the capacity to imagine something that does not yet exist. That is not a character flaw. It is just a human limitation. Your job is not to convince them. Your job is to build the thing and let the results speak."
+        },
+        {
+          "type": "heading",
+          "text": "The Business Will Demand You Become Someone New"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is perhaps the most profound truth about entrepreneurship that nobody prepares you for. The business you are trying to build requires a version of you that does not yet fully exist. You will need to develop confidence you do not currently have. You will need to learn skills that are currently outside your comfort zone. You will need to make decisions that terrify you and then live with the consequences either way."
+        },
+        {
+          "type": "paragraph",
+          "text": "Entrepreneurship is the most accelerated personal development programme on the planet. It will expose every limitation, every fear, every blind spot you have — and it will demand that you address them if you want to grow. The business does not just ask for your time and your talent. It asks for your full self. The version of you that shows up on day one of your business is rarely the version of you that is capable of running the business you are trying to build. The journey between those two versions is the real work."
+        },
+        {
+          "type": "quote",
+          "text": "You are not just building a business. You are building yourself. And sometimes — honestly, often — that is the harder and more important project of the two.",
+          "cite": "Sasha Gaye Hemmings — Founders Talk"
+        },
+        {
+          "type": "heading",
+          "text": "And Yet — It Is Worth It"
+        },
+        {
+          "type": "paragraph",
+          "text": "After everything I have described — the loneliness, the doubt, the slow seasons, the people who did not believe, the constant demand to grow into someone bigger than you currently are — I want to be absolutely clear: I would do it all again. Without hesitation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Because on the other side of all of that is something that employment can never give you. It is the ownership of your own time, your own decisions, your own direction. It is the ability to build something that reflects your values and serves the people you actually want to serve. It is watching an idea that lived only in your mind become something real that impacts real people. That feeling — that particular combination of terror and pride and purpose — is unlike anything else I have ever experienced."
+        },
+        {
+          "type": "paragraph",
+          "text": "I built Creative Minds Movement Services from nothing and helped over 134 clients do the same. I built Learning With Samara as a solo founder from the ground up. I built LWS Media Network — this platform — from an idea to a fully functioning global media company. I did all of this while raising children, writing books, and teaching students. Not because it was easy. Because it was mine."
+        },
+        {
+          "type": "paragraph",
+          "text": "That is the truth about entrepreneurship that nobody tells you loudly enough. Yes it is hard. Yes it will test you in ways you cannot currently anticipate. And yes — for the right person, with the right commitment — it is the most powerful and fulfilling thing you will ever do."
+        },
+        {
+          "type": "paragraph",
+          "text": "Thank you for being here for Founders Talk. Every week I will be in this space giving you the real conversation. No filters. No highlight reel. Just truth, insight, and the genuine desire to see you build something remarkable. See you next week."
+        }
+      ],
+      "related": ["founders-talk-ep2-what-i-wish-i-knew", "founders-talk-ep1-why-people-never-start", "sasha-gaye-hemmings-founder-profile"]
+    },
+    {
       "id": "founders-talk-ep2-what-i-wish-i-knew",
       "title": "Founders Talk EP2: What I Wish I Knew Before Starting My First Business in 2018",
       "subtitle": "If I could sit down with myself on the day I registered Creative Minds Movement Services and give her one hour of honest advice — this is exactly what I would say.",
