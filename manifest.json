@@ -1,5 +1,5 @@
 {
-  "id": "com.geordemerllc.lwsmedia",
+  "id": "com.lwsmedianetwork.app",
   "name": "LWS Media Network",
   "short_name": "LWS Media",
   "description": "A global multimedia network covering the stories that inspire, inform and ignite. Powered by Geor De Mer LLC.",
@@ -24,8 +24,7 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["news", "entertainment", "education"],
- "screenshots": [
+  "screenshots": [
     {
       "src": "https://lwsmedianetwork.com/screenshot-mobile-1.png",
       "sizes": "774x1600",
@@ -41,6 +40,16 @@
       "label": "LWS Media Network Article"
     }
   ],
+  "categories": ["news", "entertainment", "education"],
+  "shortcuts": [
+    {
+      "name": "All Stories",
+      "short_name": "Stories",
+      "description": "Browse all LWS Media Network stories",
+      "url": "/archive.html",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
       "name": "Weh Yuh Seh Views",
       "short_name": "WYS Views",
       "description": "Global news and commentary",
