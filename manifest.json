@@ -25,7 +25,22 @@
     }
   ],
   "categories": ["news", "entertainment", "education"],
-  "screenshots": [],
+  "screenshots": [
+    {
+      "src": "screenshot-mobile-1.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "LWS Media Network Homepage"
+    },
+    {
+      "src": "screenshot-mobile-2.png",
+      "sizes": "1080x1920",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "LWS Media Network Article"
+    }
+  ],
   "shortcuts": [
     {
       "name": "All Stories",
