@@ -25,31 +25,22 @@
     }
   ],
   "categories": ["news", "entertainment", "education"],
-  "screenshots": [
+ "screenshots": [
     {
       "src": "screenshot-mobile-1.png",
-      "sizes": "1080x1920",
+      "sizes": "774x1600",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "LWS Media Network Homepage"
     },
     {
       "src": "screenshot-mobile-2.png",
-      "sizes": "1080x1920",
+      "sizes": "784x1600",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "LWS Media Network Article"
     }
   ],
-  "shortcuts": [
-    {
-      "name": "All Stories",
-      "short_name": "Stories",
-      "description": "Browse all LWS Media Network stories",
-      "url": "/archive.html",
-      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
-    },
-    {
       "name": "Weh Yuh Seh Views",
       "short_name": "WYS Views",
       "description": "Global news and commentary",
