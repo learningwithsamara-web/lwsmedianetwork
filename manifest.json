@@ -27,14 +27,14 @@
   "categories": ["news", "entertainment", "education"],
  "screenshots": [
     {
-      "src": "screenshot-mobile-1.png",
+      "src": "https://lwsmedianetwork.com/screenshot-mobile-1.png",
       "sizes": "774x1600",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "LWS Media Network Homepage"
     },
     {
-      "src": "screenshot-mobile-2.png",
+      "src": "https://lwsmedianetwork.com/screenshot-mobile-2.png",
       "sizes": "784x1600",
       "type": "image/png",
       "form_factor": "narrow",
