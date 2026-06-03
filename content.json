@@ -1,6 +1,96 @@
 {
   "articles": [
   {
+      "id": "underreported-rohingya-somalia-crisis",
+      "title": "UNDERREPORTED: The Rohingya Forgotten Again — and Somalia's Silent Famine Warning",
+      "subtitle": "Two crises. Two regions. One devastating pattern — the world keeps cutting funding for the people who need it most, and the cameras keep looking away.",
+      "category": "Underreported",
+      "categoryColor": "coral",
+      "date": "June 2026",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "7 min read",
+      "featured": false,
+      "coverImage": "images/rohingya-somalia.jpeg",
+      "coverImageCaption": "Underreported: Weh Dem Nuh Seh — stories the world chooses not to tell. Photo: LWS Media Network",
+      "excerpt": "More than 1.2 million Rohingya refugees remain trapped in Bangladesh as international funding dries up. In Somalia, 6 million people face severe food insecurity and the famine warning signs are already here. Two crises, one pattern — the world is not paying attention.",
+      "slug": "underreported-rohingya-somalia-crisis",
+      "tags": ["Underreported", "Rohingya", "Somalia", "Humanitarian Crisis", "Refugees", "Hunger", "Weh Dem Nuh Seh"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Welcome to Underreported: Weh Dem Nuh Seh — where global crises do not fade into silence just because the news cycle moved on. Today we are covering two stories that have been eclipsed by louder headlines but are too critical to ignore. One is about a refugee population the world decided was no longer worth covering. The other is about a famine that is building quietly — right now — while the window to prevent it narrows by the day."
+        },
+        {
+          "type": "heading",
+          "text": "The Rohingya Crisis — The Funding Disappeared, The People Did Not"
+        },
+        {
+          "type": "paragraph",
+          "text": "Nearly nine years have passed since hundreds of thousands of Rohingya fled Myanmar in one of the most documented mass displacements of the 21st century. The images were everywhere. The international outcry was loud. And then — as it always does — the news cycle moved on. But the crisis did not."
+        },
+        {
+          "type": "paragraph",
+          "text": "More than 1.2 million Rohingya refugees remain in overcrowded camps in Bangladesh. They did not go home. They were not resettled. They are still there — in conditions that have not improved and in many ways have worsened. Since 2024, new violence in Myanmar has forced another 150,000 people to flee, adding further strain to a system that was already stretched beyond its limits."
+        },
+        {
+          "type": "paragraph",
+          "text": "And now the international funding that keeps those camps functioning is shrinking. Food assistance, healthcare, education, shelter programs — all facing cuts. Not because the need is not there. The need is as acute as it has ever been. The cuts are happening because the world has quietly decided this is an old story. Women, children, and the elderly bear the worst of it. And as conditions deteriorate, more refugees are attempting dangerous sea journeys to find a way out — with hundreds reported dead or missing in the process."
+        },
+        {
+          "type": "quote",
+          "text": "When a humanitarian crisis becomes old news, the suffering does not become old too. It compounds. Every year of inaction is another year of lives suspended in limbo with no path home and no sustainable future.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is what chronic underfunding looks like in practice. Refugee camps that depend almost entirely on international support are being told to do more with less — while the people inside them have no alternatives, no power, and no platform loud enough to force the world to listen again. The Rohingya crisis did not end. The attention did. And that distinction is costing lives."
+        },
+        {
+          "type": "heading",
+          "text": "Somalia — A Famine Warning Nobody Is Talking About"
+        },
+        {
+          "type": "paragraph",
+          "text": "On the other side of the world, another quiet emergency is building. UN agencies are warning that roughly 6 million people in Somalia face severe food insecurity this year. Nearly 1.9 million children are suffering from acute malnutrition. Almost half a million of those children face severe acute malnutrition — the most dangerous form, the one that kills."
+        },
+        {
+          "type": "paragraph",
+          "text": "This did not happen overnight. Years of drought, economic shocks, conflict, and displacement have stripped communities of their ability to absorb crisis after crisis. There is no buffer left. When the rains fail — and experts warn they may — and when aid does not arrive at the scale required, the trajectory from food insecurity to famine is not a distant possibility. It is a predictable outcome."
+        },
+        {
+          "type": "paragraph",
+          "text": "Humanitarian funding shortages are already limiting the ability of aid agencies to respond. The organisations on the ground are not being quiet about this — they are raising the alarm as loudly as they can. But a famine warning in Somalia does not trend. It does not generate the same outrage as other stories. And so the window to prevent a larger catastrophe keeps closing, quietly, while the world looks elsewhere."
+        },
+        {
+          "type": "quote",
+          "text": "Hunger emergencies do not arrive suddenly. They build slowly, one missed meal, one failed harvest, one defunded programme at a time — until intervention becomes far more difficult, far more expensive, and for some, too late.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        },
+        {
+          "type": "heading",
+          "text": "The Pattern Nobody Wants to Name"
+        },
+        {
+          "type": "paragraph",
+          "text": "Bangladesh and Somalia are thousands of miles apart. The Rohingya crisis and Somalia's food emergency have different histories, different causes, and different dynamics. But they reveal the same pattern — a growing gap between humanitarian need and humanitarian funding, in a world that has decided certain suffering is simply less urgent than other suffering."
+        },
+        {
+          "type": "paragraph",
+          "text": "Refugees in Bangladesh, hungry families in Somalia, vulnerable communities across the African continent — these are people whose lives are being shaped not only by conflict and climate shocks but by whether the international community chooses to keep paying attention. And right now, it is choosing not to."
+        },
+        {
+          "type": "paragraph",
+          "text": "That choice has consequences. Real, measurable, human consequences. The children going to sleep malnourished in Mogadishu tonight are not an abstraction. The families in Cox's Bazar who have been waiting nine years for a future that has not come are not statistics. They are people. And their stories deserve to be told — not once, loudly, and then forgotten — but consistently, persistently, and with the same urgency that the world reserves for crises closer to home."
+        },
+        {
+          "type": "quote",
+          "text": "We call them underreported. But you need to know. Bring these stories to light — and pass them on.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        }
+      ],
+      "related": ["the-hidden-hunger-crisis", "the-slow-drowning-of-freshwater", "wyh-el-nino-commentary"]
+    },
+  {
       "id": "wyh-morning-briefing-june-3-2026",
       "title": "Weh Yuh Seh Views — Morning Briefing | June 3, 2026",
       "subtitle": "Russia intensifies strikes across Ukraine, oil prices climb closer to $100, Canadian wildfire smoke blankets North America, and AI continues reshaping the global economy — here is your Morning Briefing for June 3, 2026.",
