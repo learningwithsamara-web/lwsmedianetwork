@@ -1,5 +1,138 @@
 {
   "articles": [
+  {
+      "id": "wyh-morning-briefing-june-3-2026",
+      "title": "Weh Yuh Seh Views — Morning Briefing | June 3, 2026",
+      "subtitle": "Russia intensifies strikes across Ukraine, oil prices climb closer to $100, Canadian wildfire smoke blankets North America, and AI continues reshaping the global economy — here is your Morning Briefing for June 3, 2026.",
+      "category": "Weh Yuh Seh Views",
+      "categoryColor": "green",
+      "date": "June 3, 2026",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "5 min read",
+      "featured": false,
+      "coverImage": "images/June-3-wys-news.jpeg",
+      "coverImageCaption": "Weh Yuh Seh Views — Morning Briefing, June 3, 2026. Photo: LWS Media Network",
+      "excerpt": "Russia intensifies strikes across Ukraine. Oil prices climb closer to $100. Canadian wildfire smoke blankets North America. AI continues reshaping the global economy. Here is your Morning Briefing for June 3, 2026.",
+      "slug": "wyh-morning-briefing-june-3-2026",
+      "tags": ["Weh Yuh Seh Views", "Morning Briefing", "Global News", "Ukraine", "Middle East", "Oil Prices", "AI", "Climate", "Canada Wildfires"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "Good morning, and welcome to Weh Yuh Seh Views. I am your host, Sasha — bringing you global news you can trust in just a few minutes. Here are today's headlines for June 3, 2026."
+        },
+        {
+          "type": "heading",
+          "text": "1. Top Global Headlines"
+        },
+        {
+          "type": "paragraph",
+          "text": "Russia has continued large-scale attacks on Ukrainian cities, with reports of significant casualties and infrastructure damage overnight. Ukrainian officials are again urging Western allies for additional air-defence support as the conflict enters another critical phase. The scale and frequency of these attacks signals an intensification of Russian military strategy at a moment when diplomatic efforts remain stalled."
+        },
+        {
+          "type": "paragraph",
+          "text": "Regional tensions in the Middle East remain high following new missile and drone attacks involving Iran and neighbouring states. Security concerns around major oil transit routes continue to raise fears of broader instability — with implications that stretch well beyond the region itself."
+        },
+        {
+          "type": "heading",
+          "text": "2. Breaking News"
+        },
+        {
+          "type": "paragraph",
+          "text": "Global oil prices climbed again as investors reacted to escalating conflict in the Middle East. Brent crude continues its approach toward the $100 per barrel mark as analysts warn that disruptions to shipping routes could affect global energy supplies and reignite inflation in the months ahead."
+        },
+        {
+          "type": "paragraph",
+          "text": "Ukrainian drone operations reportedly struck energy infrastructure and military facilities near St. Petersburg — highlighting the growing reach of drone warfare in this conflict and demonstrating that the fight is no longer contained to Ukrainian territory alone."
+        },
+        {
+          "type": "heading",
+          "text": "3. Politics and Diplomacy"
+        },
+        {
+          "type": "paragraph",
+          "text": "Diplomatic efforts continue behind the scenes as governments seek to prevent further escalation in the Middle East. Several countries have called for restraint while monitoring developments closely — though the gap between diplomatic language and events on the ground continues to widen."
+        },
+        {
+          "type": "paragraph",
+          "text": "The OECD has issued a warning that prolonged geopolitical conflicts could slow global economic growth and increase recession risks if energy disruptions continue. The warning underlines what many economists have been saying for months — that war and economic stability cannot coexist indefinitely."
+        },
+        {
+          "type": "heading",
+          "text": "4. Business and Finance"
+        },
+        {
+          "type": "paragraph",
+          "text": "Investors remain focused on two major forces shaping the global economy: rising energy prices and continued expansion in artificial intelligence. Technology stocks have remained relatively strong despite geopolitical uncertainty, with AI-related companies continuing to attract significant capital flows."
+        },
+        {
+          "type": "paragraph",
+          "text": "Regulators in several countries are increasing scrutiny of how AI-generated content is used online — particularly concerning news publishers and copyright protections. This is a conversation LWS Media Network will be watching closely as it directly affects how independent media platforms operate in an AI-driven landscape."
+        },
+        {
+          "type": "heading",
+          "text": "5. Technology and AI"
+        },
+        {
+          "type": "paragraph",
+          "text": "Artificial intelligence is increasingly influencing business, finance, healthcare, education, and even modern warfare. Experts say AI-driven systems are becoming a defining technology of this decade — reshaping industries faster than most regulatory frameworks can keep pace with."
+        },
+        {
+          "type": "paragraph",
+          "text": "Strong investor interest in AI-related companies continues to support technology markets worldwide despite broader economic uncertainty. The sector remains one of the few genuine bright spots in an otherwise turbulent global economy."
+        },
+        {
+          "type": "heading",
+          "text": "6. Climate and Weather Alerts"
+        },
+        {
+          "type": "paragraph",
+          "text": "Wildfires in Canada continue to spread smoke across parts of North America, affecting air quality in several regions. Officials are monitoring health impacts and weather conditions closely. The scale of this wildfire season is a stark reminder of the accelerating climate crisis — and of how quickly environmental disasters become public health emergencies."
+        },
+        {
+          "type": "paragraph",
+          "text": "Scientists continue to warn that extreme weather events — including heatwaves, droughts, floods, and wildfires — are becoming more frequent and more costly worldwide. The pattern is no longer the exception. It is the new normal."
+        },
+        {
+          "type": "paragraph",
+          "text": "US Regional Forecast for June 3, 2026 — Florida: Hot and humid with scattered afternoon thunderstorms. Georgia: Warm temperatures with isolated thunderstorms possible later today. New York: Mild conditions with periods of sunshine and occasional showers."
+        },
+        {
+          "type": "heading",
+          "text": "7. Science and Health"
+        },
+        {
+          "type": "paragraph",
+          "text": "Researchers worldwide are increasing efforts to develop technologies and policies that can help communities adapt to growing climate risks. The shift from mitigation to adaptation is gaining momentum as the scale of the challenge becomes impossible to ignore."
+        },
+        {
+          "type": "paragraph",
+          "text": "Several promising medical research programmes are showing progress, including new treatments for serious diseases and advances in biotechnology. Scientific innovation continues to offer genuine hope even amid a turbulent global environment."
+        },
+        {
+          "type": "heading",
+          "text": "8. Special Report — The Three Forces Shaping 2026"
+        },
+        {
+          "type": "paragraph",
+          "text": "Three major themes continue to dominate global affairs in 2026. First — ongoing wars and geopolitical instability, with conflicts in Ukraine and the Middle East showing no signs of resolution and drawing in more actors by the month. Second — the rapid rise of artificial intelligence, which is transforming economies, industries, and the nature of work faster than governments can legislate. Third — increasing climate-related disruptions, from Canadian wildfires to European heatwaves, that are no longer distant warnings but present-day emergencies."
+        },
+        {
+          "type": "quote",
+          "text": "These three forces — war, artificial intelligence, and climate change — are not separate stories. They are converging. And the world that emerges from that convergence will look very different from the one we inherited.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        },
+        {
+          "type": "paragraph",
+          "text": "Today's biggest stories include escalating fighting in Ukraine, continued tensions in the Middle East driving oil prices higher, the growing influence of artificial intelligence, and increasing concerns over climate-related risks. As always, the stories shaping tomorrow's world are developing right now."
+        },
+        {
+          "type": "quote",
+          "text": "I am Sasha, and this has been your Weh Yuh Seh Views Morning Briefing. Stay informed, stay aware, and have a productive day.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        }
+      ],
+      "related": ["wyh-evening-digest-june-2-2026", "wyh-el-nino-commentary", "el-nino-global-climate-crisis"]
+    },
  {
       "id": "wyh-evening-digest-june-2-2026",
       "title": "Weh Yuh Seh Views — Evening Digest | June 2, 2026",
