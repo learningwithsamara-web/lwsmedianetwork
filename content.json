@@ -1,4 +1,6 @@
 {
+  "articles": [
+ {
       "id": "wyh-evening-digest-june-2-2026",
       "title": "Weh Yuh Seh Views — Evening Digest | June 2, 2026",
       "subtitle": "Russia launches one of its largest aerial attacks on Ukraine, oil surges toward $100 per barrel, Anthropic files for IPO, and scientists warn of a powerful El Nino developing — here is everything shaping the world tonight.",
@@ -127,8 +129,6 @@
       ],
       "related": ["wyh-morning-briefing-september-3-2025", "wyh-el-nino-commentary", "el-nino-global-climate-crisis"]
     },
-{
-  "articles": [
     {
       "id": "alex-palmer-from-portmore-to-the-field",
       "title": "From Portmore to the Field — The Journey of Alex Palmer",
