@@ -1,6 +1,99 @@
 {
   "articles": [
   {
+      "id": "iran-war-powers-vote-congress",
+      "title": "The Iran War Powers Vote — Can Congress Stop President Trump?",
+      "subtitle": "The US House voted 215 to 208 to demand an end to military action against Iran. But between a concurrent resolution, a veto, and a two-thirds override threshold, the White House still holds the upper hand.",
+      "category": "Weh Yuh Seh Views",
+      "categoryColor": "green",
+      "date": "June 2026",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "6 min read",
+      "featured": false,
+      "coverImage": "images/iran-war-powers-vote.jpeg",
+      "coverImageCaption": "The US House of Representatives votes to challenge President Trump's war powers over Iran. Photo: LWS Media Network",
+      "excerpt": "The US House voted 215 to 208 to demand an end to military action against Iran — the sharpest challenge yet to President Trump's wartime powers. But can Congress actually force the President to stop a war? Here is the plain-language breakdown.",
+      "slug": "iran-war-powers-vote-congress",
+      "tags": ["Weh Yuh Seh Views", "Breaking News", "Iran", "US Politics", "Congress", "War Powers", "Trump", "Middle East"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "In a dramatic confrontation over executive authority, the US House of Representatives voted 215 to 208 to demand an end to ongoing military action against Iran. The high-stakes vote marks the sharpest challenge yet to President Donald Trump's wartime powers since conflict erupted four months ago. But it has left many Americans asking a critical question: can Congress actually force the President to stop a war?"
+        },
+        {
+          "type": "heading",
+          "text": "What Just Happened in the House?"
+        },
+        {
+          "type": "paragraph",
+          "text": "The House passed a War Powers resolution — H.Con.Res. 86 — declaring that the Trump administration has exceeded its constitutional authority. Under the War Powers Act of 1973, a president must secure explicit congressional approval to sustain military operations past a 60 to 90 day window. Because the conflict has entered its fourth month without a formal declaration of war, lawmakers moved to assert their constitutional right to control when the nation goes to war."
+        },
+        {
+          "type": "paragraph",
+          "text": "The vote was notable for rare bipartisan friction. Four Republicans — Representatives Brian Fitzpatrick, Thomas Massie, Tom Barrett, and Warren Davidson — crossed party lines to join Democrats in voting to halt the hostilities. That fracture within the President's own party is perhaps the most politically significant detail in this story. When members of your own party start breaking ranks on a war, the political ground is shifting."
+        },
+        {
+          "type": "heading",
+          "text": "Can President Trump Veto the Vote?"
+        },
+        {
+          "type": "paragraph",
+          "text": "The short answer is no — but there is a major legal catch. Because the House passed this measure as a concurrent resolution, it is technically exempt from a presidential veto. It never travels to the President's desk for a signature. However, by bypassing the President, a concurrent resolution loses its legal teeth. It does not carry the full enforcement power of federal law. What it does carry is significant political weight — a formal, public declaration that the President is operating without the consent of the legislature."
+        },
+        {
+          "type": "paragraph",
+          "text": "If Congress wants to make the mandate legally binding, they must pass it as a joint resolution. But doing so triggers a constitutional mechanism that plays directly into the President's hands — the veto power. And that is where the math becomes very uncomfortable for war opponents."
+        },
+        {
+          "type": "heading",
+          "text": "The Math of the Presidential Veto"
+        },
+        {
+          "type": "paragraph",
+          "text": "If a joint resolution reaches the White House, President Trump would almost certainly veto it. To override that veto and force the resolution into law, Congress would need a two-thirds absolute majority in both chambers. Here is the reality of the numbers:"
+        },
+        {
+          "type": "paragraph",
+          "text": "In the House, an override requires 290 votes. The current resolution only passed with 215. Congress is short by 75 votes. In the Senate, an override requires 67 votes. Republicans currently hold a slim majority — meaning dozens of the President's closest political allies would have to rebel against him to reach that number. The arithmetic is clear. Opponents of the war do not have the numbers to override a veto. President Trump retains ultimate control over military strategy."
+        },
+        {
+          "type": "quote",
+          "text": "A concurrent resolution is a powerful political statement. But political statements do not ground aircraft or withdraw troops. The hard truth is that Congress has expressed its will — and for now, the President does not have to listen.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        },
+        {
+          "type": "heading",
+          "text": "Where Does the Conflict Go From Here?"
+        },
+        {
+          "type": "paragraph",
+          "text": "For now, the war will continue. The Trump administration has dismissed the House vote as meaningless and unpatriotic, arguing that a brief April ceasefire meant hostilities technically ceased — a claim Congress fiercely rejects following recent heavy flare-ups in regional fighting. The legal debate over what constitutes a continuation of conflict versus a new engagement is itself a political battleground."
+        },
+        {
+          "type": "paragraph",
+          "text": "The political battle now moves to the US Senate. While the Senate advanced a parallel measure in a narrow 50 to 47 procedural vote last month, final passage faces a steep uphill climb. The numbers simply do not favour those seeking to legally constrain the President's military authority."
+        },
+        {
+          "type": "heading",
+          "text": "Why This Vote Still Matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "While the House vote may not physically ground aircraft or withdraw troops today, it sends a message that cannot be ignored. The political consensus supporting the war with Iran is fracturing. Four Republicans breaking ranks is not just a statistic — it is a signal. When a president loses members of his own party on a war vote, the political calculus of the conflict begins to shift in ways that go beyond any single legislative outcome."
+        },
+        {
+          "type": "paragraph",
+          "text": "History has shown that wars sustained without broad political support become progressively harder to maintain — not just militarily, but politically and economically. The War Powers Act itself was born out of exactly that kind of fracture during the Vietnam era. Congress is not stopping this war today. But it is putting the White House on notice that the clock is running."
+        },
+        {
+          "type": "quote",
+          "text": "This is the story behind the vote. Not just what happened — but what it means. Stay informed, stay aware, and keep asking the questions that the headlines do not always answer.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        }
+      ],
+      "related": ["wyh-evening-digest-june-2-2026", "wyh-morning-briefing-june-3-2026", "wyh-el-nino-commentary"]
+    },
+  {
       "id": "earth-before-us-lost-world",
       "title": "Earth Before Us — The Lost World of Extinction, Evolution, Climate Change, and Human Origins",
       "subtitle": "More than 99 percent of all species that have ever lived are now extinct. The Earth we know today is not the Earth that has always existed — and understanding what came before us changes everything about how we see ourselves.",
