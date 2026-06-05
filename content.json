@@ -1,6 +1,187 @@
 {
   "articles": [
   {
+      "id": "earth-before-us-lost-world",
+      "title": "Earth Before Us — The Lost World of Extinction, Evolution, Climate Change, and Human Origins",
+      "subtitle": "More than 99 percent of all species that have ever lived are now extinct. The Earth we know today is not the Earth that has always existed — and understanding what came before us changes everything about how we see ourselves.",
+      "category": "Science & Environment",
+      "categoryColor": "teal",
+      "date": "June 2026",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "12 min read",
+      "featured": false,
+      "coverImage": "images/earth-before-us-cover.jpeg",
+      "coverImageCaption": "Earth Before Us — billions of years of life, extinction, and survival. Photo: LWS Media Network",
+      "excerpt": "More than 99 percent of all species that have ever lived are now extinct. The Earth we know today is the product of repeated cycles of creation and destruction spanning 4.5 billion years — and understanding that lost world changes everything about how we see ourselves.",
+      "slug": "earth-before-us-lost-world",
+      "tags": ["Science & Environment", "Evolution", "Extinction", "Climate Change", "Human Origins", "Earth History", "Dinosaurs"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "When most people think about Earth's history, they imagine dinosaurs roaming ancient forests millions of years ago. Yet dinosaurs represent only a small chapter in a story spanning more than 4.5 billion years. The Earth we know today is not the Earth that has always existed. Scientists estimate that more than 99 percent of all species that have ever lived are now extinct. Every tree, bird, insect, mammal, and human alive today exists as part of a tiny surviving fraction of life's vast history."
+        },
+        {
+          "type": "paragraph",
+          "text": "The modern world is the product of repeated cycles of creation and destruction. Entire ecosystems have appeared and vanished. Oceans have advanced and retreated. Continents have collided and broken apart. Massive volcanic eruptions have altered the atmosphere. Asteroid impacts have reshaped evolution. Species have risen to dominance and disappeared forever. To understand humanity's place in nature, we must first understand the ancient world that existed long before us."
+        },
+        {
+          "type": "heading",
+          "text": "A Planet Born From Fire"
+        },
+        {
+          "type": "paragraph",
+          "text": "Earth formed approximately 4.54 billion years ago from a swirling cloud of dust and gas surrounding the young Sun. The early Earth was a hostile place. Molten rock covered much of the surface. Asteroids and comets bombarded the planet regularly. Volcanoes released enormous quantities of gases into the atmosphere. There were no forests, no animals, no oceans filled with fish, no oxygen-rich atmosphere. The world was largely unrecognizable."
+        },
+        {
+          "type": "paragraph",
+          "text": "Over millions of years, the planet gradually cooled. Water vapor condensed into liquid water, forming Earth's first oceans. These oceans became the cradle of life. Scientists believe the earliest life emerged more than 3.5 billion years ago. These first organisms were microscopic and incredibly simple compared with modern life. Yet these tiny organisms would eventually transform the entire planet."
+        },
+        {
+          "type": "heading",
+          "text": "The Great Oxygen Revolution"
+        },
+        {
+          "type": "paragraph",
+          "text": "For nearly half of Earth's history, there was little free oxygen in the atmosphere. Then a remarkable group of microorganisms known as cyanobacteria began using sunlight to produce energy through photosynthesis. As a byproduct, they released oxygen. Over hundreds of millions of years, oxygen accumulated in the atmosphere, triggering what scientists call the Great Oxygenation Event."
+        },
+        {
+          "type": "paragraph",
+          "text": "This event changed everything. Many ancient organisms that could not tolerate oxygen disappeared. At the same time, oxygen made more complex forms of life possible. Without this transformation, animals, plants, and eventually humans could never have evolved. A microscopic organism breathing out a gas transformed the trajectory of life on Earth forever."
+        },
+        {
+          "type": "heading",
+          "text": "Life Begins in the Ocean"
+        },
+        {
+          "type": "paragraph",
+          "text": "One of the most important facts in biology is that all known vertebrate life traces its ancestry to aquatic organisms. Long before forests covered continents, life flourished in the seas. Ancient oceans contained trilobites, primitive fish, jellyfish-like organisms, early arthropods, and countless extinct species that left no descendants. For hundreds of millions of years, the oceans were the center of biological innovation."
+        },
+        {
+          "type": "paragraph",
+          "text": "The earliest vertebrates resembled simple fish. Over time, evolution produced more advanced forms with jaws, stronger skeletons, and improved mobility. These developments laid the foundation for one of the greatest transitions in Earth's history. Life would eventually leave the water."
+        },
+        {
+          "type": "heading",
+          "text": "When Fish Learned to Walk"
+        },
+        {
+          "type": "paragraph",
+          "text": "Around 375 million years ago, certain fish began developing characteristics that would allow them to survive in shallow wetlands. These were not fish suddenly transforming into amphibians in a single generation. Rather, small changes accumulated over millions of years — stronger fins, more robust bones, primitive lungs, improved neck mobility, and a greater ability to support their own weight."
+        },
+        {
+          "type": "paragraph",
+          "text": "One famous transitional fossil, Tiktaalik, possessed features of both fish and land animals. It had scales and fins but also bones resembling those found in the limbs of terrestrial vertebrates. Eventually these evolutionary experiments produced the first tetrapods — four-limbed vertebrates capable of moving onto land. Every amphibian, reptile, bird, and mammal alive today descends from these pioneering creatures. Including us. The bones in a human arm share a remarkably similar structural pattern with the fins of ancient fish ancestors. The evidence of our aquatic origins remains embedded within our own anatomy."
+        },
+        {
+          "type": "heading",
+          "text": "The Age of Giant Forests"
+        },
+        {
+          "type": "paragraph",
+          "text": "As plants colonized land, vast forests emerged. During the Carboniferous Period, approximately 359 to 299 million years ago, immense swamp forests stretched across large portions of the planet. These forests were unlike anything alive today. Towering club mosses reached heights comparable to modern trees. Massive ferns dominated landscapes. Giant insects thrived in oxygen-rich air. Dragonflies grew wingspans exceeding two feet. Millipede-like creatures reached lengths greater than six feet."
+        },
+        {
+          "type": "paragraph",
+          "text": "Many of these forests would eventually become the coal deposits modern societies use for energy. Every piece of coal is essentially compressed ancient plant matter from ecosystems that disappeared hundreds of millions of years ago. When we burn coal, we are releasing carbon that was locked away by forests that no living human could have imagined."
+        },
+        {
+          "type": "heading",
+          "text": "The Age of Endless Rain and Climate Chaos"
+        },
+        {
+          "type": "paragraph",
+          "text": "Earth's climate has never been stable. Throughout geological history, the planet experienced dramatic swings between extremes. One particularly significant event occurred during the Carnian Pluvial Episode roughly 234 million years ago. Scientists believe massive volcanic eruptions released enormous quantities of carbon dioxide into the atmosphere. Global temperatures changed. Weather patterns shifted. Rainfall increased dramatically across large regions of the world."
+        },
+        {
+          "type": "paragraph",
+          "text": "For perhaps millions of years, unusually wet conditions transformed ecosystems. Species adapted or disappeared. New evolutionary opportunities emerged. Geological evidence indicates that certain regions experienced prolonged periods of intense rainfall unlike anything humans have witnessed in recorded history. Earth's deep past is a reminder that climate has always been one of the most powerful forces capable of reshaping life — long before human industry ever entered the picture."
+        },
+        {
+          "type": "quote",
+          "text": "Climate change is not a modern invention. It is one of the oldest forces on this planet. What is modern is the speed at which we are driving it — and the consequences we are only beginning to understand.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        },
+        {
+          "type": "heading",
+          "text": "The Rise and Reign of the Dinosaurs"
+        },
+        {
+          "type": "paragraph",
+          "text": "Following earlier extinction events, dinosaurs emerged and eventually became the dominant land animals. For approximately 165 million years, dinosaurs occupied nearly every terrestrial environment. Some were small hunters. Others were feathered. Some grew larger than modern buildings. Contrary to popular belief, dinosaurs were not evolutionary failures. They were among the most successful groups of animals ever to exist — ruling the planet for a period of time so vast it makes all of human history look like a brief footnote."
+        },
+        {
+          "type": "paragraph",
+          "text": "The world of the dinosaurs included vast forests, giant predators, flying reptiles, early mammals, and diverse ecosystems spanning the globe. For millions of years, they appeared unstoppable. Then catastrophe struck."
+        },
+        {
+          "type": "heading",
+          "text": "The Asteroid That Changed Everything"
+        },
+        {
+          "type": "paragraph",
+          "text": "Approximately 66 million years ago, a large asteroid struck near what is now Mexico. The impact released energy equivalent to billions of nuclear bombs. Wildfires spread. Dust filled the atmosphere. Sunlight decreased. Food chains collapsed. The extinction event eliminated approximately 75 percent of Earth's species. Non-avian dinosaurs vanished from the planet entirely."
+        },
+        {
+          "type": "paragraph",
+          "text": "Yet some descendants survived. Today, every bird on Earth is considered a living dinosaur. The pigeons in city parks and the eagles soaring overhead are distant descendants of creatures that survived one of the worst disasters in planetary history. Extinction is devastating — but survival is possible even from the edge of annihilation."
+        },
+        {
+          "type": "heading",
+          "text": "The Truth About Extinction — More Than 99 Percent Are Gone"
+        },
+        {
+          "type": "paragraph",
+          "text": "Perhaps the most astonishing fact in paleontology is that virtually every species that has ever existed is now extinct. The Earth today contains only a tiny fraction of life's historical diversity. Species disappear for many reasons — environmental change, competition, disease, climate shifts, habitat loss, and catastrophic events. Extinction is not the exception. It is the rule. The history of life is largely a history of disappearance."
+        },
+        {
+          "type": "paragraph",
+          "text": "The species alive today represent survivors of countless biological experiments conducted over billions of years. We are not the intended outcome of evolution. We are simply the ones who made it this far — so far."
+        },
+        {
+          "type": "heading",
+          "text": "The Rise of Mammals and the Human Story"
+        },
+        {
+          "type": "paragraph",
+          "text": "After the dinosaur extinction, mammals expanded into newly available ecological niches. Over millions of years, mammals evolved into numerous forms. Some returned to the oceans and became whales. Others took to the air as bats. Primates eventually emerged among the forests. These primates would produce one lineage unlike any before it — the human lineage."
+        },
+        {
+          "type": "paragraph",
+          "text": "Genetics, archaeology, and fossil evidence overwhelmingly support the conclusion that modern humans originated in Africa. Homo sapiens evolved approximately 300,000 years ago. Africa contains the deepest and most diverse branches of human genetic variation — precisely what scientists expect from the region where our species first evolved. Every living human ultimately traces ancestry back to African populations. This is not a theory. It is one of the strongest conclusions in modern science."
+        },
+        {
+          "type": "heading",
+          "text": "The Great Human Migration"
+        },
+        {
+          "type": "paragraph",
+          "text": "Around 60,000 to 70,000 years ago, groups of humans began expanding beyond Africa. Over thousands of years, populations spread into the Middle East, Europe, Asia, Australia, Siberia, and eventually the Americas. These journeys required remarkable adaptability. Humans survived deserts, mountains, forests, ice ages, and environments entirely unlike anything their ancestors had known. The migration transformed a regional African species into a global one."
+        },
+        {
+          "type": "paragraph",
+          "text": "Human skin pigmentation evolved as part of this journey — primarily in response to ultraviolet radiation. Near the equator, darker skin containing more melanin helped protect against harmful ultraviolet radiation. As populations moved into regions with lower sunlight levels, lighter skin gradually evolved in many groups because it improved vitamin D production. This process occurred over thousands of generations. All humans remain extraordinarily similar genetically. The visible differences between populations represent only a tiny fraction of our genetic makeup. Modern science has demonstrated clearly that race is a social concept far more than a biological one. Humanity remains one species with a shared origin."
+        },
+        {
+          "type": "heading",
+          "text": "We Are the Survivors of Deep Time"
+        },
+        {
+          "type": "paragraph",
+          "text": "The story of Earth is not merely the story of dinosaurs or humans. It is the story of survival. Life emerged from ancient oceans. Fish became land animals. Forests rose and vanished. Rain-soaked worlds transformed ecosystems. Mass extinctions erased most species that ever existed. Dinosaurs ruled the Earth and disappeared. Humans emerged in Africa and spread across the globe."
+        },
+        {
+          "type": "paragraph",
+          "text": "Today we stand as products of billions of years of evolutionary history. Every breath we take, every bone in our body, and every cell in our DNA carries echoes of ancient oceans, vanished forests, extinct species, and ancestral journeys across continents. We are not separate from Earth's history. We are one of its most recent chapters — and the choices we make right now will determine what the next chapter looks like."
+        },
+        {
+          "type": "quote",
+          "text": "We did not inherit this planet from our ancestors. We borrowed it from our children. And the story of what came before us should make us far more careful about what we leave behind.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        }
+      ],
+      "related": ["el-nino-global-climate-crisis", "the-slow-drowning-of-freshwater", "wyh-el-nino-commentary"]
+    },
+  {
       "id": "underreported-rohingya-somalia-crisis",
       "title": "UNDERREPORTED: The Rohingya Forgotten Again — and Somalia's Silent Famine Warning",
       "subtitle": "Two crises. Two regions. One devastating pattern — the world keeps cutting funding for the people who need it most, and the cameras keep looking away.",
