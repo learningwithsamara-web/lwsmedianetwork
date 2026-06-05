@@ -1,6 +1,91 @@
 {
   "articles": [
   {
+      "id": "cosmic-exorcist-priest-fired-ufo-demons",
+      "title": "The Cosmic Exorcist — Why a Prominent Washington Priest Was Fired Over His UFO Demon Rant",
+      "subtitle": "Cardinal Robert McElroy removed Monsignor Stephen Rossetti as the Archdiocese of Washington's chief exorcist after a viral video claimed UFO sightings are demonic manifestations designed to manipulate humanity.",
+      "category": "Weh Yuh Seh Views",
+      "categoryColor": "green",
+      "date": "June 2026",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "5 min read",
+      "featured": false,
+      "coverImage": "images/cosmic-exorcist-rossetti.jpeg",
+      "coverImageCaption": "Monsignor Stephen Rossetti, former chief exorcist of the Archdiocese of Washington. Photo: The New York Times",
+      "excerpt": "A prominent Washington priest, licensed psychologist, and chief exorcist went viral after claiming UFO sightings are demonic manifestations. Cardinal Robert McElroy responded swiftly — firing him and severing all ties with his ministry organization.",
+      "slug": "cosmic-exorcist-priest-fired-ufo-demons",
+      "tags": ["Weh Yuh Seh Views", "UAP", "UFO", "Catholic Church", "Washington", "Religion", "Breaking News"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "The escalating conversation around Unidentified Anomalous Phenomena has breached the walls of the Vatican and triggered an unprecedented theological showdown in the nation's capital. At the center of it is a prominent priest, a viral video, and a question that sits at the intersection of faith, science, and the unknown — what exactly are UFOs?"
+        },
+        {
+          "type": "heading",
+          "text": "The Firing"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cardinal Robert McElroy, the Archbishop of Washington, announced the immediate removal of Monsignor Stephen Rossetti from his long-standing role as the Archdiocese of Washington's chief exorcist. The dismissal was swift and decisive. Alongside Rossetti's personal termination, the Archdiocese completely severed its affiliation with the St. Michael Center for Spiritual Renewal — a prominent Washington-based non-profit organization headed by the priest that specialised in deliverance ministries and treating psychologically troubled clergy."
+        },
+        {
+          "type": "paragraph",
+          "text": "Rossetti is not an obscure figure. He is a licensed psychologist, a published author, and one of the most high-profile exorcists in the United States. He had served in his role for years and built a significant public platform. His removal sent shockwaves through both the Catholic community and the broader conversation around UAP disclosure that has been growing in intensity since the US government began releasing classified materials."
+        },
+        {
+          "type": "heading",
+          "text": "The Video That Started It All"
+        },
+        {
+          "type": "paragraph",
+          "text": "The controversy ignited on May 29, 2026, when Rossetti published a video to his Facebook and Instagram pages — where he commands a combined following of over 148,000 users. Addressing the recent influx of government UAP declassifications, Rossetti drew on his two decades of exorcism experience to offer an interpretation that stopped many people cold."
+        },
+        {
+          "type": "paragraph",
+          "text": "In the video, Rossetti warned that the physics-defying maneuvers reported in UAP sightings resemble the spiritual deception he encounters in his exorcism work. He suggested that demons — which he described as invisible entities — seek to influence humanity, and expressed his personal belief that many UFO sightings are in fact demonic manifestations rather than extraterrestrial visitors. The video went viral almost immediately, generating fierce debate across religious, scientific, and UAP research communities."
+        },
+        {
+          "type": "quote",
+          "text": "When a credentialed psychologist and senior Catholic priest tells 148,000 followers that UFOs are demons — and gets fired for it by his own archdiocese — that is a story that demands serious attention.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        },
+        {
+          "type": "heading",
+          "text": "Why the Church Acted So Quickly"
+        },
+        {
+          "type": "paragraph",
+          "text": "The speed of the Archdiocese's response is itself telling. Cardinal McElroy did not issue a statement distancing the Church from Rossetti's views or ask him to clarify his position. He removed him entirely and cut institutional ties with his ministry organisation in a single decisive move. That kind of response suggests the Church felt the claims were not merely theologically controversial — but potentially damaging to its credibility and its relationship with the broader public conversation around UAP disclosure."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Catholic Church has historically navigated the question of extraterrestrial life with more nuance than many people expect. Vatican astronomers have spoken openly about the possibility of life on other planets without theological contradiction. Rossetti's framing — presenting UAPs specifically as demonic deception — appears to have crossed a line that the institutional Church was not willing to publicly endorse."
+        },
+        {
+          "type": "heading",
+          "text": "The Bigger Picture — UAPs, Faith, and the Unknown"
+        },
+        {
+          "type": "paragraph",
+          "text": "This story matters beyond the specific circumstances of one priest's firing. It sits at the collision point of several massive conversations happening simultaneously — the US government's ongoing UAP disclosure process, the question of how religious institutions respond to phenomena that challenge traditional frameworks, and the very human tendency to interpret the unknown through the lens of whatever belief system we already hold."
+        },
+        {
+          "type": "paragraph",
+          "text": "Whether UAPs represent advanced technology, natural phenomena, extraterrestrial intelligence, or something else entirely remains genuinely unresolved. The science is actively evolving. What is clear is that the conversation is no longer fringe — it is happening in congressional hearings, military briefings, and now apparently in the offices of Catholic cardinals. When a topic reaches that many rooms simultaneously, it deserves serious, honest coverage."
+        },
+        {
+          "type": "paragraph",
+          "text": "Monsignor Rossetti offered his interpretation through the framework of his faith and his professional experience as an exorcist. His archdiocese disagreed strongly enough to end his career in that role. The debate about what is actually in our skies — and what it means — is far from over."
+        },
+        {
+          "type": "quote",
+          "text": "Whether you believe in demons, extraterrestrials, or neither — the fact that this conversation is now happening at the highest levels of government and religion tells you something important. Pay attention.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        }
+      ],
+      "related": ["iran-war-powers-vote-congress", "wyh-morning-briefing-june-3-2026", "wyh-evening-digest-june-2-2026"]
+    },
+  {
       "id": "iran-war-powers-vote-congress",
       "title": "The Iran War Powers Vote — Can Congress Stop President Trump?",
       "subtitle": "The US House voted 215 to 208 to demand an end to military action against Iran. But between a concurrent resolution, a veto, and a two-thirds override threshold, the White House still holds the upper hand.",
