@@ -1,6 +1,107 @@
 {
   "articles": [
   {
+      "id": "cosmic-carousel-night-sky-motion",
+      "title": "The Cosmic Carousel — Why the Night Sky Is Secretly in Motion",
+      "subtitle": "The constellations look exactly the same as they did to ancient Egyptian pharaohs. But this stillness is a grand cosmic illusion — every star you see is hurtling through space at hundreds of thousands of miles per hour.",
+      "category": "Science & Environment",
+      "categoryColor": "teal",
+      "date": "June 2026",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "7 min read",
+      "featured": false,
+      "coverImage": "images/cosmic-carousel-cover.jpeg",
+      "coverImageCaption": "The night sky — a living map of high-speed cosmic travellers. Photo: LWS Media Network",
+      "excerpt": "The constellations look identical to those observed by ancient Egyptian pharaohs. But this stillness is a grand cosmic illusion. Every star you see is hurtling through space at hundreds of thousands of miles per hour — and the night sky has an expiration date.",
+      "slug": "cosmic-carousel-night-sky-motion",
+      "tags": ["Science & Environment", "Astronomy", "Space", "Milky Way", "Stars", "Constellations", "Universe"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "When you look up at the night sky, the universe appears perfectly still. The constellations we see today — Orion, the Big Dipper, Cassiopeia — are identical to the ones observed by ancient Egyptian pharaohs and Greek philosophers thousands of years ago. The sky above us feels permanent, reliable, unchanging. It is one of the few things in human life that appears to transcend time."
+        },
+        {
+          "type": "paragraph",
+          "text": "But this stillness is a grand cosmic illusion. In reality, every single star in the night sky is hurtling through space at hundreds of thousands of miles per hour. We are not living in a static universe. We are riding a massive, swirling galactic carousel — and the fact that it looks motionless from where we stand is one of the most remarkable tricks that distance and scale have ever played on the human eye."
+        },
+        {
+          "type": "heading",
+          "text": "The Sun Is a Cosmic Locomotive"
+        },
+        {
+          "type": "paragraph",
+          "text": "To understand how stars move, we have to start with our own. For centuries, humans believed the Sun sat perfectly still at the center of the solar system while the planets did all the moving. The planets do orbit the Sun — but the Sun itself is on a massive journey of its own."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Sun is currently travelling at a staggering 514,000 miles per hour — approximately 828,000 kilometres per hour. It is orbiting the supermassive black hole at the centre of our galaxy, the Milky Way. And because the galaxy is so mind-bogglingly large, it takes the Sun roughly 230 million years to complete just one single lap. One orbit. One cosmic year. The last time the Sun was in the same position it occupies today, dinosaurs had not yet evolved."
+        },
+        {
+          "type": "paragraph",
+          "text": "As the Sun sprints through space, it drags Earth, Mars, Jupiter, and the rest of the planets along with it. This means our planets are not tracing flat, simple circles. They are pulling through space in a giant, beautiful three-dimensional corkscrew pattern — spiralling through the galaxy at extraordinary speed while simultaneously orbiting our star."
+        },
+        {
+          "type": "quote",
+          "text": "We think of Earth as our anchor. But Earth is orbiting the Sun, the Sun is orbiting the galaxy, and the galaxy is moving through the universe. There is no stillness anywhere. We are always, always in motion.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        },
+        {
+          "type": "heading",
+          "text": "The Great Galactic Drift"
+        },
+        {
+          "type": "paragraph",
+          "text": "Every other star you see in the sky is doing the exact same thing. The Milky Way is a swirling metropolis of hundreds of billions of stars, and none of them are parked. But stars do not move in perfect unison. Depending on their age, their distance from the galactic centre, and the gravitational influence of neighbouring star clusters, different stars travel at different speeds and in subtly different directions."
+        },
+        {
+          "type": "paragraph",
+          "text": "Astronomers call this peculiar motion — the individual velocity of a star relative to the average motion of its surrounding region. Over immense periods of time, this independent drifting means that stars slowly separate from their neighbours, gradually changing the arrangement of the night sky. The constellations we see today are a snapshot. A specific arrangement that exists in this particular slice of cosmic time and will not exist again."
+        },
+        {
+          "type": "heading",
+          "text": "The Illusion of Stillness"
+        },
+        {
+          "type": "paragraph",
+          "text": "If stars are moving at hundreds of thousands of miles per hour, why does the night sky look so perfectly frozen? The answer is extreme distance. Consider watching a commercial aircraft flying at 30,000 feet. Even though it is travelling at 500 miles per hour, it appears to crawl slowly across the sky because it is far away. Now multiply that distance by billions."
+        },
+        {
+          "type": "paragraph",
+          "text": "The nearest star system to Earth, Alpha Centauri, is roughly 25 trillion miles away. At that distance, a star can travel millions of miles in a human lifetime — and the shift is still too small to detect with the naked eye. It takes advanced telescopes, precise measurements, and in some cases centuries of accumulated astronomical data to detect the movement of even our closest stellar neighbours. The sky looks still because the universe is simply too large for human timescales to perceive its motion directly."
+        },
+        {
+          "type": "heading",
+          "text": "The Shape of Things to Come"
+        },
+        {
+          "type": "paragraph",
+          "text": "Because stars are drifting, constellations have an expiration date. If you could travel 100,000 years into the future, the night sky would look completely alien to modern eyes. The famous handle of the Big Dipper will bend into a sharp angle, distorting the familiar shape beyond recognition. The constellation Orion — one of the most recognisable patterns in the sky for thousands of years of human history — will slowly stretch and warp until the famous hunter is unrecognisable."
+        },
+        {
+          "type": "paragraph",
+          "text": "The stars that form Orion's belt today are not even close to each other in real space. They appear aligned only from our particular vantage point in the galaxy. As our perspective shifts over tens of thousands of years, that alignment dissolves. Every constellation is a temporary coincidence of angle and distance — a fleeting moment in the long story of galactic motion that humanity happened to observe and name."
+        },
+        {
+          "type": "heading",
+          "text": "A Living Map"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ultimately, the night sky is not a ceiling. It is a living, breathing map of motion on a scale that dwarfs everything human civilisation has ever built or imagined. Every twinkle of a star is a snapshot of a high-speed cosmic traveller, flying through the dark on a journey that began billions of years before life emerged on Earth and will continue billions of years after it is gone."
+        },
+        {
+          "type": "paragraph",
+          "text": "The next time you look up at the stars and feel the weight of the sky above you — remember that you are not standing still looking at something motionless. You are a passenger on a planet, orbiting a star, spiralling through a galaxy, moving through a universe that has never once stopped expanding. The stillness you perceive is borrowed from distance. The motion is real."
+        },
+        {
+          "type": "quote",
+          "text": "The universe has never been still. It has always been spinning, expanding, colliding, and drifting. We just finally built the instruments to prove what the cosmos already knew.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        }
+      ],
+      "related": ["earth-before-us-lost-world", "autophagy-science-part-1", "el-nino-global-climate-crisis"]
+    },
+  {
       "id": "ai-energy-crisis-silicon-brain",
       "title": "The Lightbulb vs. The Power Plant — Why AI Is Out-Consuming Humanity",
       "subtitle": "The human brain runs on 20 watts — the same power as a dim refrigerator lightbulb. The artificial intelligence systems we are building to replace it are on course to consume more electricity and fresh water than all of humanity combined.",
