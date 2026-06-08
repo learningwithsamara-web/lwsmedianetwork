@@ -1,7 +1,7 @@
 // LWS Media Network — Service Worker
-// Version: lws-media-v1.0.21
+// Version: lws-media-v1.0.22
 
-var CACHE_NAME = 'lws-media-v1.0.21';
+var CACHE_NAME = 'lws-media-v1.0.22';
 
 var STATIC_ASSETS = [
   '/',
