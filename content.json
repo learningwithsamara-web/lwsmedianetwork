@@ -1,6 +1,95 @@
 {
   "articles": [
   {
+      "id": "philippines-earthquake-june-2026",
+      "title": "BREAKING: Magnitude 7.8 Earthquake Rocks Southern Philippines — Tsunami Warnings Issued Across Southeast Asia",
+      "subtitle": "A powerful undersea earthquake struck Mindanao at 7:37 a.m. local time on June 8, 2026, triggering regional tsunami warnings across the Philippines, Indonesia, Malaysia, and beyond. Thousands of coastal residents have been ordered to evacuate.",
+      "category": "Weh Yuh Seh Views",
+      "categoryColor": "green",
+      "date": "June 8, 2026",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "6 min read",
+      "featured": false,
+      "coverImage": "images/philippines-earthquake-2026.jpeg",
+      "coverImageCaption": "Magnitude 7.8 earthquake strikes southern Philippines — June 8, 2026. Photo: LWS Media Network",
+      "excerpt": "A major magnitude 7.8 earthquake violently shook the island of Mindanao in the southern Philippines early Monday morning, knocking out power grids and prompting urgent tsunami evacuations across several Southeast Asian nations. This is the strongest earthquake to strike the Philippines since 1990.",
+      "slug": "philippines-earthquake-june-2026",
+      "tags": ["Weh Yuh Seh Views", "Breaking News", "Philippines", "Earthquake", "Tsunami", "Southeast Asia", "Natural Disaster"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "MANILA, Philippines — A major magnitude 7.8 earthquake violently shook the island of Mindanao in the southern Philippines early Monday morning, knocking out local power grids and prompting urgent tsunami evacuations across several Southeast Asian nations. The powerful undersea quake struck at 7:37 a.m. local time, sending workers and students fleeing into the streets during what had been a standard Monday morning flag-raising ceremony."
+        },
+        {
+          "type": "paragraph",
+          "text": "The United States Geological Survey reports the epicenter was located roughly 26 kilometres west-southwest of Kablalan and approximately 13 kilometres from General Santos City, striking at a depth of 35 kilometres. The quake originally registered with a preliminary magnitude as high as 8.2 before being revised. According to historical seismic records, this event stands as the strongest earthquake to strike the Philippines since 1990."
+        },
+        {
+          "type": "heading",
+          "text": "Tsunami Threat Triggers Coastal Evacuations"
+        },
+        {
+          "type": "paragraph",
+          "text": "Immediately following the rupture, the Philippine Institute of Volcanology and Seismology and the Pacific Tsunami Warning Center declared a regional tsunami threat. Coastal residents in the Philippines, Indonesia, and Malaysia were ordered to immediately leave beaches, ports, and low-lying coastal areas for higher ground."
+        },
+        {
+          "type": "paragraph",
+          "text": "Philippine authorities warned of dangerous tsunami waves exceeding 1 metre that could surge and repeat for hours, calling for immediate self-evacuation along the Sarangani and Soccsksargen coastlines. Tsunami waves of up to 3 metres remain possible along the closest epicentral coastlines. Indonesia's meteorology agency and authorities in Japan also activated localised tsunami advisories in response to the scale of the event."
+        },
+        {
+          "type": "paragraph",
+          "text": "The National Tsunami Warning Center confirmed there is no tsunami danger to the Continental United States, California, or Hawaii. However, a minor Tsunami Advisory was issued for Guam and the Commonwealth of the Northern Mariana Islands for waves under 0.3 metres."
+        },
+        {
+          "type": "quote",
+          "text": "Witnesses reported severe, prolonged horizontal shaking that triggered immediate, widespread power outages across General Santos City and surrounding municipalities. The scale of the tremor left communities disoriented and communication infrastructure severely disrupted.",
+          "cite": "LWS Media Network Field Report"
+        },
+        {
+          "type": "heading",
+          "text": "Initial Damage and Emergency Response"
+        },
+        {
+          "type": "paragraph",
+          "text": "While a comprehensive damage assessment is underway by the National Disaster Risk Reduction and Management Council, initial reports indicate localised structural impacts across the affected region. In Alabel, Sarangani, local police chief Benjie Ancheta confirmed that the town's municipal police building suffered visible structural cracks during the tremor."
+        },
+        {
+          "type": "paragraph",
+          "text": "No major casualties or total structural collapses have been officially verified by local authorities as of the time of publication, though emergency response teams are experiencing significant communication delays due to downed utility lines. The situation remains fluid and the full extent of damage has not yet been assessed."
+        },
+        {
+          "type": "heading",
+          "text": "Understanding the Tectonic Setting"
+        },
+        {
+          "type": "paragraph",
+          "text": "The Philippines sits squarely on the Ring of Fire — the arc of intense seismic and volcanic activity surrounding the Pacific Ocean that accounts for approximately 90 percent of the world's earthquakes. Mindanao's complex geology involves the active subduction zone of the Cotabato Trench, where the Sunda plate and the Philippine Sea plate converge. This tectonic configuration makes the region one of the most seismically active on earth."
+        },
+        {
+          "type": "paragraph",
+          "text": "Seismologists warn that an undersea thrust-fault earthquake of this magnitude will generate numerous powerful aftershocks. Philippine authorities have already registered several aftershocks exceeding magnitude 6.5 and are urging the public to remain vigilant, as weakened structures could collapse under subsequent tremors. Residents in affected areas are being advised not to return to buildings until structural safety has been confirmed."
+        },
+        {
+          "type": "heading",
+          "text": "What to Watch"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is a rapidly developing story. The immediate priorities for authorities are completing coastal evacuations, restoring communication infrastructure, assessing structural damage across General Santos City and Sarangani province, and monitoring the ongoing aftershock sequence. Regional neighbours including Indonesia, Malaysia, and Japan remain on elevated alert as tsunami monitoring continues."
+        },
+        {
+          "type": "paragraph",
+          "text": "LWS Media Network will continue monitoring this situation as official reports, casualty assessments, and emergency directives emerge from Philippine authorities and regional disaster management agencies."
+        },
+        {
+          "type": "quote",
+          "text": "The planet is speaking again. From El Nino to earthquakes to rising seas — the Ring of Fire reminds us that the ground beneath our feet is never as permanent as we assume. Our thoughts are with every family affected in Mindanao tonight.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        }
+      ],
+      "related": ["wyh-morning-briefing-june-3-2026", "el-nino-global-climate-crisis", "the-slow-drowning-of-freshwater"]
+    },
+  {
       "id": "cosmic-carousel-night-sky-motion",
       "title": "The Cosmic Carousel — Why the Night Sky Is Secretly in Motion",
       "subtitle": "The constellations look exactly the same as they did to ancient Egyptian pharaohs. But this stillness is a grand cosmic illusion — every star you see is hurtling through space at hundreds of thousands of miles per hour.",
