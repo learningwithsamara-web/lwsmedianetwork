@@ -1,6 +1,103 @@
 {
   "articles": [
   {
+      "id": "pentagon-israel-espionage-critical",
+      "title": "Pentagon Reportedly Raises Israeli Espionage Threat Level to Critical",
+      "subtitle": "Leaked Defense Intelligence Agency documents suggest the US has quietly elevated Israel's counterintelligence threat designation to its highest possible level — exposing severe friction between Washington and its closest Middle Eastern ally.",
+      "category": "Weh Yuh Seh Views",
+      "categoryColor": "green",
+      "date": "June 2026",
+      "author": "Sasha Gaye Hemmings | LWS Media Network",
+      "readTime": "6 min read",
+      "featured": false,
+      "coverImage": "images/pentagon-israel-espionage.jpeg",
+      "coverImageCaption": "The Pentagon — Washington DC. Photo: LWS Media Network",
+      "excerpt": "Leaked internal documents from the Defense Intelligence Agency suggest the US has quietly elevated Israel's counterintelligence threat level to critical — the highest possible designation for foreign espionage risks. The targets reportedly include senior Trump administration officials.",
+      "slug": "pentagon-israel-espionage-critical",
+      "tags": ["Weh Yuh Seh Views", "Breaking News", "Pentagon", "Israel", "Espionage", "US Politics", "Middle East", "Intelligence"],
+      "body": [
+        {
+          "type": "paragraph",
+          "text": "WASHINGTON — A reported internal shift within the Pentagon has exposed severe friction between the United States and its closest Middle Eastern ally. According to leaked internal documents from the Defense Intelligence Agency, the US government has quietly elevated Israel's counterintelligence threat level to critical — the highest possible designation for foreign espionage risks."
+        },
+        {
+          "type": "paragraph",
+          "text": "The distinction is important and must not be misread. The Pentagon does not view Israel as a military or adversarial threat in the conventional sense. Instead, the upgrade reflects an immediate, high-level warning regarding aggressive intelligence operations allegedly conducted by Israeli services on American soil — a critical difference that speaks to the complex and often contradictory nature of relationships between even the closest of allies."
+        },
+        {
+          "type": "heading",
+          "text": "Targeting High-Level Officials"
+        },
+        {
+          "type": "paragraph",
+          "text": "According to US intelligence sources, the DIA adjusted the threat level from high to critical after detecting a sharp increase in Israeli electronic surveillance and eavesdropping attempts. The primary targets of these operations are reportedly high-ranking American policymakers. Among those allegedly monitored are top Trump administration officials — including chief diplomatic negotiator Steve Witkoff and Pentagon policy chief Elbridge Colby."
+        },
+        {
+          "type": "paragraph",
+          "text": "Intelligence analysts believe the spike in espionage activity is an attempt by Jerusalem to gain unauthorised access to the administration's internal, closed-door deliberations regarding the Middle East. In other words — Israel is reportedly spying on its closest ally not out of hostility, but out of strategic anxiety about where American policy on Iran and the broader region is heading."
+        },
+        {
+          "type": "quote",
+          "text": "This is not an enemy spying on America. This is an ally spying on America — and that distinction makes it both more complicated and, in some ways, more alarming. It tells you how deep the strategic divide has become.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        },
+        {
+          "type": "heading",
+          "text": "Diverging Strategies on Iran"
+        },
+        {
+          "type": "paragraph",
+          "text": "The intensifying intelligence friction highlights a widening strategic rift between Washington and Jerusalem over regional security. While the United States has focused heavily on diplomatic tracks to de-escalate tensions with Tehran, Israel has consistently pushed for a more aggressive, direct military stance against Iran and its proxies, including Hezbollah in Lebanon."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fearing that US diplomatic compromises could undermine its national security interests, Israel has reportedly accelerated its intelligence-gathering efforts to anticipate and potentially counter shifts in American foreign policy. It is a dynamic that has played out before in the history of US-Israel relations — but rarely at this level of reported intensity and rarely with this kind of formal internal escalation from the Pentagon."
+        },
+        {
+          "type": "heading",
+          "text": "Unprecedented Security Precautions"
+        },
+        {
+          "type": "paragraph",
+          "text": "While high-level intelligence sharing between the two nations reportedly remains active, the critical counterintelligence rating has forced the Pentagon to implement strict operational security measures. US officials travelling to Israel or meeting with Israeli counterparts have reportedly been issued strict defensive protocols — including mandates to avoid sensitive policy conversations in hotel rooms, requirements to use temporary clean laptops, and instructions to communicate solely via burner phones to bypass advanced interception software."
+        },
+        {
+          "type": "paragraph",
+          "text": "These are not routine security precautions. Burner phones and clean laptops are the kind of measures typically associated with operations in adversarial nations. The fact that they are reportedly being deployed in the context of interactions with a formal ally speaks volumes about how seriously the Pentagon is treating this threat assessment."
+        },
+        {
+          "type": "heading",
+          "text": "Official Denials"
+        },
+        {
+          "type": "paragraph",
+          "text": "Both governments have moved quickly to publicly minimise the reports. The Israeli Embassy in Washington issued a strong statement denying the allegations, reiterating a strict, decades-old policy that Israel does not conduct intelligence operations inside the United States. White House and Pentagon spokespeople have dismissed the leaked documents as inaccurate, maintaining that the US-Israel intelligence partnership remains robust, cooperative, and built on mutual trust. The DIA has declined to comment on the leaked security classifications."
+        },
+        {
+          "type": "paragraph",
+          "text": "Official denials in situations like this are standard protocol and tell us relatively little. What matters is the documented internal response — and if the leaked reports are accurate, the Pentagon's operational security shift is a louder statement than any press release. Actions, as always, speak more clearly than official statements."
+        },
+        {
+          "type": "heading",
+          "text": "Why This Story Matters"
+        },
+        {
+          "type": "paragraph",
+          "text": "The US-Israel relationship is one of the most consequential bilateral partnerships in modern geopolitics. It shapes policy across the entire Middle East, influences arms supply chains, affects diplomatic positioning at the United Nations, and has direct implications for conflicts currently unfolding in Gaza, Lebanon, and potentially Iran. When that relationship develops significant internal fractures — even private, officially denied ones — the ripple effects are felt across the entire region and beyond."
+        },
+        {
+          "type": "paragraph",
+          "text": "This is a story LWS Media Network will continue to follow. The full picture is still emerging, the documents remain unverified by independent sources, and both governments have strong incentives to manage the public narrative carefully. But the pattern of events — the leaked assessment, the operational security protocols, the reported surveillance targets — paints a picture that deserves serious, sustained attention."
+        },
+        {
+          "type": "quote",
+          "text": "In geopolitics, there are no permanent friends — only permanent interests. This story is a reminder that even the closest alliances are held together by alignment of interest, not unconditional loyalty. When the interests diverge, the tension follows.",
+          "cite": "Sasha Gaye Hemmings, LWS Media Network"
+        }
+      ],
+      "related": ["iran-war-powers-vote-congress", "wyh-morning-briefing-june-3-2026", "wyh-evening-digest-june-2-2026"]
+    },
+  {
       "id": "philippines-earthquake-june-2026",
       "title": "BREAKING: Magnitude 7.8 Earthquake Rocks Southern Philippines — Tsunami Warnings Issued Across Southeast Asia",
       "subtitle": "A powerful undersea earthquake struck Mindanao at 7:37 a.m. local time on June 8, 2026, triggering regional tsunami warnings across the Philippines, Indonesia, Malaysia, and beyond. Thousands of coastal residents have been ordered to evacuate.",
