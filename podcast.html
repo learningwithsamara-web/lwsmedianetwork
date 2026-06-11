@@ -280,91 +280,12 @@
     </div>
   </footer>
 
-  <script>
-    var RSS_FEED = 'https://anchor.fm/s/107fac348/podcast/rss';
-    var SPOTIFY_URL = 'https://open.spotify.com/show/6ihjoLVzHzJAwhid6YVR1F';
-    var CORS_PROXY = 'https://api.allorigins.win/get?url=';
-
-    function formatDate(dateStr) {
-      try {
-        var d = new Date(dateStr);
-        return d.toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
-      } catch(e) { return dateStr; }
-    }
-
-    function stripHtml(html) {
-      var tmp = document.createElement('div');
-      tmp.innerHTML = html;
-      return tmp.textContent || tmp.innerText || '';
-    }
-
-    function truncate(str, len) {
-      if (!str) return '';
-      str = str.trim();
-      if (str.length <= len) return str;
-      return str.substring(0, len).trim() + '...';
-    }
-
-    function renderEpisodes(items) {
-      var grid = document.getElementById('episodes-grid');
-      if (!items || items.length === 0) {
-        grid.innerHTML = '<div class="episodes-error"><i class="ti ti-microphone-off"></i><p>No episodes found. Check back soon.</p></div>';
-        return;
-      }
-      var html = '';
-      items.slice(0, 20).forEach(function(item, idx) {
-        var title = item.querySelector('title') ? item.querySelector('title').textContent : 'Episode ' + (idx + 1);
-        var desc = '';
-        var descEl = item.querySelector('description') || item.querySelector('summary');
-        if (descEl) desc = truncate(stripHtml(descEl.textContent), 200);
-        var pubDate = item.querySelector('pubDate') ? item.querySelector('pubDate').textContent : '';
-        var duration = '';
-        var durEl = item.querySelector('duration') || item.getElementsByTagNameNS('*','duration')[0];
-        if (durEl) duration = durEl.textContent;
-        var link = item.querySelector('link') ? item.querySelector('link').textContent : SPOTIFY_URL;
-        var enclosure = item.querySelector('enclosure');
-        var audioUrl = enclosure ? enclosure.getAttribute('url') : null;
-
-        html += '<div class="episode-card" onclick="window.open(\'' + (audioUrl || SPOTIFY_URL) + '\',\'_blank\')">';
-        html += '<div class="episode-num">' + String(idx + 1).padStart(2, '0') + '</div>';
-        html += '<div class="episode-body">';
-        html += '<p class="episode-title">' + title + '</p>';
-        if (desc) html += '<p class="episode-desc">' + desc + '</p>';
-        html += '<div class="episode-meta">';
-        if (pubDate) html += '<span class="episode-date"><i class="ti ti-calendar" style="font-size:11px"></i>' + formatDate(pubDate) + '</span>';
-        if (duration) html += '<span class="episode-duration"><i class="ti ti-clock" style="font-size:11px"></i>' + duration + '</span>';
-        html += '<span class="episode-play"><i class="ti ti-brand-spotify"></i> Listen on Spotify</span>';
-        html += '</div>';
-        html += '</div>';
-        html += '</div>';
-      });
-      grid.innerHTML = html;
-    }
-
-    fetch(CORS_PROXY + encodeURIComponent(RSS_FEED))
-      .then(function(r) { return r.json(); })
-      .then(function(data) {
-        var parser = new DOMParser();
-        var xml = parser.parseFromString(data.contents, 'text/xml');
-        var items = xml.querySelectorAll('item');
-        if (items.length > 0) {
-          renderEpisodes(Array.from(items));
-        } else {
-          throw new Error('No episodes');
-        }
-      })
-      .catch(function() {
-        document.getElementById('episodes-grid').innerHTML =
-          '<div class="episodes-error">'
-          + '<i class="ti ti-microphone"></i>'
-          + '<p>Episodes are loading from our feed. If this persists, listen directly on your preferred platform.</p>'
-          + '<div class="platform-buttons" style="justify-content:center;margin-top:16px;">'
-          + '<a href="' + SPOTIFY_URL + '" target="_blank" class="platform-btn spotify"><i class="ti ti-brand-spotify"></i> Open on Spotify</a>'
-          + '<a href="https://podcasts.apple.com/us/podcast/weh-yuh-seh-views/id1896893789" target="_blank" class="platform-btn apple"><i class="ti ti-brand-apple"></i> Open on Apple</a>'
-          + '</div>'
-          + '</div>';
-      });
-  </script>
+ <script>
+  document.getElementById('episodes-grid').innerHTML =
+    '<div style="border-radius:12px;overflow:hidden;max-width:700px;">'
+    + '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/6ihjoLVzHzJAwhid6YVR1F?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>'
+    + '</div>';
+</script>
 
 </body>
 </html>
