@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weh Yuh Seh Views Podcast | LWS Media Network</title>
+  <meta name="description" content="Weh Yuh Seh Views — A LWS Media Network Production. Global news, interviews, and the stories shaping our world. Hosted by Sasha Gaye Hemmings." />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#b8922a" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <style>
+    *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; background:#f8f6f1; color:#111; font-size:16px; line-height:1.6; }
+    a { text-decoration:none; color:inherit; }
+    .wrap { max-width:1100px; margin:0 auto; padding:0 24px; }
+    .content-wrap { max-width:760px; margin:0 auto; padding:0 24px; }
+
+    #lws-header { background:#fff; border-bottom:1px solid #e8e4dc; padding:16px 0; position:sticky; top:0; z-index:100; }
+    .header-inner { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+    .lws-logo { font-size:16px; font-weight:600; letter-spacing:2px; color:#111; }
+    .logo-sep { color:#ccc; margin:0 6px; }
+    .logo-acc { color:#b8922a; }
+    nav ul { display:flex; gap:20px; list-style:none; align-items:center; }
+    nav ul a { font-size:12px; color:#666; letter-spacing:0.8px; text-transform:uppercase; transition:color 0.2s; }
+    nav ul a:hover { color:#b8922a; }
+    nav ul .nav-cta { background:#6b46b0; color:#fff; padding:7px 14px; border-radius:2px; }
+    nav ul .nav-cta:hover { background:#5a3a9a; color:#fff; }
+    .menu-toggle { display:none; background:none; border:none; font-size:24px; color:#111; cursor:pointer; }
+
+    /* HERO */
+    .podcast-hero { background:#111; padding:64px 0; }
+    .podcast-hero-inner { display:grid; grid-template-columns:200px 1fr; gap:48px; align-items:center; }
+    .podcast-artwork { width:200px; height:200px; border-radius:12px; overflow:hidden; background:#1a1a1a; border:1px solid #333; flex-shrink:0; }
+    .podcast-artwork img { width:100%; height:100%; object-fit:cover; }
+    .podcast-artwork-placeholder { width:100%; height:100%; display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#1a3a2a,#1d7a5a); }
+    .podcast-artwork-placeholder i { font-size:48px; color:rgba(255,255,255,0.3); }
+    .podcast-show-label { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:#1d7a5a; margin-bottom:12px; font-weight:600; }
+    .podcast-show-title { font-size:36px; font-weight:600; color:#fff; line-height:1.2; margin-bottom:8px; }
+    .podcast-show-sub { font-size:13px; color:#b8922a; letter-spacing:1px; margin-bottom:16px; }
+    .podcast-show-desc { font-size:15px; color:#888; line-height:1.75; margin-bottom:28px; max-width:540px; }
+    .podcast-host { font-size:13px; color:#666; margin-bottom:28px; }
+    .podcast-host span { color:#b8922a; font-weight:500; }
+
+    .platform-buttons { display:flex; gap:12px; flex-wrap:wrap; }
+    .platform-btn { display:flex; align-items:center; gap:8px; padding:12px 20px; border-radius:4px; font-size:13px; font-weight:600; letter-spacing:0.5px; transition:opacity 0.2s; }
+    .platform-btn:hover { opacity:0.85; }
+    .platform-btn.spotify { background:#1db954; color:#fff; }
+    .platform-btn.apple { background:#a855f7; color:#fff; }
+    .platform-btn.amazon { background:#00a8e0; color:#fff; }
+
+    /* STATS BAR */
+    .podcast-stats { background:#1a1a1a; border-bottom:1px solid #2a2a2a; padding:20px 0; }
+    .stats-inner { display:flex; gap:40px; align-items:center; flex-wrap:wrap; }
+    .stat-item { display:flex; align-items:center; gap:8px; }
+    .stat-item i { font-size:18px; color:#b8922a; }
+    .stat-label { font-size:11px; letter-spacing:1px; text-transform:uppercase; color:#666; }
+    .stat-value { font-size:14px; color:#fff; font-weight:600; }
+
+    /* EPISODES */
+    .episodes-section { padding:56px 0 80px; }
+    .sec-label { display:flex; align-items:center; gap:14px; margin-bottom:32px; }
+    .sec-label-text { font-size:10px; letter-spacing:3px; text-transform:uppercase; font-weight:600; color:#1d7a5a; white-space:nowrap; }
+    .sec-label-line { flex:1; height:0.5px; background:#e0dbd0; }
+
+    .episodes-grid { display:flex; flex-direction:column; gap:16px; }
+    .episode-card { background:#fff; border:0.5px solid #e0dbd0; border-radius:4px; padding:24px 28px; display:flex; align-items:flex-start; gap:20px; transition:box-shadow 0.2s; cursor:pointer; }
+    .episode-card:hover { box-shadow:0 4px 20px rgba(0,0,0,0.08); }
+    .episode-num { font-size:11px; letter-spacing:2px; text-transform:uppercase; color:#b8922a; font-weight:600; flex-shrink:0; padding-top:4px; min-width:32px; }
+    .episode-body { flex:1; }
+    .episode-title { font-size:16px; font-weight:600; color:#111; line-height:1.4; margin-bottom:8px; }
+    .episode-desc { font-size:13px; color:#888; line-height:1.65; margin-bottom:12px; }
+    .episode-meta { display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
+    .episode-date { font-size:11px; color:#bbb; display:flex; align-items:center; gap:4px; }
+    .episode-duration { font-size:11px; color:#bbb; display:flex; align-items:center; gap:4px; }
+    .episode-play { display:flex; align-items:center; gap:6px; font-size:12px; color:#1db954; font-weight:600; letter-spacing:0.5px; margin-left:auto; flex-shrink:0; }
+    .episode-play i { font-size:16px; }
+
+    .episodes-loading { text-align:center; padding:60px 24px; color:#aaa; }
+    .episodes-loading i { font-size:32px; display:block; margin-bottom:12px; color:#ddd; }
+    .episodes-error { text-align:center; padding:60px 24px; }
+    .episodes-error i { font-size:40px; color:#ddd; display:block; margin-bottom:12px; }
+    .episodes-error p { font-size:14px; color:#888; margin-bottom:20px; }
+
+    /* SUBSCRIBE STRIP */
+    .subscribe-strip { background:#111; padding:48px 0; text-align:center; }
+    .subscribe-eyebrow { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:#1d7a5a; margin-bottom:12px; font-weight:600; }
+    .subscribe-title { font-size:28px; font-weight:600; color:#fff; margin-bottom:10px; }
+    .subscribe-title span { color:#b8922a; }
+    .subscribe-sub { font-size:15px; color:#888; max-width:440px; margin:0 auto 28px; line-height:1.75; }
+    .subscribe-buttons { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+
+    /* FOOTER */
+    #lws-footer { background:#0a0a0a; border-top:0.5px solid #2a2a2a; padding:48px 0 0; }
+    .footer-inner { display:grid; grid-template-columns:1fr 1fr 1fr; gap:32px; padding-bottom:40px; }
+    .footer-logo-text { font-size:15px; font-weight:600; letter-spacing:2px; color:#fff; margin-bottom:12px; }
+    .footer-tagline { font-size:13px; color:#bbb; line-height:1.7; margin-bottom:16px; }
+    .footer-social { display:flex; gap:10px; margin-top:12px; }
+    .footer-social a { width:34px; height:34px; border-radius:2px; border:0.5px solid #333; display:flex; align-items:center; justify-content:center; color:#888; font-size:16px; transition:all 0.2s; }
+    .footer-social a:hover { border-color:#b8922a; color:#b8922a; }
+    .footer-col-label { font-size:10px; letter-spacing:2px; text-transform:uppercase; color:#b8922a; margin-bottom:14px; font-weight:600; }
+    .footer-links { display:flex; flex-direction:column; gap:10px; }
+    .footer-links a { font-size:13px; color:#ccc; transition:color 0.2s; }
+    .footer-links a:hover { color:#b8922a; }
+    .footer-bottom { border-top:0.5px solid #1e1e1e; padding:20px 0; display:flex; justify-content:space-between; align-items:center; }
+    .footer-copy { font-size:12px; color:#888; }
+    .footer-domain { font-size:12px; color:#555; }
+
+    @media(max-width:768px) {
+      .podcast-hero-inner { grid-template-columns:1fr; }
+      .podcast-artwork { width:140px; height:140px; }
+      .podcast-show-title { font-size:26px; }
+      nav ul { display:none; }
+      nav ul.open { display:flex; flex-direction:column; position:absolute; top:60px; left:0; right:0; background:#fff; border-bottom:1px solid #e8e4dc; padding:20px 24px; gap:16px; }
+      .menu-toggle { display:block; }
+      .footer-inner { grid-template-columns:1fr; }
+      .footer-bottom { flex-direction:column; gap:8px; }
+      .episode-card { flex-direction:column; }
+      .platform-buttons { flex-direction:column; }
+      .subscribe-buttons { flex-direction:column; align-items:center; }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="lws-header">
+    <div class="wrap">
+      <div class="header-inner">
+        <a href="index.html" class="lws-logo">LWS<span class="logo-sep">|</span><span class="logo-acc">Media Network</span></a>
+        <button class="menu-toggle" onclick="document.querySelector('nav ul').classList.toggle('open')"><i class="ti ti-menu-2"></i></button>
+        <nav><ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="archive.html">All Stories</a></li>
+          <li><a href="podcast.html" style="color:#b8922a;">Podcast</a></li>
+          <li><a href="install.html">Get the App</a></li>
+          <li><a href="index.html#featured" class="nav-cta">Get Featured</a></li>
+        </ul></nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="podcast-hero">
+    <div class="wrap">
+      <div class="podcast-hero-inner">
+        <div class="podcast-artwork">
+          <div class="podcast-artwork-placeholder">
+            <i class="ti ti-microphone"></i>
+          </div>
+        </div>
+        <div>
+          <p class="podcast-show-label">Now Streaming</p>
+          <h1 class="podcast-show-title">Weh Yuh Seh Views</h1>
+          <p class="podcast-show-sub">A LWS Media Network Production</p>
+          <p class="podcast-show-desc">Global news, interviews, and the stories shaping our world. Morning and evening briefings, breaking news as it happens, and conversations with the people behind the headlines.</p>
+          <p class="podcast-host">Hosted by <span>Sasha Gaye Hemmings</span> &nbsp;|&nbsp; Powered by Geor De Mer LLC</p>
+          <div class="platform-buttons">
+            <a href="https://open.spotify.com/show/6ihjoLVzHzJAwhid6YVR1F" target="_blank" rel="noopener" class="platform-btn spotify">
+              <i class="ti ti-brand-spotify"></i> Listen on Spotify
+            </a>
+            <a href="https://podcasts.apple.com/us/podcast/weh-yuh-seh-views/id1896893789" target="_blank" rel="noopener" class="platform-btn apple">
+              <i class="ti ti-brand-apple"></i> Apple Podcasts
+            </a>
+            <a href="https://music.amazon.com/podcasts/a9398d9c-e34d-4293-8eaf-143c9f95a87d" target="_blank" rel="noopener" class="platform-btn amazon">
+              <i class="ti ti-brand-amazon"></i> Amazon Music
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="podcast-stats">
+    <div class="wrap">
+      <div class="stats-inner">
+        <div class="stat-item">
+          <i class="ti ti-radio"></i>
+          <div>
+            <p class="stat-label">Available On</p>
+            <p class="stat-value">Spotify &bull; Apple &bull; Amazon</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="ti ti-clock"></i>
+          <div>
+            <p class="stat-label">Schedule</p>
+            <p class="stat-value">Daily — 8AM &amp; 5PM + Breaking News</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <i class="ti ti-world"></i>
+          <div>
+            <p class="stat-label">Coverage</p>
+            <p class="stat-value">Global News &bull; Interviews &bull; Analysis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="episodes-section">
+    <div class="wrap">
+      <div class="sec-label">
+        <span class="sec-label-text">Latest Episodes</span>
+        <span class="sec-label-line"></span>
+      </div>
+      <div class="episodes-grid" id="episodes-grid">
+        <div class="episodes-loading">
+          <i class="ti ti-loader"></i>
+          <p>Loading latest episodes...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="subscribe-strip">
+    <div class="wrap">
+      <p class="subscribe-eyebrow">Never Miss an Episode</p>
+      <h2 class="subscribe-title">Subscribe to <span>Weh Yuh Seh Views</span></h2>
+      <p class="subscribe-sub">Daily briefings, breaking news drops, and interviews with the people shaping our world. Available on all major platforms.</p>
+      <div class="subscribe-buttons">
+        <a href="https://open.spotify.com/show/6ihjoLVzHzJAwhid6YVR1F" target="_blank" rel="noopener" class="platform-btn spotify">
+          <i class="ti ti-brand-spotify"></i> Follow on Spotify
+        </a>
+        <a href="https://podcasts.apple.com/us/podcast/weh-yuh-seh-views/id1896893789" target="_blank" rel="noopener" class="platform-btn apple">
+          <i class="ti ti-brand-apple"></i> Subscribe on Apple
+        </a>
+        <a href="https://music.amazon.com/podcasts/a9398d9c-e34d-4293-8eaf-143c9f95a87d" target="_blank" rel="noopener" class="platform-btn amazon">
+          <i class="ti ti-brand-amazon"></i> Follow on Amazon
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer id="lws-footer">
+    <div class="wrap">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logo-text">LWS<span style="color:#444;margin:0 6px;">|</span><span style="color:#b8922a;">Media Network</span></div>
+          <p class="footer-tagline">A global multimedia network covering the stories that matter. Powered by Geor De Mer LLC.</p>
+          <div class="footer-social">
+            <a href="https://twitter.com/LWSMediahq" target="_blank" rel="noopener" title="Twitter"><i class="ti ti-brand-twitter"></i></a>
+            <a href="https://instagram.com/lwsmediahq" target="_blank" rel="noopener" title="Instagram LWS Media"><i class="ti ti-brand-instagram"></i></a>
+            <a href="https://instagram.com/wehyuhsehviews" target="_blank" rel="noopener" title="Instagram Weh Yuh Seh Views"><i class="ti ti-brand-instagram"></i></a>
+            <a href="https://youtube.com/@wehyuhsehviews" target="_blank" rel="noopener" title="YouTube"><i class="ti ti-brand-youtube"></i></a>
+            <a href="https://open.spotify.com/show/6ihjoLVzHzJAwhid6YVR1F" target="_blank" rel="noopener" title="Spotify"><i class="ti ti-brand-spotify"></i></a>
+            <a href="https://podcasts.apple.com/us/podcast/weh-yuh-seh-views/id1896893789" target="_blank" rel="noopener" title="Apple Podcasts"><i class="ti ti-brand-apple"></i></a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-label">Sections</p>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="archive.html">All Stories</a>
+            <a href="podcast.html">Podcast</a>
+            <a href="index.html#science">Science &amp; Environment</a>
+            <a href="index.html#wyh">Weh Yuh Seh Views</a>
+            <a href="index.html#underreported">Underreported</a>
+            <a href="install.html">Get the App</a>
+            <a href="index.html#featured">Get Featured</a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-label">Company</p>
+          <div class="footer-links">
+            <a href="about.html">About LWS Media</a>
+            <a href="contact.html">Contact</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+            <a href="advertise.html">Advertise</a>
+            <a href="consent.html">Parental Consent Form</a>
+            <a href="mailto:editor@lwsmedianetwork.com">editor@lwsmedianetwork.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 Geor De Mer LLC. All rights reserved. LWS Media Network.</p>
+        <p class="footer-domain">lwsmedianetwork.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var RSS_FEED = 'https://anchor.fm/s/107fac348/podcast/rss';
+    var SPOTIFY_URL = 'https://open.spotify.com/show/6ihjoLVzHzJAwhid6YVR1F';
+    var CORS_PROXY = 'https://api.allorigins.win/get?url=';
+
+    function formatDate(dateStr) {
+      try {
+        var d = new Date(dateStr);
+        return d.toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' });
+      } catch(e) { return dateStr; }
+    }
+
+    function stripHtml(html) {
+      var tmp = document.createElement('div');
+      tmp.innerHTML = html;
+      return tmp.textContent || tmp.innerText || '';
+    }
+
+    function truncate(str, len) {
+      if (!str) return '';
+      str = str.trim();
+      if (str.length <= len) return str;
+      return str.substring(0, len).trim() + '...';
+    }
+
+    function renderEpisodes(items) {
+      var grid = document.getElementById('episodes-grid');
+      if (!items || items.length === 0) {
+        grid.innerHTML = '<div class="episodes-error"><i class="ti ti-microphone-off"></i><p>No episodes found. Check back soon.</p></div>';
+        return;
+      }
+      var html = '';
+      items.slice(0, 20).forEach(function(item, idx) {
+        var title = item.querySelector('title') ? item.querySelector('title').textContent : 'Episode ' + (idx + 1);
+        var desc = '';
+        var descEl = item.querySelector('description') || item.querySelector('summary');
+        if (descEl) desc = truncate(stripHtml(descEl.textContent), 200);
+        var pubDate = item.querySelector('pubDate') ? item.querySelector('pubDate').textContent : '';
+        var duration = '';
+        var durEl = item.querySelector('duration') || item.getElementsByTagNameNS('*','duration')[0];
+        if (durEl) duration = durEl.textContent;
+        var link = item.querySelector('link') ? item.querySelector('link').textContent : SPOTIFY_URL;
+        var enclosure = item.querySelector('enclosure');
+        var audioUrl = enclosure ? enclosure.getAttribute('url') : null;
+
+        html += '<div class="episode-card" onclick="window.open(\'' + (audioUrl || SPOTIFY_URL) + '\',\'_blank\')">';
+        html += '<div class="episode-num">' + String(idx + 1).padStart(2, '0') + '</div>';
+        html += '<div class="episode-body">';
+        html += '<p class="episode-title">' + title + '</p>';
+        if (desc) html += '<p class="episode-desc">' + desc + '</p>';
+        html += '<div class="episode-meta">';
+        if (pubDate) html += '<span class="episode-date"><i class="ti ti-calendar" style="font-size:11px"></i>' + formatDate(pubDate) + '</span>';
+        if (duration) html += '<span class="episode-duration"><i class="ti ti-clock" style="font-size:11px"></i>' + duration + '</span>';
+        html += '<span class="episode-play"><i class="ti ti-brand-spotify"></i> Listen on Spotify</span>';
+        html += '</div>';
+        html += '</div>';
+        html += '</div>';
+      });
+      grid.innerHTML = html;
+    }
+
+    fetch(CORS_PROXY + encodeURIComponent(RSS_FEED))
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        var parser = new DOMParser();
+        var xml = parser.parseFromString(data.contents, 'text/xml');
+        var items = xml.querySelectorAll('item');
+        if (items.length > 0) {
+          renderEpisodes(Array.from(items));
+        } else {
+          throw new Error('No episodes');
+        }
+      })
+      .catch(function() {
+        document.getElementById('episodes-grid').innerHTML =
+          '<div class="episodes-error">'
+          + '<i class="ti ti-microphone"></i>'
+          + '<p>Episodes are loading from our feed. If this persists, listen directly on your preferred platform.</p>'
+          + '<div class="platform-buttons" style="justify-content:center;margin-top:16px;">'
+          + '<a href="' + SPOTIFY_URL + '" target="_blank" class="platform-btn spotify"><i class="ti ti-brand-spotify"></i> Open on Spotify</a>'
+          + '<a href="https://podcasts.apple.com/us/podcast/weh-yuh-seh-views/id1896893789" target="_blank" class="platform-btn apple"><i class="ti ti-brand-apple"></i> Open on Apple</a>'
+          + '</div>'
+          + '</div>';
+      });
+  </script>
+
+</body>
+</html>
