@@ -475,11 +475,7 @@ body {
     <div class="countdown-card">
       <div class="cd-label">🎬 SHOWTIME COUNTDOWN</div>
       <div class="cd-timer" id="timer">00:00:00</div>
-      <div class="cd-sub">SET YOUR SHOWTIME BELOW</div>
-      <div class="cd-input-row">
-        <label>SHOWTIME:</label>
-        <input type="time" id="showtimePicker">
-      </div>
+      <div class="cd-sub">SUNDAY, JUNE 14, 2026 · 3:00 PM</div>
     </div>
 
     <div class="sec-title">🌟 TONIGHT'S LINEUP</div>
@@ -700,37 +696,8 @@ body {
       </div>
     </div>
 
-    <!-- PHONE PATH -->
-    <div class="path-card">
-      <div class="path-hdr phone">
-        <div class="path-icon">📱</div>
-        <div>
-          <div class="path-title">ON A PHONE</div>
-          <div style="font-size:11px;color:#888;margin-top:2px;">No Teleparty needed — use WhatsApp</div>
-        </div>
-      </div>
-      <div class="path-body phone">
-        <div class="step">
-          <div class="step-num">1</div>
-          <div class="step-text">Teleparty <strong>does not work on phones</strong> — but don't worry, here's what to do</div>
-        </div>
-        <div class="step">
-          <div class="step-num">2</div>
-          <div class="step-text">The host at home starts a <strong>WhatsApp Video Call</strong> with phone family members</div>
-        </div>
-        <div class="step">
-          <div class="step-num">3</div>
-          <div class="step-text">On the video call, tap <strong>"Share Screen"</strong> → then open Netflix and play the movie</div>
-        </div>
-        <div class="step">
-          <div class="step-num">4</div>
-          <div class="step-text">Phone family can <strong>see and hear</strong> the movie through the call — open this cinema page on the side for the full experience 🎬</div>
-        </div>
-      </div>
-    </div>
-
     <div class="tip-box">
-      <strong>💡 Pro tip:</strong> Start a WhatsApp group called <strong>"Samara's Cinema Night 🎬"</strong> before showtime. Share this file in the group, share the Teleparty link in the group, and use the group to do a countdown together. Family overseas can send birthday messages in the chat during the movie! 🎉
+      <strong>💡 Pro tip:</strong> Start a WhatsApp group called <strong>"Samara's Cinema Night 🎬"</strong> before showtime. Share this page link in the group, share the Teleparty link in the group, and use the group to do a countdown together. Family overseas can send birthday messages in the chat during the movie! 🎉
     </div>
 
     <div class="page-footer">🎬 SAMARA'S CINEMA · EST. 2026 · JAMAICA<br><span>All movies. All magic. All love. ❤️</span></div>
@@ -747,20 +714,11 @@ body {
     window.scrollTo(0, 0);
   }
 
-  // COUNTDOWN
+ // COUNTDOWN — Fixed to June 14, 2026, 3:00 PM (Jamaica time)
   const timerEl = document.getElementById('timer');
-  const picker = document.getElementById('showtimePicker');
-
-  const def = new Date();
-  def.setHours(def.getHours() + 1, 0, 0);
-  picker.value = def.getHours().toString().padStart(2,'0') + ':' + def.getMinutes().toString().padStart(2,'0');
 
   function getShowtime() {
-    const [h, m] = picker.value.split(':').map(Number);
-    const t = new Date();
-    t.setHours(h, m, 0, 0);
-    if (t < new Date()) t.setDate(t.getDate() + 1);
-    return t;
+    return new Date(2026, 5, 14, 15, 0, 0); // Month is 0-indexed: 5 = June
   }
 
   function tick() {
@@ -771,15 +729,15 @@ body {
       timerEl.style.color = '#FF0080';
       return;
     }
-    const h = Math.floor(diff / 3600000);
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
     const m = Math.floor((diff % 3600000) / 60000);
     const s = Math.floor((diff % 60000) / 1000);
-    timerEl.textContent = `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    timerEl.textContent = `${d}D ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
     timerEl.style.fontSize = '';
     timerEl.style.color = '';
   }
 
-  picker.addEventListener('change', tick);
   setInterval(tick, 1000);
   tick();
 </script>
