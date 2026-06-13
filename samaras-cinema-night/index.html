@@ -1,1 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samara's Cinema Night 🎬</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Special+Elite&family=Nunito:wght@400;700;900&display=swap');
 
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --gold: #FFD700;
+  --pink: #FF0080;
+  --teal: #00FFCC;
+  --dark: #080810;
+  --card: #10101a;
+  --border: rgba(255,215,0,0.3);
+}
+
+body {
+  background: var(--dark);
+  color: #fff;
+  font-family: 'Nunito', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Stars */
+.stars {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(1px 1px at 8% 12%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 22% 65%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1px 1px at 38% 28%, rgba(255,255,255,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 52% 78%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1px 1px at 67% 18%, rgba(255,255,255,0.8) 0%, transparent 100%),
+    radial-gradient(1px 1px at 83% 52%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(1px 1px at 12% 88%, rgba(255,255,255,0.7) 0%, transparent 100%),
+    radial-gradient(1px 1px at 91% 88%, rgba(255,255,255,0.5) 0%, transparent 100%),
+    radial-gradient(1px 1px at 4%  44%, rgba(255,255,255,0.9) 0%, transparent 100%),
+    radial-gradient(1px 1px at 58%  8%, rgba(255,255,255,0.6) 0%, transparent 100%),
+    radial-gradient(2px 2px at 31% 50%, rgba(255,220,100,0.5) 0%, transparent 100%),
+    radial-gradient(2px 2px at 74% 38%, rgba(255,220,100,0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 45% 95%, rgba(255,255,255,0.4) 0%, transparent 100%),
+    radial-gradient(1px 1px at 76% 72%, rgba(255,255,255,0.7) 0%, transparent 100%);
+}
+
+/* ── NAV TABS ── */
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(8,8,16,0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.nav::-webkit-scrollbar { display: none; }
+.nav-btn {
+  flex-shrink: 0;
+  padding: 14px 18px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #666;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.nav-btn.active {
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
+
+/* ── MARQUEE ── */
+.marquee-bar {
+  background: var(--gold);
+  padding: 7px 0;
+  overflow: hidden;
+}
+.marquee-track {
+  display: flex;
+  gap: 50px;
+  animation: marquee 14s linear infinite;
+  white-space: nowrap;
+}
+.marquee-track span {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #0a0a0a;
+  flex-shrink: 0;
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* ── PAGES ── */
+.page { display: none; position: relative; z-index: 1; }
+.page.active { display: block; }
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px 16px 80px;
+}
+
+/* ── HERO ── */
+.hero {
+  background: linear-gradient(180deg, #1a0830 0%, #080810 100%);
+  border-bottom: 1px solid var(--border);
+  padding: 30px 20px 24px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-rainbow {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #FF0080, #FFD700, #00FFCC, #FF6600, #FF0080);
+  background-size: 300% 100%;
+  animation: rainbow 4s linear infinite;
+}
+@keyframes rainbow { from { background-position: 0% 0%; } to { background-position: 300% 0%; } }
+
+.bulbs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.bulb {
+  width: 13px; height: 13px;
+  border-radius: 50%;
+  animation: blink 1.6s ease-in-out infinite;
+}
+.bulb:nth-child(1){background:#FF0080;animation-delay:0s}
+.bulb:nth-child(2){background:#FFD700;animation-delay:.2s}
+.bulb:nth-child(3){background:#00FFCC;animation-delay:.4s}
+.bulb:nth-child(4){background:#FF6600;animation-delay:.6s}
+.bulb:nth-child(5){background:#FF0080;animation-delay:.8s}
+.bulb:nth-child(6){background:#FFD700;animation-delay:1s}
+.bulb:nth-child(7){background:#00FFCC;animation-delay:1.2s}
+@keyframes blink {
+  0%,100%{opacity:1;box-shadow:0 0 8px currentColor}
+  50%{opacity:.15;box-shadow:none}
+}
+
+.cinema-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 56px;
+  line-height: 1;
+  color: var(--gold);
+  text-shadow: 0 0 30px rgba(255,215,0,0.4), 3px 3px 0 #7a5c00;
+  letter-spacing: 3px;
+}
+.cinema-sub {
+  font-family: 'Special Elite', cursive;
+  font-size: 12px;
+  color: #888;
+  letter-spacing: 4px;
+  margin-top: 4px;
+}
+.now-showing-pill {
+  display: inline-block;
+  margin-top: 14px;
+  background: var(--pink);
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 12px;
+  letter-spacing: 3px;
+  padding: 4px 16px;
+  border-radius: 2px;
+}
+.feature-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 8px;
+  letter-spacing: 1px;
+}
+
+/* birthday banner */
+.bday-card {
+  background: linear-gradient(135deg, #1a0830, #0d0d1a);
+  border: 2px solid var(--gold);
+  border-radius: 6px;
+  padding: 22px 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.bday-card::before {
+  content: '🎉🎂🎉🎂🎉🎂🎉🎂🎉🎂';
+  position: absolute;
+  top: 6px; left: 0; right: 0;
+  font-size: 13px;
+  opacity: 0.25;
+  letter-spacing: 3px;
+}
+.bday-hb { font-family:'Bebas Neue',sans-serif; font-size:22px; color:var(--gold); letter-spacing:3px; margin-top:8px; }
+.bday-name { font-family:'Bebas Neue',sans-serif; font-size:54px; color:var(--pink); line-height:1; text-shadow:0 0 20px rgba(255,0,128,0.4); }
+.bday-age { font-family:'Special Elite',cursive; font-size:13px; color:#aaa; margin-top:4px; letter-spacing:2px; }
+.dots { display:flex; justify-content:center; gap:8px; margin-top:14px; }
+.dot { width:10px;height:10px;border-radius:50%;animation:floatdot 2s ease-in-out infinite; }
+.dot:nth-child(1){background:#FF0080;animation-delay:0s}
+.dot:nth-child(2){background:#FFD700;animation-delay:.2s}
+.dot:nth-child(3){background:#00FFCC;animation-delay:.4s}
+.dot:nth-child(4){background:#FF6600;animation-delay:.6s}
+.dot:nth-child(5){background:#FF0080;animation-delay:.8s}
+.dot:nth-child(6){background:#FFD700;animation-delay:1s}
+@keyframes floatdot { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-6px)} }
+
+/* countdown */
+.countdown-card {
+  background: var(--card);
+  border: 2px solid var(--pink);
+  border-radius: 6px;
+  padding: 20px 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.cd-label { font-family:'Bebas Neue',sans-serif; font-size:12px; letter-spacing:3px; color:var(--pink); margin-bottom:10px; }
+.cd-timer { font-family:'Bebas Neue',sans-serif; font-size:52px; color:var(--gold); letter-spacing:6px; line-height:1; text-shadow:0 0 20px rgba(255,215,0,0.3); }
+.cd-sub { font-size:11px; color:#555; margin-top:6px; letter-spacing:2px; font-family:'Special Elite',cursive; }
+.cd-input-row { margin-top:14px; display:flex; align-items:center; justify-content:center; gap:10px; }
+.cd-input-row label { font-size:11px; color:#666; letter-spacing:1px; font-family:'Special Elite',cursive; }
+.cd-input-row input[type=time] {
+  background:#1a1a2a; border:1px solid var(--gold); color:var(--gold);
+  padding:7px 12px; font-family:'Bebas Neue',sans-serif; font-size:20px;
+  border-radius:3px; letter-spacing:2px;
+}
+
+/* section title */
+.sec-title {
+  font-family:'Bebas Neue',sans-serif; font-size:20px; letter-spacing:3px;
+  color:var(--gold); text-align:center; margin:24px 0 14px;
+  display:flex; align-items:center; gap:10px; justify-content:center;
+}
+.sec-title::before,.sec-title::after {
+  content:''; flex:1; height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+}
+
+/* ── MENU ── */
+.menu-card {
+  background: var(--card);
+  border: 2px solid var(--gold);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.menu-hdr {
+  background: var(--gold);
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-hdr span { font-family:'Bebas Neue',sans-serif; font-size:18px; color:#0a0a0a; letter-spacing:2px; }
+.cat-label {
+  font-family:'Bebas Neue',sans-serif; font-size:12px; letter-spacing:3px;
+  color:var(--pink); border-bottom:1px solid #222; padding-bottom:4px; margin-bottom:10px;
+}
+.cat { padding:14px 16px 0; }
+.cat:last-of-type { padding-bottom:14px; }
+.mitem {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:9px 0; border-bottom:1px dashed #1e1e2e;
+}
+.mitem:last-child { border-bottom:none; }
+.mitem-l { display:flex; align-items:center; gap:10px; }
+.mitem-emoji { font-size:22px; width:30px; text-align:center; }
+.mitem-name { font-weight:700; font-size:14px; color:#fff; }
+.mitem-desc { font-size:11px; color:#666; margin-top:1px; }
+.mitem-price { font-family:'Special Elite',cursive; color:var(--gold); font-size:14px; white-space:nowrap; }
+.mitem-price.free { color:var(--teal); }
+.menu-ftr { background:#0d0d18; padding:10px 16px; font-size:11px; color:#555; text-align:center; font-family:'Special Elite',cursive; letter-spacing:1px; }
+
+/* ── TICKETS ── */
+.ticket {
+  display:flex; border-radius:6px; overflow:hidden;
+  box-shadow:0 6px 24px rgba(0,0,0,0.5); margin-bottom:16px;
+}
+.ticket-main { flex:1; padding:18px 16px; }
+.ticket.pink .ticket-main { background:linear-gradient(135deg,#C2185B,#7B003C); }
+.ticket.gold .ticket-main { background:linear-gradient(135deg,#E65100,#BF360C); }
+
+.ticket-sep {
+  width:2px;
+  background:repeating-linear-gradient(to bottom,transparent 0,transparent 6px,rgba(255,255,255,.25) 6px,rgba(255,255,255,.25) 10px);
+  position:relative;
+}
+.ticket-sep::before,.ticket-sep::after {
+  content:''; position:absolute; left:50%; transform:translateX(-50%);
+  width:18px; height:18px; border-radius:50%; background:var(--dark);
+}
+.ticket-sep::before { top:-9px; }
+.ticket-sep::after { bottom:-9px; }
+
+.ticket-stub {
+  width:64px; display:flex; flex-direction:column;
+  align-items:center; justify-content:center; padding:10px 6px;
+}
+.ticket.pink .ticket-stub { background:#7B003C; }
+.ticket.gold .ticket-stub { background:#BF360C; }
+.stub-text {
+  font-family:'Bebas Neue',sans-serif; font-size:10px; letter-spacing:2px;
+  color:rgba(255,255,255,.5); writing-mode:vertical-rl;
+  text-orientation:mixed; transform:rotate(180deg);
+}
+.stub-icon { font-size:22px; margin-top:8px; }
+
+.t-cinema { font-family:'Bebas Neue',sans-serif; font-size:9px; letter-spacing:3px; color:rgba(255,255,255,.4); margin-bottom:4px; }
+.t-name { font-family:'Bebas Neue',sans-serif; font-size:28px; line-height:1; color:#fff; }
+.t-sub { font-size:10px; color:rgba(255,255,255,.4); letter-spacing:1px; margin-bottom:10px; }
+.t-row { display:flex; gap:16px; flex-wrap:wrap; margin-top:10px; }
+.t-field-lbl { font-size:9px; letter-spacing:2px; color:rgba(255,255,255,.35); text-transform:uppercase; }
+.t-field-val { font-family:'Special Elite',cursive; font-size:12px; color:var(--gold); }
+.barcode { margin-top:12px; display:flex; gap:2px; align-items:flex-end; }
+.bar { background:rgba(255,255,255,.6); border-radius:1px; }
+
+/* ── JOIN GUIDE ── */
+.join-hero {
+  background:linear-gradient(135deg,#0d1a0d,#080810);
+  border:2px solid var(--teal);
+  border-radius:6px;
+  padding:20px 16px;
+  text-align:center;
+  margin-bottom:20px;
+}
+.join-hero-title { font-family:'Bebas Neue',sans-serif; font-size:32px; color:var(--teal); letter-spacing:2px; }
+.join-hero-sub { font-size:13px; color:#888; margin-top:4px; font-family:'Special Elite',cursive; letter-spacing:1px; }
+
+.path-card {
+  background:var(--card);
+  border-radius:6px;
+  overflow:hidden;
+  margin-bottom:16px;
+  border:1px solid #1e1e2e;
+}
+.path-hdr {
+  padding:12px 16px;
+  display:flex; align-items:center; gap:10px;
+}
+.path-hdr.laptop { background:linear-gradient(90deg,#1a1a40,#0d0d20); border-bottom:2px solid var(--gold); }
+.path-hdr.phone  { background:linear-gradient(90deg,#1a0830,#0d0d20); border-bottom:2px solid var(--pink); }
+.path-icon { font-size:28px; }
+.path-title { font-family:'Bebas Neue',sans-serif; font-size:20px; letter-spacing:2px; }
+.path-hdr.laptop .path-title { color:var(--gold); }
+.path-hdr.phone  .path-title { color:var(--pink); }
+.path-body { padding:14px 16px; }
+
+.step {
+  display:flex; gap:12px; align-items:flex-start;
+  padding:10px 0; border-bottom:1px dashed #1a1a2a;
+}
+.step:last-child { border-bottom:none; }
+.step-num {
+  width:26px; height:26px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Bebas Neue',sans-serif; font-size:14px;
+  flex-shrink:0; margin-top:1px;
+}
+.laptop .step-num { background:var(--gold); color:#0a0a0a; }
+.phone  .step-num { background:var(--pink); color:#fff; }
+.step-text { font-size:13px; color:#ccc; line-height:1.5; }
+.step-text strong { color:#fff; }
+.step-text a, .step-link {
+  color:var(--teal); text-decoration:none; font-weight:700;
+  word-break:break-all;
+}
+
+.tip-box {
+  background:#0d1a0d;
+  border:1px solid rgba(0,255,204,0.3);
+  border-radius:4px;
+  padding:12px 14px;
+  margin-bottom:16px;
+  font-size:12px;
+  color:#aaa;
+  line-height:1.6;
+}
+.tip-box strong { color:var(--teal); }
+
+.share-box {
+  background:var(--card);
+  border:2px dashed var(--gold);
+  border-radius:6px;
+  padding:18px 16px;
+  text-align:center;
+  margin-bottom:16px;
+}
+.share-label { font-family:'Bebas Neue',sans-serif; font-size:13px; letter-spacing:3px; color:var(--gold); margin-bottom:10px; }
+.share-steps { text-align:left; }
+.share-step { font-size:13px; color:#ccc; padding:6px 0; display:flex; gap:8px; }
+.share-step-icon { font-size:16px; flex-shrink:0; }
+
+/* footer */
+.page-footer {
+  text-align:center; margin-top:32px;
+  font-family:'Special Elite',cursive; font-size:11px;
+  color:#333; letter-spacing:2px; line-height:2;
+}
+.page-footer span { color:var(--pink); }
+</style>
+</head>
+<body>
+
+<div class="stars"></div>
+
+<!-- MARQUEE -->
+<div class="marquee-bar">
+  <div class="marquee-track">
+    <span>🎬 SAMARA'S CINEMA</span>
+    <span>⭐ BIRTHDAY SPECIAL</span>
+    <span>🍿 TONIGHT ONLY</span>
+    <span>🎂 JUNE 14 · 2026</span>
+    <span>🎟️ ALL FAMILY WELCOME</span>
+    <span>🎬 SAMARA'S CINEMA</span>
+    <span>⭐ BIRTHDAY SPECIAL</span>
+    <span>🍿 TONIGHT ONLY</span>
+    <span>🎂 JUNE 14 · 2026</span>
+    <span>🎟️ ALL FAMILY WELCOME</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-rainbow"></div>
+  <div class="bulbs">
+    <div class="bulb"></div><div class="bulb"></div><div class="bulb"></div>
+    <div class="bulb"></div><div class="bulb"></div><div class="bulb"></div>
+    <div class="bulb"></div>
+  </div>
+  <div class="cinema-name">SAMARA'S<br>CINEMA</div>
+  <div class="cinema-sub">ESTABLISHED JUNE 14, 2026 · JAMAICA</div>
+  <div class="now-showing-pill">▶ NOW SHOWING</div>
+  <div class="feature-title">🎬 BIRTHDAY DOUBLE FEATURE 🎬</div>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+  <button class="nav-btn active" onclick="showPage('home')">🏠 HOME</button>
+  <button class="nav-btn" onclick="showPage('menu')">🍿 MENU</button>
+  <button class="nav-btn" onclick="showPage('tickets')">🎟️ TICKETS</button>
+  <button class="nav-btn" onclick="showPage('join')">📺 HOW TO JOIN</button>
+</nav>
+
+<!-- ══ PAGE: HOME ══ -->
+<div class="page active" id="page-home">
+  <div class="container">
+
+    <div class="bday-card">
+      <div class="bday-hb">🎂 Happy Birthday</div>
+      <div class="bday-name">SAMARA</div>
+      <div class="bday-age">The Big 1️⃣0️⃣ — Double Digits! 🎉</div>
+      <div class="dots">
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+        <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+      </div>
+    </div>
+
+    <div class="countdown-card">
+      <div class="cd-label">🎬 SHOWTIME COUNTDOWN</div>
+      <div class="cd-timer" id="timer">00:00:00</div>
+      <div class="cd-sub">SUNDAY, JUNE 14, 2026 · 3:00 PM</div>
+    </div>
+
+    <div class="sec-title">🌟 TONIGHT'S LINEUP</div>
+    <div style="background:var(--card);border:1px solid var(--border);border-radius:6px;padding:16px;">
+      <div style="display:flex;gap:14px;align-items:center;padding:10px 0;border-bottom:1px dashed #1e1e2e;">
+        <div style="font-size:28px;">🎬</div>
+        <div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:var(--pink);">MOVIE 1 — SAMARA'S PICK</div>
+          <div style="font-size:12px;color:#888;margin-top:2px;">Birthday girl chooses first ⭐</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:14px;align-items:center;padding:10px 0;">
+        <div style="font-size:28px;">🎬</div>
+        <div>
+          <div style="font-family:'Bebas Neue',sans-serif;font-size:16px;letter-spacing:2px;color:var(--gold);">MOVIE 2 — LATE SHOW</div>
+          <div style="font-size:12px;color:#888;margin-top:2px;">Little brother's belated birthday pick 🎂</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      🎬 SAMARA'S CINEMA · EST. 2026 · JAMAICA<br>
+      <span>All movies. All magic. All love. ❤️</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══ PAGE: MENU ══ -->
+<div class="page" id="page-menu">
+  <div class="container">
+    <div class="sec-title">🍿 SNACK BAR MENU</div>
+    <div class="menu-card">
+      <div class="menu-hdr">
+        <span>🎬 TONIGHT'S MENU</span>
+        <span>CINEMA SPECIALS</span>
+      </div>
+
+      <div class="cat">
+        <div class="cat-label">— SNACKS —</div>
+        <div class="mitem">
+          <div class="mitem-l">
+            <div class="mitem-emoji">🍿</div>
+            <div><div class="mitem-name">Cinema Popcorn</div><div class="mitem-desc">Classic salted, fresh & hot</div></div>
+          </div>
+          <div class="mitem-price free">FREE ✓</div>
+        </div>
+        <div class="mitem">
+          <div class="mitem-l">
+            <div class="mitem-emoji">🌭</div>
+            <div><div class="mitem-name">Cinema Hot Dog</div><div class="mitem-desc">Served cinema-style</div></div>
+          </div>
+          <div class="mitem-price">$50</div>
+        </div>
+        <div class="mitem">
+          <div class="mitem-l">
+            <div class="mitem-emoji">🍔</div>
+            <div><div class="mitem-name">Cinema Burger</div><div class="mitem-desc">Juicy & loaded</div></div>
+          </div>
+          <div class="mitem-price">$150</div>
+        </div>
+        <div class="mitem">
+          <div class="mitem-l">
+            <div class="mitem-emoji">🍗</div>
+            <div><div class="mitem-name">KFC Chicken</div><div class="mitem-desc">Finger lickin' good</div></div>
+          </div>
+          <div class="mitem-price">$200</div>
+        </div>
+      </div>
+
+      <div class="cat">
+        <div class="cat-label">— SWEET TREATS —</div>
+        <div class="mitem">
+          <div class="mitem-l">
+            <div class="mitem-emoji">🍦</div>
+            <div><div class="mitem-name">Ice Cream</div><div class="mitem-desc">Served at intermission only!</div></div>
+          </div>
+          <div class="mitem-price">$100</div>
+        </div>
+        <div class="mitem">
+          <div class="mitem-l">
+            <div class="mitem-emoji">🍬</div>
+            <div><div class="mitem-name">Cinema Candy</div><div class="mitem-desc">Sweet pick from the jar</div></div>
+          </div>
+          <div class="mitem-price">$30</div>
+        </div>
+      </div>
+
+      <div class="cat">
+        <div class="cat-label">— DRINKS —</div>
+        <div class="mitem">
+          <div class="mitem-l">
+            <div class="mitem-emoji">🥤</div>
+            <div><div class="mitem-name">Soda</div><div class="mitem-desc">Ice cold & fizzy</div></div>
+          </div>
+          <div class="mitem-price">$50</div>
+        </div>
+        <div class="mitem">
+          <div class="mitem-l">
+            <div class="mitem-emoji">🧃</div>
+            <div><div class="mitem-name">Juice</div><div class="mitem-desc">Cold & refreshing</div></div>
+          </div>
+          <div class="mitem-price">$20</div>
+        </div>
+        <div class="mitem">
+          <div class="mitem-l">
+            <div class="mitem-emoji">💧</div>
+            <div><div class="mitem-name">Water</div><div class="mitem-desc">Still or sparkling</div></div>
+          </div>
+          <div class="mitem-price free">FREE ✓</div>
+        </div>
+      </div>
+
+      <div class="menu-ftr">⭐ Popcorn is always complimentary with your ticket ⭐</div>
+    </div>
+
+    <div class="page-footer">🎬 SAMARA'S CINEMA · EST. 2026 · JAMAICA<br><span>All movies. All magic. All love. ❤️</span></div>
+  </div>
+</div>
+
+<!-- ══ PAGE: TICKETS ══ -->
+<div class="page" id="page-tickets">
+  <div class="container">
+    <div class="sec-title">🎟️ YOUR TICKETS</div>
+
+    <!-- Samara -->
+    <div class="ticket pink">
+      <div class="ticket-main">
+        <div class="t-cinema">SAMARA'S CINEMA · JUNE 14, 2026</div>
+        <div class="t-name">SAMARA</div>
+        <div class="t-sub">🎂 BIRTHDAY GIRL — VIP GUEST</div>
+        <div class="t-row">
+          <div><div class="t-field-lbl">Seat</div><div class="t-field-val">A1 — BEST SEAT</div></div>
+          <div><div class="t-field-lbl">Show</div><div class="t-field-val">Movie 1</div></div>
+          <div><div class="t-field-lbl">Popcorn</div><div class="t-field-val">✓ Included</div></div>
+        </div>
+        <div class="barcode">
+          <div class="bar" style="width:2px;height:28px"></div><div class="bar" style="width:3px;height:22px"></div>
+          <div class="bar" style="width:1px;height:30px"></div><div class="bar" style="width:2px;height:18px"></div>
+          <div class="bar" style="width:4px;height:28px"></div><div class="bar" style="width:1px;height:24px"></div>
+          <div class="bar" style="width:2px;height:30px"></div><div class="bar" style="width:3px;height:20px"></div>
+          <div class="bar" style="width:1px;height:28px"></div><div class="bar" style="width:2px;height:22px"></div>
+          <div class="bar" style="width:3px;height:30px"></div><div class="bar" style="width:1px;height:18px"></div>
+        </div>
+      </div>
+      <div class="ticket-sep"></div>
+      <div class="ticket-stub"><div class="stub-text">BIRTHDAY VIP</div><div class="stub-icon">🎂</div></div>
+    </div>
+
+    <!-- Brother -->
+    <div class="ticket gold">
+      <div class="ticket-main">
+        <div class="t-cinema">SAMARA'S CINEMA · JUNE 14, 2026</div>
+        <div class="t-name">VIP GUEST</div>
+        <div class="t-sub">⭐ BELATED BIRTHDAY LOVE</div>
+        <div class="t-row">
+          <div><div class="t-field-lbl">Seat</div><div class="t-field-val">A2 — VIP</div></div>
+          <div><div class="t-field-lbl">Show</div><div class="t-field-val">Movie 2</div></div>
+          <div><div class="t-field-lbl">Popcorn</div><div class="t-field-val">✓ Included</div></div>
+        </div>
+        <div class="barcode">
+          <div class="bar" style="width:3px;height:22px"></div><div class="bar" style="width:1px;height:30px"></div>
+          <div class="bar" style="width:2px;height:18px"></div><div class="bar" style="width:4px;height:28px"></div>
+          <div class="bar" style="width:2px;height:24px"></div><div class="bar" style="width:1px;height:30px"></div>
+          <div class="bar" style="width:3px;height:20px"></div><div class="bar" style="width:2px;height:28px"></div>
+          <div class="bar" style="width:1px;height:22px"></div><div class="bar" style="width:4px;height:30px"></div>
+          <div class="bar" style="width:2px;height:18px"></div><div class="bar" style="width:1px;height:26px"></div>
+        </div>
+      </div>
+      <div class="ticket-sep"></div>
+      <div class="ticket-stub"><div class="stub-text">SPECIAL GUEST</div><div class="stub-icon">⭐</div></div>
+    </div>
+
+    <div class="page-footer">🎬 SAMARA'S CINEMA · EST. 2026 · JAMAICA<br><span>All movies. All magic. All love. ❤️</span></div>
+  </div>
+</div>
+
+    <!-- SHARE THE PAGE FIRST -->
+   <!-- SHARE THE PAGE FIRST -->
+    <div class="share-box">
+      <div class="share-label">📤 STEP 1 — SHARE THE LINK</div>
+      <div class="share-steps">
+        <div class="share-step"><span class="share-step-icon">1️⃣</span><span>Send this link to your family WhatsApp group: <strong>lwsmedianetwork.com/samaras-cinema-night.html</strong></span></div>
+        <div class="share-step"><span class="share-step-icon">2️⃣</span><span>Tell them: <em>"Tap this link — it's your cinema ticket! Works on phone, tablet, or laptop, anywhere in the world."</em></span></div>
+        <div class="share-step"><span class="share-step-icon">3️⃣</span><span>Then follow the steps below to sync the movie on Netflix together</span></div>
+      </div>
+    </div>
+
+    <!-- LAPTOP PATH -->
+    <div class="path-card">
+      <div class="path-hdr laptop">
+        <div class="path-icon">💻</div>
+        <div>
+          <div class="path-title">ON A LAPTOP OR COMPUTER</div>
+          <div style="font-size:11px;color:#888;margin-top:2px;">Chrome browser required</div>
+        </div>
+      </div>
+      <div class="path-body laptop">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-text">Open <strong>Google Chrome</strong> on your laptop (download it free if you don't have it)</div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-text">Go to <a href="https://www.teleparty.com" target="_blank">teleparty.com</a> and click <strong>"Add to Chrome"</strong> — it's completely free</div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-text">Open <strong>Netflix</strong> and sign in with your own account, then start the movie</div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-text">Click the <strong>Teleparty icon</strong> (top right of Chrome) → click <strong>"Start the Party"</strong></div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div class="step-text">Copy the <strong>party link</strong> it gives you and send it to family on WhatsApp — they click it and everyone is in sync! 🎉</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <strong>💡 Pro tip:</strong> Start a WhatsApp group called <strong>"Samara's Cinema Night 🎬"</strong> before showtime. Share this page link in the group, share the Teleparty link in the group, and use the group to do a countdown together. Family overseas can send birthday messages in the chat during the movie! 🎉
+    </div>
+
+    <div class="page-footer">🎬 SAMARA'S CINEMA · EST. 2026 · JAMAICA<br><span>All movies. All magic. All love. ❤️</span></div>
+  </div>
+</div>
+
+<script>
+  // NAV
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('page-' + id).classList.add('active');
+    event.target.classList.add('active');
+    window.scrollTo(0, 0);
+  }
+
+ // COUNTDOWN — Fixed to June 14, 2026, 3:00 PM (Jamaica time)
+  const timerEl = document.getElementById('timer');
+
+  function getShowtime() {
+    return new Date(2026, 5, 14, 15, 0, 0); // Month is 0-indexed: 5 = June
+  }
+
+  function tick() {
+    const diff = getShowtime() - new Date();
+    if (diff <= 0) {
+      timerEl.textContent = '🎬 SHOWTIME!';
+      timerEl.style.fontSize = '30px';
+      timerEl.style.color = '#FF0080';
+      return;
+    }
+    const d = Math.floor(diff / 86400000);
+    const h = Math.floor((diff % 86400000) / 3600000);
+    const m = Math.floor((diff % 3600000) / 60000);
+    const s = Math.floor((diff % 60000) / 1000);
+    timerEl.textContent = `${d}D ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+    timerEl.style.fontSize = '';
+    timerEl.style.color = '';
+  }
+
+  setInterval(tick, 1000);
+  tick();
+</script>
+</body>
+</html>
